@@ -1,9 +1,8 @@
-// ProjectCards.js
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { BsGithub } from "react-icons/bs";
 
-function ProjectCards({ title, description, ghLink }) {
+function ProjectCards({ title, description, ghLink, leads }) {
   return (
     <Card className="project-card-view">
       <Card.Body>
@@ -23,6 +22,23 @@ function ProjectCards({ title, description, ghLink }) {
         }}>
           {description}
         </Card.Text>
+
+        {/* Only render leads if they exist */}
+        {leads && leads.length > 0 && (
+          <Card.Text style={{
+            fontSize: "1em",
+            marginBottom: "20px"
+          }}>
+            <strong>Project Lead{leads.length > 1 ? 's' : ''}:</strong>
+            <ul style={{ listStyle: "none", paddingLeft: "20px" }}>
+              {leads.map((lead, index) => (
+                <li key={index}>• {lead}</li>
+              ))}
+            </ul>
+          </Card.Text>
+        )}
+
+        {/* Only render GitHub link if it exists */}
         {ghLink && (
           <a
             href={ghLink}

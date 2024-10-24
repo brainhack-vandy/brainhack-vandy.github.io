@@ -3,47 +3,33 @@ import { Container, Form } from "react-bootstrap";
 import Particle from "../Particle";
 
 const ConsoleBox = ({ children }) => (
-  <div style={{
-    backgroundColor: "rgba(0, 0, 0, 0.2)",
-    border: "1px solid rgba(255, 255, 255, 0.1)",
-    borderRadius: "8px",
-    padding: "20px",
-    marginBottom: "25px",
-    color: "white",
-    fontFamily: "monospace"
-  }}>
+  <div className="console-box">
     {children}
   </div>
 );
 
-const ProjectTeam = ({ names }) => (
-  <div style={{ marginTop: "15px" }}>
-    <span style={{ color: "#98c379" }}>Project Lead: </span>
-    <ul style={{
-      listStyle: "none",
-      paddingLeft: "20px",
-      marginBottom: "0"
-    }}>
-      {names.map((name, index) => (
-        <li key={index}>• {name}</li>
-      ))}
-    </ul>
-  </div>
-);
+const ProjectTeam = ({ names }) => {
+  if (!names || names.length === 0) return null;
+
+  return (
+    <div className="project-team">
+      <div className="project-team-label">Project Lead:</div>
+      <ul className="project-team-list">
+        {names.map((name, index) => (
+          <li key={index} className="project-team-item">{name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 const YearSelect = ({ years, currentYear, onYearChange }) => {
   return (
-    <Form.Group className="mb-4">
+    <Form.Group className="year-select-container mb-4">
       <Form.Select
         value={currentYear}
         onChange={(e) => onYearChange(e.target.value)}
-        style={{
-          width: "200px",
-          backgroundColor: "#623686",
-          color: "white",
-          border: "1px solid rgba(255, 255, 255, 0.2)",
-          cursor: "pointer"
-        }}
+        aria-label="Select BrainHack Year"
       >
         {years.map((year) => (
           <option key={year} value={year.toString()}>
@@ -54,16 +40,11 @@ const YearSelect = ({ years, currentYear, onYearChange }) => {
     </Form.Group>
   );
 };
-
 const ComingSoon = () => (
   <ConsoleBox>
-    <div style={{
-      fontSize: "1.2em",
-      textAlign: "center",
-      padding: "40px 20px"
-    }}>
-      <h3 style={{ color: "#98c379" }}>Coming Soon!</h3>
-      <p style={{ marginTop: "20px" }}>
+    <div className="coming-soon">
+      <h3 className="coming-soon-title">Coming Soon!</h3>
+      <p className="coming-soon-text">
         Project submissions for BrainHack 2025 will open later this year.
         Stay tuned for exciting new projects!
       </p>
@@ -79,79 +60,60 @@ function Projects() {
     "2024": [
       {
         title: "PhysioQA",
-        description: `Functional magnetic resonance imaging (fMRI) measures blood-oxygen-level-dependent (BOLD) changes in the brain as a proxy for neural activity.
+        description: `Functional magnetic resonance imaging (fMRI) is a powerful and widely used technique in human brain research, measuring blood-oxygen-level-dependent (BOLD) changes in the brain, as a PROXY for neural activity.
 
-Two major influences on fMRI data are respiration and cardiac processes which affect blood-oxygen levels in the brain. While these measures are collected concurrently with fMRI, quality checking this data is challenging:
+Due to blood-oxygen dependency, two major influences on fMRI data are respiration and cardiac related processes which affect blood-oxygen levels in the brain. So people collect the measures of respiration and heart rate concurrently with fMRI to study and also to remove these effects.
 
-- Time-consuming manual labor
-- Prone to human error
-- Requires expertise to distinguish real data from artifacts
+Fantastic! But here is the catch, like any other data we need to quality-check! Let's face it, checking the quality of this data can be a real headache. It usually involves a time consuming tedious manual labor and is prone to human error - you need to know what is real data, what is an artifact.
 
-Our solution: Create a deep-learning tool to automate quality assessment that:
-- Performs automated quality checks
-- Identifies potential issues
-- Provides guidance for resolving problems`,
-        leads: ["Dr. Jane Smith"],
-        repoUrl: "https://github.com/example/physioqa"
+That's why we want to create a nifty deep-learning tool to automate quality assessment! This tool doesn't just check the quality of your data; it also points out any issues and gives you tips on how to fix them. It's like having a friendly expert on your team, making sure your research data is as good as it can be!`,
       },
       {
         title: "Resting State Networks Across Age",
-        description: `Resting state networks have enhanced our understanding of cognitive functions including:
-- Emotion processing
-- Working memory
-- Daydreaming
+        description: `Since their discovery, resting state networks have elucidated our understanding of cognitive function such as emotion processing, working memory, and daydreaming.
 
-While these networks are potential biomarkers for mental disorders, it's crucial to understand how they change with age. Current research shows age influences network connectivity, but specific regional changes need further investigation.
+Additionally, a collective of scientists believe resting state networks may be a possible biomarker of mental disorders. However, before we can confirm resting state networks point to a characteristic of mental disorders it is important to model how they change across age.
 
-Project Goal: Compare methods of resting state network analysis and model age-related changes in network connectivity.`,
-        leads: ["Dr. John Doe"],
-        repoUrl: "https://github.com/example/rsn-age"
+Many studies have identified that age does influence the connectivity of resting state networks however which brain regions within resting state networks change specifically needs to be further understood.
+
+The goal of this project is to compare methods of how resting state network information are retrieved and potentially model how they change across age.`
       },
       {
         title: "fMRI-EEG Preprocessing",
-        description: `This project focuses on developing a robust quality control pipeline for multiple neuroimaging datasets.
+        description: `Preprocessing is a critical step in neuroimaging analysis, laying the foundation for accurate and meaningful scientific discoveries.
 
-Key Aspects:
-- Suitable for both beginners and experienced researchers
-- Hands-on experience with raw fMRI/EEG data
-- Development of visualization tools for different preprocessing stages
-- Integration with major toolboxes (AFNI, FSL, ANTs, chronux)
+We need help configuring a pipeline to quality check for multiple datasets. This project will allow attendees with or without experience handling fMRI/EEG data to get a chance to work with what we call the "raw data".
 
-The pipeline will ensure preprocessing steps are working as expected and verify data quality for future analyses.`,
-        leads: ["Dr. Emily Chen"],
-        repoUrl: "https://github.com/example/fmri-eeg-preproc"
+Working on a QC pipeline includes devising visuals of what the data looks like at various stages to make sure that the preprocessing is working as you expected and the data collected is good quality for future analyses.
+
+Toolboxes used include AFNI, FSL, ANTs, chronux, etc.`
       },
       {
         title: "BIDS derivatives",
-        description: `Physiopy is developing solutions for handling neuroimaging physiological data through various tools:
+        description: `Physiopy is a community dedicated to developing solutions for handling physiological data acquired in neuroimaging setups.
 
-- phys2bids: Standardizes raw physiological data per BIDS
-- peakdet: Processes and analyzes data
-- phys2denoise: Produces physiological regressors
-- physioQC: Handles quality control
+Currently, physiopy supports and maintains phys2bids, a library that standardizes raw physiological data in accordance with the Brain Imaging Data Structure (BIDS). The community is also developing and managing other libraries like peakdet (processing and analysing), phys2denoise (producing physiological regressors for neuroimaging denoising), and physioQC (quality control).
 
-Project Goal: Initiate discussion and develop a BIDS proposal for physiological derivatives, as current specifications don't cover physiological data requirements.`,
-        leads: ["Dr. Sarah Johnson"],
-        repoUrl: "https://github.com/example/bids-deriv"
+All those libraries produce a bunch of different derivatives. However, the derivatives structure and requirements for physiological data (i.e. cardiac, respiratory, blood pressure, etc.) are not yet covered by the BIDS specification.
+
+With this project, we are hoping to start a discussion around an eventual BIDS proposal on physiological derivatives.`
       },
       {
         title: "Neural Manifolds",
-        description: `This project explores brain adaptability through neural ensemble activity, examining the balance between stability and flexibility in learning and memory.
+        description: `What are the meaningful changes in the brain with experience, that allows for adaptive behavior?
 
-Key Research Questions:
-1. Can we decode behavioral states from ensemble dynamics?
-2. What is the core representational geometry of the ensembles?
-3. How does ensemble activity change with time and experience?
+When we look at the coordinated activity across spiking networks of neuronal ensembles, we see a delicate balance of stability and flexibility, as needed for a system that can both learn and remember.
 
-Data: Simultaneously-recorded neurons from non-human primates during:
-- Complex sequence memory task learning
-- Post-learning sleep states`,
-        leads: ["Dr. Michael Wilson"],
-        repoUrl: "https://github.com/example/neural-manifolds"
-      }
+In this project, we present a population of simultaneously-recorded neurons from the non-human primate during learning of a complex sequence memory task, and in sleep afterwards. These data are exceptionally rich for exploration, but also to address three fundamental questions:
+
+(1) can we decode behavioral states from the ensemble dynamics?
+(2) what is the core representational geometry of the ensembles (what factors are best preserved/differentiated in low-dimensional spaces, and how does the geometry constrain the computations and dynamics of the network?
+(3) does the ensemble activity drift with time and experience, and if so, how?`
+      },
     ]
   };
 
+  // Get all years from projectData and sort them in descending order
   const years = Object.keys(projectData).sort((a, b) => b - a);
 
   const handleYearChange = (year) => {
@@ -161,7 +123,7 @@ Data: Simultaneously-recorded neurons from non-human primates during:
   return (
     <Container fluid className="project-section">
       <Particle />
-      <Container>
+      <Container className="project-container">
         <h1 className="project-heading">
           Project Pitches <strong className="purple">BrainHack</strong>
         </h1>
@@ -180,31 +142,20 @@ Data: Simultaneously-recorded neurons from non-human primates during:
               key={index}
               id={project.title.toLowerCase().replace(/\s+/g, '-')}
             >
-              <h3 style={{
-                color: "white",
-                marginBottom: "20px",
-                fontSize: "1.8em"
-              }}>
-                {project.title}
-              </h3>
+              <h3 className="project-title">{project.title}</h3>
               <ConsoleBox>
-                <div style={{
-                  whiteSpace: "pre-wrap",
-                  lineHeight: "1.6",
-                  fontSize: "1.1em",
-                  marginBottom: "15px"
-                }}>
+                <div className="project-description">
                   {project.description}
                 </div>
 
                 {project.repoUrl && (
-                  <div>
-                    <span style={{ color: "#61afef" }}>URL: </span>
+                  <div className="project-url">
+                    <span className="project-url-label">URL:</span>
                     <a
                       href={project.repoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ color: "#e5c07b" }}
+                      className="project-url-link"
                     >
                       {project.repoUrl}
                     </a>
