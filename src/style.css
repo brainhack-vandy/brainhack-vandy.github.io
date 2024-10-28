@@ -563,73 +563,46 @@ button:focus {
   font-family: monospace;
 }
 
-/* Project Title Styles */
-.project-title {
-  color: white;
-  font-size: 1.8em;
-  margin-bottom: 20px;
-  font-weight: 600;
+/* Project Card Styles */
+.project-card-view {
+  background-color: rgba(15, 6, 33, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Project Description Styles */
-.project-description {
-  white-space: pre-wrap;
-  line-height: 1.8;
-  font-size: 1.1em;
-  margin-bottom: 20px;
-  color: #e6e6e6;
+.project-card-view:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Project URL Styles */
-.project-url {
-  margin: 15px 0;
+.project-card-title {
+  font-size: 1.3em !important;
+  font-weight: 600 !important;
+  margin-bottom: 15px !important;
+  color: var(--imp-text-color) !important;
 }
 
-.project-url-label {
-  color: #61afef;
-  margin-right: 8px;
+.project-card-description {
+  text-align: justify !important;
+  font-size: 1.1em !important;
+  line-height: 1.6 !important;
+  margin-bottom: 20px !important;
+  white-space: pre-wrap !important;
+  color: #e6e6e6 !important;
 }
 
-.project-url-link {
-  color: #e5c07b;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.project-card-row {
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
-.project-url-link:hover {
-  color: #f0d794;
-  text-decoration: underline;
+.project-card-col {
+  margin-bottom: 30px;
 }
 
-/* Project Team Styles */
-.project-team {
-  margin-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 15px;
-}
-
-.project-team-label {
-  color: #98c379;
-  margin-bottom: 8px;
-  font-weight: 500;
-}
-
-.project-team-list {
-  list-style: none;
-  padding-left: 20px;
-  margin-bottom: 0;
-}
-
-.project-team-item {
-  color: #e6e6e6;
-  margin-bottom: 4px;
-}
-
-.project-team-item::before {
-  content: "•";
-  color: #98c379;
-  margin-right: 8px;
-}
 
 /* Year Select Styles */
 .year-select-container {
@@ -669,14 +642,45 @@ button:focus {
   padding: 8px 12px !important;
 }
 
+.year-select {
+  background-color: #0c0513 !important;
+  color: white !important;
+  border: 1px solid var(--imp-text-color) !important;
+  cursor: pointer !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  font-size: 1.1em !important;
+  width: 200px !important;
+  margin-bottom: 30px !important;
+}
+
+.year-select:hover {
+  border-color: #a94cce !important;
+}
+
+.year-select:focus {
+  box-shadow: none !important;
+  border-color: #a94cce !important;
+}
+
+/* Ensure dropdown options are visible */
+.year-select option {
+  background-color: #0c0513 !important;
+  color: white !important;
+  padding: 8px 12px !important;
+}
+
 /* Coming Soon Styles */
 .coming-soon {
   text-align: center;
   padding: 40px 20px;
+  background-color: rgba(15, 6, 33, 0.9);
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 .coming-soon-title {
-  color: #98c379;
+  color: var(--imp-text-color);
   font-size: 1.8em;
   margin-bottom: 20px;
 }

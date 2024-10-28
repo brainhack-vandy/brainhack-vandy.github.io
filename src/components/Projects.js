@@ -1,55 +1,46 @@
-import React, { useState } from "react";
-import { Container, Form } from "react-bootstrap";
-import Particle from "../Particle";
+import React, { useState } from 'react';
+import { Container, Row, Col, Form } from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
+import Particle from './Particle';
 
-const ConsoleBox = ({ children }) => (
-  <div className="console-box">
-    {children}
-  </div>
+const ProjectCard = ({ title, description }) => (
+  <Card className="project-card-view">
+    <Card.Body>
+      <Card.Title className="project-card-title">
+        {title}
+      </Card.Title>
+      <Card.Text className="project-card-description">
+        {description}
+      </Card.Text>
+    </Card.Body>
+  </Card>
 );
 
-const ProjectTeam = ({ names }) => {
-  if (!names || names.length === 0) return null;
+const YearSelect = ({ years, currentYear, onYearChange }) => (
+  <Form.Group className="year-select-container">
+    <Form.Select
+      value={currentYear}
+      onChange={(e) => onYearChange(e.target.value)}
+      aria-label="Select BrainHack Year"
+      className="year-select"
+    >
+      {years.map((year) => (
+        <option key={year} value={year.toString()}>
+          BrainHack {year}
+        </option>
+      ))}
+    </Form.Select>
+  </Form.Group>
+);
 
-  return (
-    <div className="project-team">
-      <div className="project-team-label">Project Lead:</div>
-      <ul className="project-team-list">
-        {names.map((name, index) => (
-          <li key={index} className="project-team-item">{name}</li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-const YearSelect = ({ years, currentYear, onYearChange }) => {
-  return (
-    <Form.Group className="year-select-container mb-4">
-      <Form.Select
-        value={currentYear}
-        onChange={(e) => onYearChange(e.target.value)}
-        aria-label="Select BrainHack Year"
-      >
-        {years.map((year) => (
-          <option key={year} value={year.toString()}>
-            BrainHack {year}
-          </option>
-        ))}
-      </Form.Select>
-    </Form.Group>
-  );
-};
 const ComingSoon = () => (
-  <ConsoleBox>
-    <div className="coming-soon">
-      <h3 className="coming-soon-title">Coming Soon!</h3>
-      <p className="coming-soon-text">
-        Project submissions for BrainHack 2025 will open later this year.
-        Stay tuned for exciting new projects!
-      </p>
-    </div>
-  </ConsoleBox>
+  <div className="coming-soon">
+    <h3 className="coming-soon-title">Coming Soon!</h3>
+    <p className="coming-soon-text">
+      Project submissions for BrainHack 2025 will open later this year.
+      Stay tuned for exciting new projects!
+    </p>
+  </div>
 );
 
 function Projects() {
@@ -64,7 +55,7 @@ function Projects() {
 
 Due to blood-oxygen dependency, two major influences on fMRI data are respiration and cardiac related processes which affect blood-oxygen levels in the brain. So people collect the measures of respiration and heart rate concurrently with fMRI to study and also to remove these effects.
 
-Fantastic! But here is the catch, like any other data we need to quality-check! Let's face it, checking the quality of this data can be a real headache. It usually involves a time consuming tedious manual labor and is prone to human error - you need to know what is real data, what is an artifact.
+Fantastic! But here is the catch, like any other data we need to quality-check! Let's face it, checking the quality of this data can be real headache. It usually involves a time consuming tedious manual labor and is prone to human error - you need to know what is real data, what is an artifact.
 
 That's why we want to create a nifty deep-learning tool to automate quality assessment! This tool doesn't just check the quality of your data; it also points out any issues and gives you tips on how to fix them. It's like having a friendly expert on your team, making sure your research data is as good as it can be!`,
       },
@@ -113,59 +104,37 @@ In this project, we present a population of simultaneously-recorded neurons from
     ]
   };
 
-  // Get all years from projectData and sort them in descending order
   const years = Object.keys(projectData).sort((a, b) => b - a);
-
-  const handleYearChange = (year) => {
-    setCurrentYear(year);
-  };
 
   return (
     <Container fluid className="project-section">
       <Particle />
-      <Container className="project-container">
-        <h1 className="project-heading">
+      <Container>
+        <h1 className="project-heading text-center">
           Project Pitches <strong className="purple">BrainHack</strong>
         </h1>
 
-        <YearSelect
-          years={years}
-          currentYear={currentYear}
-          onYearChange={handleYearChange}
-        />
+        <div className="d-flex justify-content-center">
+          <YearSelect
+            years={years}
+            currentYear={currentYear}
+            onYearChange={setCurrentYear}
+          />
+        </div>
 
         {currentYear === "2025" ? (
           <ComingSoon />
         ) : (
-          projectData[currentYear]?.map((project, index) => (
-            <section
-              key={index}
-              id={project.title.toLowerCase().replace(/\s+/g, '-')}
-            >
-              <h3 className="project-title">{project.title}</h3>
-              <ConsoleBox>
-                <div className="project-description">
-                  {project.description}
-                </div>
-
-                {project.repoUrl && (
-                  <div className="project-url">
-                    <span className="project-url-label">URL:</span>
-                    <a
-                      href={project.repoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-url-link"
-                    >
-                      {project.repoUrl}
-                    </a>
-                  </div>
-                )}
-
-                <ProjectTeam names={project.leads} />
-              </ConsoleBox>
-            </section>
-          ))
+          <Row className="project-card-row">
+            {projectData[currentYear].map((project, index) => (
+              <Col md={6} className="project-card-col" key={index}>
+                <ProjectCard
+                  title={project.title}
+                  description={project.description}
+                />
+              </Col>
+            ))}
+          </Row>
         )}
       </Container>
     </Container>
