@@ -231,13 +231,37 @@ button:focus {
 }
 
 .application-button {
-  padding: 0.6em 1.5em;
-  font-size: 1em;
-  font-weight: 500;
-  opacity: 0.7;
-  cursor: not-allowed;
-  width: fit-content;
+  padding: 0.6em 1.5em !important;
+  font-size: 1em !important;
+  font-weight: 500 !important;
+  width: fit-content !important;
 }
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #623686 !important;
+  border-color: #623686 !important;
+}
+
+.btn-primary:hover:not(:disabled) {
+  color: #fff !important;
+  background-color: #6d20c5d7 !important;
+  border-color: #6d20c5d7 !important;
+}
+
+.btn-primary:disabled {
+  background-color: #623686 !important;
+  border-color: #623686 !important;
+  opacity: 0.7 !important;
+  cursor: not-allowed !important;
+  color: #fff !important;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 
 .home-image-container {
   padding-bottom: 20px;
@@ -301,6 +325,8 @@ button:focus {
   background-size: cover !important;
   width: 100%;
   height: 100%;
+  z-index: 0 !important;
+  /* Ensure particles are behind content */
 }
 
 .home-header {
@@ -502,6 +528,11 @@ button:focus {
 /* --------- */
 /* Projects */
 /* --------- */
+/* Existing CSS remains the same until the Projects section */
+
+/* --------- */
+/* Projects */
+/* --------- */
 .project-section {
   position: relative !important;
   padding-top: 150px !important;
@@ -509,44 +540,8 @@ button:focus {
   background-image: var(--section-background-color) !important;
 }
 
-.project-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
-}
-
-.project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
-  color: white !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
-
-.project-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
-}
-
-.btn-primary {
-  color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
-}
-
-.btn-primary:hover {
-  color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
-}
-
-.btn:focus {
-  outline: none !important;
-  box-shadow: none !important;
+.project-container {
+  padding: 0 25px;
 }
 
 .project-heading {
@@ -554,6 +549,166 @@ button:focus {
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
+  margin-bottom: 40px !important;
+}
+
+/* Console Box Styles */
+.console-box {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 30px;
+  color: white;
+  font-family: monospace;
+}
+
+/* Project Card Styles */
+.project-card-view {
+  background-color: rgba(15, 6, 33, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card-view:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-card-title {
+  font-size: 1.3em !important;
+  font-weight: 600 !important;
+  margin-bottom: 15px !important;
+  color: var(--imp-text-color) !important;
+}
+
+.project-card-description {
+  text-align: justify !important;
+  font-size: 1.1em !important;
+  line-height: 1.6 !important;
+  margin-bottom: 20px !important;
+  white-space: pre-wrap !important;
+  color: #e6e6e6 !important;
+}
+
+.project-card-row {
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.project-card-col {
+  margin-bottom: 30px;
+}
+
+
+/* Year Select Styles */
+.year-select-container {
+  position: relative !important;
+  z-index: 2 !important;
+  /* Higher z-index to appear above particles */
+  margin-bottom: 30px;
+}
+
+.year-select-container select {
+  width: 200px !important;
+  background-color: #623686 !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  cursor: pointer !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  font-size: 1.1em !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+
+.year-select-container select:hover {
+  background-color: #6d20c5d7 !important;
+}
+
+.year-select-container select:focus {
+  box-shadow: none !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Style the dropdown options */
+.year-select-container select option {
+  background-color: #623686 !important;
+  color: white !important;
+  padding: 8px 12px !important;
+}
+
+.year-select {
+  background-color: #0c0513 !important;
+  color: white !important;
+  border: 1px solid var(--imp-text-color) !important;
+  cursor: pointer !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  font-size: 1.1em !important;
+  width: 200px !important;
+  margin-bottom: 30px !important;
+}
+
+.year-select:hover {
+  border-color: #a94cce !important;
+}
+
+.year-select:focus {
+  box-shadow: none !important;
+  border-color: #a94cce !important;
+}
+
+/* Ensure dropdown options are visible */
+.year-select option {
+  background-color: #0c0513 !important;
+  color: white !important;
+  padding: 8px 12px !important;
+}
+
+/* Coming Soon Styles */
+.coming-soon {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(15, 6, 33, 0.9);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.coming-soon-title {
+  color: var(--imp-text-color);
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.coming-soon-text {
+  color: #e6e6e6;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .project-container {
+    padding: 0 15px;
+  }
+
+  .project-title {
+    font-size: 1.6em;
+  }
+
+  .project-description {
+    font-size: 1em;
+  }
+
+  .year-select {
+    width: 100%;
+    max-width: 200px;
+  }
 }
 
 /* --------- */
