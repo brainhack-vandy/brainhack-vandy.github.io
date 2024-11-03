@@ -41,16 +41,13 @@ function Introduction() {
                 borderRadius: "8px",
                 marginTop: "20px"
               }}>
-                Brainhack Vanderbilt is dedicated to a harassment-free conference experience for everyone. We follow Global Brainhack anti-harassment policy can be found here:{" "}
-
+                Brainhack Vanderbilt is dedicated to ensuring a welcoming, harassment-free experience for everyone. We adhere to the Global Brainhack {" "}
                 <a href="https://brainhack.org/code-of-conduct.html"
                   target="_blank"
                   rel="noreferrer"
                   className="purple"
-                  style={{ textDecoration: "underline" }}
-                >
-                  Code of Conduct
-                </a>
+                  style={{ textDecoration: "underline" }}>
+                  Code of Conduct.</a>
               </div>
             </p>
           </Col>

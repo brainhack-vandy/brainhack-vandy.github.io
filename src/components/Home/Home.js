@@ -22,6 +22,11 @@ function Home() {
                 </span>
               </h1>
 
+              <h1
+              >
+
+              </h1>
+
               <h1 className="heading-name heading-small-margin">
                 Welcome to
                 <strong className="main-name"> BrainHack Vanderbilt</strong>
@@ -30,13 +35,12 @@ function Home() {
               <p className="event-date">
                 January 24-26, 2025
               </p>
-
               <div className="button-container">
                 <button
                   className="btn btn-primary application-button"
                   disabled
                 >
-                  Applications Opening Soon
+                  Registration Opens Soon
                 </button>
               </div>
             </Col>

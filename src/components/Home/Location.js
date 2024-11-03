@@ -32,6 +32,20 @@ function Location() {
                         <br />
                         Nashville, TN 37240
                     </address>
+                    <h2 style={{
+                        fontSize: "2.1em",
+                        fontWeight: "500",
+                        color: "white",
+                        marginBottom: "20px",
+                        marginTop: "20px"
+                    }}>
+                        Contact Us
+                    </h2>
+                    <a
+                        href="mailto:brainhack.vanderbilt@gmail.com"
+                    >
+                        brainhack.vanderbilt@gmail.com
+                    </a>  
                 </Col>
                 <Col
                     lg="8"
@@ -48,7 +62,10 @@ function Location() {
                         allowFullScreen=""
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe>
+                        title="Vanderbilt University Location"
+                    >
+                        
+                    </iframe>
                 </Col>
             </Row>
         </Container>

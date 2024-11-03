@@ -8,7 +8,7 @@ function Footer() {
         <Col md="4" className="footer-copywright">
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>BrainHack Vanderbilt</h3>
+          <h3>Copyright @ 2025 BrainHack Vanderbilt</h3>
         </Col>
       </Row>
     </Container>
