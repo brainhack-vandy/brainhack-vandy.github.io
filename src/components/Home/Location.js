@@ -43,9 +43,13 @@ function Location() {
                     </h2>
                     <a
                         href="mailto:brainhack.vanderbilt@gmail.com"
+                        title="brainhack.vanderbilt@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "var(--imp-text-color)" }}
                     >
                         brainhack.vanderbilt@gmail.com
-                    </a>  
+                    </a>
                 </Col>
                 <Col
                     lg="8"
@@ -64,7 +68,7 @@ function Location() {
                         referrerPolicy="no-referrer-when-downgrade"
                         title="Vanderbilt University Location"
                     >
-                        
+
                     </iframe>
                 </Col>
             </Row>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import Particle from './Particle';
 import ProjectCard from './ProjectCard';
+import ProjectPitchInstr from './ProjectPitchInstr';
 
 // images must be imported as: import logo from './logo.png';
 
@@ -85,6 +86,8 @@ function Projects() {
         <h1 className="project-heading text-center">
           Project Pitches <strong className="purple">BrainHack</strong>
         </h1>
+
+        <ProjectPitchInstr />
 
         <div className="d-flex justify-content-center">
           <YearSelect
