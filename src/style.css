@@ -528,11 +528,7 @@ button:focus {
 /* --------- */
 /* Projects */
 /* --------- */
-/* Existing CSS remains the same until the Projects section */
 
-/* --------- */
-/* Projects */
-/* --------- */
 .project-section {
   position: relative !important;
   padding-top: 150px !important;
@@ -834,4 +830,45 @@ button:focus {
   .project-pitch-heading {
     font-size: 2em;
   }
+}
+
+/**
+  * Project Pitch Instructions
+  */
+
+.project-pitch-instr-section {
+  position: relative;
+  z-index: 1;
+  background-image: var(--section-background-color);
+}
+
+.project-pitch-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.project-pitch-text {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.project-pitch-subheading {
+  color: var(--imp-text-color);
+}
+
+.project-pitch-submit-button {
+  padding: 0.6em 1.5em !important;
+  font-size: 1em !important;
+  font-weight: 500 !important;
+  width: fit-content !important;
+  background-color: #c770f0 !important;
+  border: none !important;
+  color: white !important;
+}
+
+.project-pitch-submit-button:hover {
+  background-color: #a94cce !important;
+  transform: translateY(-2px);
 }
