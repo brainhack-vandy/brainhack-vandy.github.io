@@ -4,19 +4,18 @@
   "private": true,
   "homepage": "https://brainhack-vandy.github.io",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.4",
-    "bootstrap": "^5.1.3",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "bootstrap": "^5.3.3",
     "purgecss": "^6.0.0",
-    "react": "^17.0.2",
-    "react-bootstrap": "^2.2.1",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.8.0",
-    "react-parallax-tilt": "^1.7.42",
-    "react-router-dom": "^6.2.2",
-    "react-scripts": "5.0.0",
-    "react-tsparticles": "^1.42.2",
-    "web-vitals": "^2.1.4"
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.5",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "react-parallax-tilt": "^1.7.252",
+    "react-router-dom": "^6.27.0",
+    "react-tsparticles": "^2.12.2",
+    "web-vitals": "^4.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -45,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0"
+    "gh-pages": "^6.2.0",
+    "react-scripts": "^5.0.1"
   }
 }
