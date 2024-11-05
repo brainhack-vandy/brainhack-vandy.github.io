@@ -68,7 +68,6 @@ function Location() {
                         referrerPolicy="no-referrer-when-downgrade"
                         title="Vanderbilt University Location"
                     >
-
                     </iframe>
                 </Col>
             </Row>
