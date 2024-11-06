@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function ProjectPitch() {
     return (
@@ -21,22 +22,20 @@ function ProjectPitch() {
                                 </Col>
                                 <Col lg={4} className="d-flex justify-content-center">
                                     <div className="project-pitch-button-container">
-                                        <a
-                                            href="./Projects"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
+                                        <Link
+                                            to="/projects" // Replace with your actual route
                                             className="btn project-pitch-submit-button"
                                         >
                                             Submit Your Project Pitch
-                                        </a>
+                                        </Link>
                                     </div>
                                 </Col>
                             </Row>
                         </div>
-                    </Col >
-                </Row >
-            </Container >
-        </div >
+                    </Col>
+                </Row>
+            </Container>
+        </div>
     );
 }
 
