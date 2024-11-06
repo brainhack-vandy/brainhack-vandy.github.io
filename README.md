@@ -72,3 +72,6 @@ Pushing updates to the website from the main branch is a 2-step process:
 
     }
     ```
+
+---
+Design based on [@soumyajit4419/Porfolio](https://github.com/soumyajit4419/Portfolio) and [BrainHack Western](https://brainhackwestern.github.io/).
