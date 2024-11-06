@@ -617,31 +617,6 @@ button:focus {
   background-color: rgba(15, 6, 33, 0.9) !important;
 }
 
-/* .project-image-container {
-  overflow: hidden;
-  max-height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(15, 6, 33, 0.9);
-}
-
-
-.project-card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  max-height: 300px;
-  transition: transform 0.3s ease;
-}
-
-/* Optional: Add hover effect for images */
-.project-card-view:hover .project-card-image {
-  transform: scale(1.05);
-}
-
-*/
-
 /* Year Select Styles */
 .year-select-container {
   position: relative !important;
@@ -742,14 +717,6 @@ button:focus {
   .project-description {
     font-size: 1em;
   }
-
-  /* .project-image-container {
-    max-height: 250px;
-  }
-
-  .project-card-image {
-    max-height: 250px;
-  } */
 
   .card-img-top {
     max-height: 250px !important;
