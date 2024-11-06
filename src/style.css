@@ -560,18 +560,27 @@ button:focus {
 }
 
 /* Project Card Styles */
+.project-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
 .project-card-view {
-  background-color: rgba(15, 6, 33, 0.9) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  height: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
 }
 
 .project-card-view:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
 
 .project-card-title {
@@ -599,6 +608,39 @@ button:focus {
   margin-bottom: 30px;
 }
 
+.card-img-top {
+  padding: 20px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
+  max-height: 300px !important;
+  object-fit: contain !important;
+  background-color: rgba(15, 6, 33, 0.9) !important;
+}
+
+/* .project-image-container {
+  overflow: hidden;
+  max-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(15, 6, 33, 0.9);
+}
+
+
+.project-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 300px;
+  transition: transform 0.3s ease;
+}
+
+/* Optional: Add hover effect for images */
+.project-card-view:hover .project-card-image {
+  transform: scale(1.05);
+}
+
+*/
 
 /* Year Select Styles */
 .year-select-container {
@@ -701,10 +743,28 @@ button:focus {
     font-size: 1em;
   }
 
+  /* .project-image-container {
+    max-height: 250px;
+  }
+
+  .project-card-image {
+    max-height: 250px;
+  } */
+
+  .card-img-top {
+    max-height: 250px !important;
+  }
+
+  .project-card {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
   .year-select {
     width: 100%;
     max-width: 200px;
   }
+
 }
 
 /* --------- */
