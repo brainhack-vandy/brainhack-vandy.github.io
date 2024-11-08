@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.4b2c59d0.css",
-    "main.js": "/static/js/main.a6305fc5.js",
+    "main.css": "/static/css/main.3930f5db.css",
+    "main.js": "/static/js/main.2cc1190d.js",
     "static/js/488.82df7a3f.chunk.js": "/static/js/488.82df7a3f.chunk.js",
     "static/media/physio_qa.png": "/static/media/physio_qa.d4a1ea9c7aa32bd398a9.png",
     "static/media/fmri_eeg.png": "/static/media/fmri_eeg.c43ee8ad2e7afe3cf3a1.png",
     "static/media/rsn_across_age.png": "/static/media/rsn_across_age.123ae0e808244662207a.png",
+    "static/media/landing.svg": "/static/media/landing.6d8016c4442e2333f1722fe632176fe0.svg",
     "static/media/bids_deriv.png": "/static/media/bids_deriv.cff136765f316f2616af.png",
     "static/media/science1.svg": "/static/media/science1.33aa78dd7d2cf6b82de27bd3d140549d.svg",
-    "static/media/man-on-desk.svg": "/static/media/man-on-desk.541f8179af8209ce03ccf2178fe62dbf.svg",
     "static/media/neural_manifold.png": "/static/media/neural_manifold.56d85cf49820446cdd48.png",
     "static/media/logo.png": "/static/media/logo.7f837113b2c2ee6fa46d.png",
     "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
     "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/index.html",
-    "main.4b2c59d0.css.map": "/static/css/main.4b2c59d0.css.map",
-    "main.a6305fc5.js.map": "/static/js/main.a6305fc5.js.map",
+    "main.3930f5db.css.map": "/static/css/main.3930f5db.css.map",
+    "main.2cc1190d.js.map": "/static/js/main.2cc1190d.js.map",
     "488.82df7a3f.chunk.js.map": "/static/js/488.82df7a3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b2c59d0.css",
-    "static/js/main.a6305fc5.js"
+    "static/css/main.3930f5db.css",
+    "static/js/main.2cc1190d.js"
   ]
 }
