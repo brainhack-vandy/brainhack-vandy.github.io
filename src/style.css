@@ -153,8 +153,16 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 2.2em !important;
+  width: 5em !important;
+  transition: all 0.3s ease-out;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    height: 1.8em !important;
+    width: 4.5em !important;
+  }
 }
 
 .navbar-nav .nav-link {
