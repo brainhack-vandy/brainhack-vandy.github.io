@@ -3,6 +3,7 @@ import LoadingAnimation from "../src/components/LoadingAnimation";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects";
+import MockTodo from "./components/MockTodo";
 import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
@@ -32,6 +33,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/todo" element={<MockTodo />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
