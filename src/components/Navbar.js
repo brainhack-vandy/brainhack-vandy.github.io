@@ -68,6 +68,13 @@ function NavBar() {
                 <AiOutlineQuestionCircle className="nav-icon" /> FAQ
               </Nav.Link>
             </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link as={Link} to="/schedule" onClick={() => updateExpanded(false)}>
+                <AiOutlineQuestionCircle className="nav-icon" /> Schedule
+              </Nav.Link>
+            </Nav.Item>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
