@@ -1,4 +1,4 @@
-import issues from '../data/projects.json';
+import issues from '../data/issues.json';
 
 
 export default function MockTodo() {
