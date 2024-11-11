@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineQuestionCircle
+  AiOutlineQuestionCircle,
+  AiOutlineCalendar
 } from "react-icons/ai";
 
 function NavBar() {
@@ -64,14 +65,14 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/faq" onClick={() => updateExpanded(false)}>
-                <AiOutlineQuestionCircle className="nav-icon" /> FAQ
+              <Nav.Link as={Link} to="/schedule" onClick={() => updateExpanded(false)}>
+                <AiOutlineCalendar className="nav-icon" /> Schedule
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/schedule" onClick={() => updateExpanded(false)}>
-                <AiOutlineQuestionCircle className="nav-icon" /> Schedule
+              <Nav.Link as={Link} to="/faq" onClick={() => updateExpanded(false)}>
+                <AiOutlineQuestionCircle className="nav-icon" /> FAQ
               </Nav.Link>
             </Nav.Item>
 
