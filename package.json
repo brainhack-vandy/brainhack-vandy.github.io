@@ -2,7 +2,7 @@
   "name": "brainhack-vanderbilt",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://brainhack-vandy.github.io",
+  "homepage": "https://brainhack-vandy.github.io/#",
   "dependencies": {
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",

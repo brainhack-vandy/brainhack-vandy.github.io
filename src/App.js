@@ -6,7 +6,7 @@ import Projects from "./components/Projects";
 import FAQ from "./components/Faq";
 import Footer from "./components/Footer";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate
