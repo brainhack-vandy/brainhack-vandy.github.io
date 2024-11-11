@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
+  AiOutlineQuestionCircle
 } from "react-icons/ai";
 
 function NavBar() {
@@ -59,6 +60,12 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen className="nav-icon" /> Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link as={Link} to="/faq" onClick={() => updateExpanded(false)}>
+                <AiOutlineQuestionCircle className="nav-icon" /> FAQ
               </Nav.Link>
             </Nav.Item>
           </Nav>

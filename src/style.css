@@ -136,25 +136,14 @@ button:focus {
   opacity: 0.9 !important;
 }
 
-@media (max-width: 767px) {
-  .navbar {
-    padding: 1rem 2rem !important;
-    font-size: 1.4rem !important;
-    background-color: #181a27 !important;
-  }
-
-  .navbar-nav .nav-item a::after {
-    display: none !important;
-  }
-}
-
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 2em !important;
+  width: 5.2em !important;
+  transition: all 0.3s ease-out;
 }
 
 .navbar-nav .nav-link {
@@ -167,11 +156,6 @@ button:focus {
   padding: 0.8rem 1rem !important;
 }
 
-@media (max-width: 767px) {
-  .nav-link {
-    padding: 0.7rem 1rem !important;
-  }
-}
 
 .navbar-nav .nav-item {
   position: relative;
@@ -201,6 +185,27 @@ button:focus {
 
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 1rem 2rem !important;
+    font-size: 1.4rem !important;
+    background-color: #181a27 !important;
+  }
+
+  .navbar-nav .nav-item a::after {
+    display: none !important;
+  }
+
+  .nav-link {
+    padding: 0.7rem 1rem !important;
+  }
+
+  .logo {
+    height: 1.8em !important;
+    width: 4.5em !important;
+  }
 }
 
 /* --------- */
@@ -529,11 +534,7 @@ button:focus {
 /* --------- */
 /* Projects */
 /* --------- */
-/* Existing CSS remains the same until the Projects section */
 
-/* --------- */
-/* Projects */
-/* --------- */
 .project-section {
   position: relative !important;
   padding-top: 150px !important;
@@ -565,18 +566,27 @@ button:focus {
 }
 
 /* Project Card Styles */
+.project-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
 .project-card-view {
-  background-color: rgba(15, 6, 33, 0.9) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  height: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
 }
 
 .project-card-view:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
 
 .project-card-title {
@@ -604,6 +614,14 @@ button:focus {
   margin-bottom: 30px;
 }
 
+.card-img-top {
+  padding: 20px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
+  max-height: 300px !important;
+  object-fit: contain !important;
+  background-color: rgba(15, 6, 33, 0.9) !important;
+}
 
 /* Year Select Styles */
 .year-select-container {
@@ -706,10 +724,20 @@ button:focus {
     font-size: 1em;
   }
 
+  .card-img-top {
+    max-height: 250px !important;
+  }
+
+  .project-card {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
   .year-select {
     width: 100%;
     max-width: 200px;
   }
+
 }
 
 /* --------- */
@@ -834,5 +862,154 @@ button:focus {
 
   .project-pitch-heading {
     font-size: 2em;
+  }
+}
+
+/**
+  * Project Pitch Instructions
+  */
+
+.project-pitch-instr-section {
+  position: relative;
+  z-index: 1;
+  background-image: var(--section-background-color);
+}
+
+.project-pitch-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.project-pitch-text {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.project-pitch-subheading {
+  color: var(--imp-text-color);
+}
+
+.project-pitch-submit-button {
+  padding: 0.6em 1.5em !important;
+  font-size: 1em !important;
+  font-weight: 500 !important;
+  width: fit-content !important;
+  background-color: #c770f0 !important;
+  border: none !important;
+  color: white !important;
+}
+
+.project-pitch-submit-button:hover {
+  background-color: #a94cce !important;
+  transform: translateY(-2px);
+}
+
+/* --------- */
+/* FAQ Tab */
+/* --------- */
+
+/* FAQ Section Styles */
+.faq-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.faq-content {
+  padding: 20px 0;
+}
+
+.faq-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.faq-icon {
+  color: var(--imp-text-color);
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  /* Prevent icon from shrinking */
+  margin-left: 15px;
+  /* Add some space between text and icon */
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  padding: 0 20px;
+  color: #e6e6e6;
+  font-size: 1em;
+  line-height: 1.6;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.faq-answer.show {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+  padding: 20px;
+  margin-top: -10px;
+}
+
+/* Link styles */
+.faq-link {
+  color: var(--imp-text-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.faq-link:hover {
+  color: #be50f4;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .faq-section {
+    padding-top: 100px !important;
+  }
+
+  .faq-question {
+    font-size: 1em;
+    padding: 15px;
+  }
+
+  .faq-answer {
+    font-size: 0.95em;
+  }
+
+  .faq-question span {
+    padding-right: 10px;
+    /* Ensure text doesn't overlap with icon */
   }
 }
