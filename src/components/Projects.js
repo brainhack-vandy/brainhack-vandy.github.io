@@ -108,7 +108,7 @@ function Projects() {
         ) : (
           <Row className="project-card-row">
             {projectData[currentYear].map((project, index) => (
-              <Col md={6} className="project-card-col" key={index}>
+              <Col md={4} className="project-card-col" key={index}>
                 <ProjectCard
                   title={project.title}
                   description={project.description}
