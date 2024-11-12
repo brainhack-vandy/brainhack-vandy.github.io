@@ -16,8 +16,7 @@ function ProjectPitch() {
                             <Row className="align-items-center">
                                 <Col lg={8}>
                                     <p className="project-pitch-text">
-                                    Share your project ideas online and pitch them to a global audience to build your team. 
-                                    Be part of shaping the future of neuroscience research!
+                                    Got a brilliant neuroscience idea brewing? Share it on our project board, then at BrainHack take the floor for a quick pitch that'll make your fellow brain enthusiasts want to join your crew. No need for a TED-worthy presentation; just bring your enthusiasm and watch as other curious minds gravitate toward your idea. Whether you're planning to revolutionize fMRI analysis or create the next big open-source neuroimaging tool, your future collaborators are in the room – they just don't know it yet!
                                     </p>
                                 </Col>
                                 <Col lg={4} className="d-flex justify-content-center">
