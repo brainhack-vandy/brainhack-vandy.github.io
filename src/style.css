@@ -1003,6 +1003,45 @@ button:focus {
   text-decoration: underline;
 }
 
+/* Schedule Section Styles */
+.schedule-container {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.schedule-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  margin-bottom: 40px !important;
+  text-align: center !important;
+}
+
+.schedule-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.schedule-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .schedule-section {
+      padding-top: 100px !important;
+  }
+  
+  .schedule-image-container {
+      padding: 15px;
+  }
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .faq-section {
