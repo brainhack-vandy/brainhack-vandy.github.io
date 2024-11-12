@@ -26,7 +26,7 @@ function ProjectPitch() {
                                             to="/projects" // Replace with your actual route
                                             className="btn project-pitch-submit-button"
                                         >
-                                            Submit Your Project Pitch
+                                            Pitch a Project
                                         </Link>
                                     </div>
                                 </Col>

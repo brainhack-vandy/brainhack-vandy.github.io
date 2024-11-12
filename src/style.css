@@ -631,7 +631,7 @@ button:focus {
 }
 
 .year-select-container select {
-  width: 200px !important;
+  width: 100px !important;
   background-color: #623686 !important;
   color: white !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
