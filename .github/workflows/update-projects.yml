@@ -1,0 +1,52 @@
+name: Update Issues and Deploy
+
+on:
+  issues:
+    types: [opened, edited, deleted]
+  schedule:
+    - cron: '0 * * * *' # Every hour
+
+permissions:
+  contents: write
+  issues: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # or your project's Node.js version
+
+      - name: Fetch Issues
+        run: |
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/issues?state=open" \
+          > src/data/issues.json
+
+      - name: Commit Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add src/data/issues.json
+          git commit -m "Update issues data" || echo "No changes to commit"
+          git push
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build project
+        run: CI=false npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: deployed
+
+
