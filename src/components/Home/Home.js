@@ -6,7 +6,6 @@ import Introduction from "./Introduction";
 import Location from "./Location";
 // import Sponsors from "./Sponsors";
 import ProjectPitch from "./ProjectPitch";
-import SponsorSection from "./SponsorSection";
 
 function Home() {
   return (
@@ -56,10 +55,9 @@ function Home() {
           </Row>
         </Container>
       </Container>
-     
+
       <Introduction />
       <ProjectPitch />
-      <SponsorSection />
       <Location />
       {/* <Sponsors /> */}
     </section>
