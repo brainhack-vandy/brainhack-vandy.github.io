@@ -41,7 +41,7 @@ function Home() {
                   className="btn btn-primary application-button"
                   disabled
                 >
-                  Registration Opens Soon
+                  Applications Opening Soon
                 </button>
               </div>
             </Col>

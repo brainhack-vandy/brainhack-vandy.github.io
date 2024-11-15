@@ -632,7 +632,7 @@ button:focus {
 }
 
 .year-select-container select {
-  width: 200px !important;
+  width: 100px !important;
   background-color: #623686 !important;
   color: white !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
@@ -661,6 +661,7 @@ button:focus {
   padding: 8px 12px !important;
 }
 
+/* Year Select Styles */
 .year-select {
   background-color: #0c0513 !important;
   color: white !important;
@@ -671,6 +672,14 @@ button:focus {
   font-size: 1.1em !important;
   width: 200px !important;
   margin-bottom: 30px !important;
+  /* Add custom white dropdown arrow */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 0.75rem center !important;
+  background-size: 1em !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
 }
 
 .year-select:hover {
@@ -963,6 +972,8 @@ button:focus {
 
 .faq-answer {
   height: 0;
+  text-align: left;
+  padding: 1rem;
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease;
@@ -991,6 +1002,45 @@ button:focus {
 .faq-link:hover {
   color: #be50f4;
   text-decoration: underline;
+}
+
+/* Schedule Section Styles */
+.schedule-container {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.schedule-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  margin-bottom: 40px !important;
+  text-align: center !important;
+}
+
+.schedule-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.schedule-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .schedule-section {
+      padding-top: 100px !important;
+  }
+  
+  .schedule-image-container {
+      padding: 15px;
+  }
 }
 
 /* Responsive Styles */

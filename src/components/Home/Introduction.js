@@ -28,11 +28,10 @@ function Introduction() {
               Brainhack isn't just another science conference. Picture a global playground where researchers from all corners and fields come together. They roll up their sleeves and dive headfirst into some cool neuroscience projects.
               <br />
               <br />
-              <span style={{ fontSize: "1.1em" }}>
-                Brainhack has this groovy mix of Hackathon energy with Unconference spontaneity. Workshops? Check. Brainstorming data science tools for neuroscience? Double-check. A major chunk is all about open collaboration. Imagine teams from different disciplines geeking out and brainstorming solutions for neuroscience puzzles.
-                <br /><br />
-                And because learning never stops, Brainhack has a side of tutorials. Dive into Python, get friendly with GitHub, float around in cloud computing, or dive deep into some fresh statistical methods. To wrap it up, Brainhack isn't just an event—it's a vibe. A place where data science flirts with neuroscience, all in the name of unlocking the secrets of the brain. Cool, right?
-              </span>
+              Brainhack has this groovy mix of Hackathon energy with Unconference spontaneity. Workshops? Check. Brainstorming data science tools for neuroscience? Double-check. A major chunk is all about open collaboration. Imagine teams from different disciplines geeking out and brainstorming solutions for neuroscience puzzles.
+              <br />
+              <br />
+              And because learning never stops, Brainhack has a side of tutorials. Dive into Python, get friendly with GitHub, float around in cloud computing, or dive deep into some fresh statistical methods. To wrap it up, Brainhack isn't just an event—it's a vibe. A place where data science flirts with neuroscience, all in the name of unlocking the secrets of the brain. Cool, right?
               <br />
               <br />
               <div style={{

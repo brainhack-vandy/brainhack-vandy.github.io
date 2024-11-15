@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import LoadingAnimation from "../src/components/LoadingAnimation";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
+import Schedule from "./components/Schedule";
 import Projects from "./components/Projects";
 import MockTodo from "./components/MockTodo";
 import FAQ from "./components/Faq";
@@ -35,6 +36,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/todo" element={<MockTodo />} />
+          <Route path="/schedule" element={<Schedule />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="*" element={<Navigate to="/" />} />

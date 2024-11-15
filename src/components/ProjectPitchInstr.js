@@ -14,12 +14,11 @@ function ProjectPitchInstr() {
                             </p>
                             <div className="project-guidelines">
                                 <p className="mb-3">
-                                    Your project can be anything you want, with just two general guidelines.
-                                    Your project should:
+                                    Your project can be anything you want, with just two general guidelines. Your project should:
                                 </p>
                                 <ul className="project-guidelines-list">
-                                    <li className="project-guidelines-item">Be broadly neuroscience related</li>
-                                    <li className="project-guidelines-item">Contribute to open science</li>
+                                    <li className="project-guidelines-item">be broadly neuroscience related</li>
+                                    <li className="project-guidelines-item">contribute to open science</li>
                                 </ul>
                             </div>
                             <div className="project-pitch-button-container mt-4">
@@ -33,7 +32,7 @@ function ProjectPitchInstr() {
                                 </a>
                             </div>
                             <p className="project-pitch-text mt-4">
-                                See below some examples from last year's BrainHack Vanderbilt.
+                                Scroll down to see some examples from last year's BrainHack Vanderbilt.
                             </p>
                         </div>
                     </Col>
