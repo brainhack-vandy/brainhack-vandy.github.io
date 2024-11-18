@@ -6,6 +6,7 @@ import Introduction from "./Introduction";
 import Location from "./Location";
 // import Sponsors from "./Sponsors";
 import ProjectPitch from "./ProjectPitch";
+import Type from "./Type";
 
 function Home() {
   return (
@@ -31,7 +32,9 @@ function Home() {
                 Welcome to
                 <strong className="main-name"> BrainHack Vanderbilt</strong>
               </h1>
-
+              <div style={{ padding: 50, textAlign: "left" }}>
+              <Type />
+              </div>
               <p className="event-date">
                 January 24-26, 2025
               </p>
