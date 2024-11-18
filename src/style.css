@@ -326,13 +326,10 @@ button:focus {
 
 #tsparticles {
   position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
   z-index: 0 !important;
-  /* Ensure particles are behind content */
+  pointer-events: none; /* This should already disable interactions */
 }
+
 
 .home-header {
   padding-top: 80px !important;
@@ -340,7 +337,7 @@ button:focus {
 
 .home-section {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   background-image: var(--image-gradient), url(./images/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
