@@ -4,9 +4,8 @@ import homeImg from "../../images/landing.svg";
 import Particle from "../Particle";
 import Introduction from "./Introduction";
 import Location from "./Location";
-// import Sponsors from "./Sponsors";
 import ProjectPitch from "./ProjectPitch";
-import SponsorSection from "./SponsorSection";
+import SponsorSection from "./Sponsors";
 
 function Home() {
   return (
@@ -56,7 +55,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-     
+    
       <Introduction />
       <ProjectPitch />
       <SponsorSection />
