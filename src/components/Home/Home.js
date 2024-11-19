@@ -4,8 +4,8 @@ import homeImg from "../../images/landing.svg";
 import Particle from "../Particle";
 import Introduction from "./Introduction";
 import Location from "./Location";
-// import Sponsors from "./Sponsors";
 import ProjectPitch from "./ProjectPitch";
+import SponsorSection from "./Sponsors";
 
 function Home() {
   return (
@@ -36,11 +36,11 @@ function Home() {
                 January 24-26, 2025
               </p>
               <div className="button-container">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX6AfQ0noO5hzIEO-SgBIcfsHfCuQyyEgLGxrP3N5UCg8w0w/viewform?usp=sharing" target="_blank" rel="noopener noreferrer">
-          <button className="btn btn-primary application-button">
-            Apply Here
-          </button>
-        </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX6AfQ0noO5hzIEO-SgBIcfsHfCuQyyEgLGxrP3N5UCg8w0w/viewform?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <button className="btn btn-primary application-button">
+                    Apply Here
+                  </button>
+                </a>
               </div>
             </Col>
 
@@ -57,8 +57,8 @@ function Home() {
 
       <Introduction />
       <ProjectPitch />
+      <SponsorSection />
       <Location />
-      {/* <Sponsors /> */}
     </section>
   );
 }
