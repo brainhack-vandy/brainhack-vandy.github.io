@@ -54,7 +54,7 @@ function Sponsors() {
     return (
         <div className="sponsor-section">
             <Row className="justify-content-center">
-                <Col lg={10}>
+                <Col xs={7} lg={10}>
                     <h2 className="project-pitch-heading">
                         2024 <span className="purple">Sponsors</span>
                     </h2>
@@ -62,7 +62,7 @@ function Sponsors() {
                         {sponsors.map((sponsor, index) => (
                             <Col key={index} lg={3} className="sponsor-icons">
                                 <a href={sponsor.href} target="_blank" rel="noopener noreferrer">
-                                    <img src={sponsor.imgSrc} alt={sponsor.alt} style={{ width: "90%", height: "auto" }} />
+                                    <img src={sponsor.imgSrc} alt={sponsor.alt} style={{ width: "100%", height: "auto" }} />
                                 </a>
                             </Col>
                         ))}
