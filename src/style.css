@@ -1094,6 +1094,7 @@ button:focus {
   margin-top: 2rem;
   margin-bottom: 2rem;
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  overflow: hidden; /* Prevent horizontal scroll */
 }
 
 .sponsor-container {

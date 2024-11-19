@@ -60,9 +60,9 @@ function Sponsors() {
                     </h2>
                     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
                         {sponsors.map((sponsor, index) => (
-                            <Col key={index} xs={6} md={3} lg={3} className="sponsor-icons">
+                            <Col key={index} lg={3} className="sponsor-icons">
                                 <a href={sponsor.href} target="_blank" rel="noopener noreferrer">
-                                    <img src={sponsor.imgSrc} alt={sponsor.alt} style={{ width: "100%", height: "auto" }} />
+                                    <img src={sponsor.imgSrc} alt={sponsor.alt} style={{ width: "90%", height: "auto" }} />
                                 </a>
                             </Col>
                         ))}
