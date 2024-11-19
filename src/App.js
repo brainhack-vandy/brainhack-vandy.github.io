@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import Projects from "./components/Projects";
 import FAQ from "./components/Faq";
 import Footer from "./components/Footer";
-import Schedule from "./components/Schedule";
+import Schedule from "./components/Schedule/Schedule";
 import {
   HashRouter as Router,
   Route,
