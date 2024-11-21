@@ -3,9 +3,9 @@ import Typewriter from "typewriter-effect";
 
 function Type() {
   return (
-    <div style={{ display: "flex", alignItems: "center" }}>
+    <div style={{ display: "flex", alignItems: "baseline", padding: "0" }}>
+    <h1 style={{ margin: "0 10px 0 0", padding: "0", fontSize: "1.5em" }}>Open to</h1>
       
-      <h1 style={{ margin: 0, paddingRight: 10 }}>Open to</h1>
       <Typewriter
         options={{
           strings: [
@@ -21,8 +21,12 @@ function Type() {
           autoStart: true,
           loop: true,
           deleteSpeed: 50,
+          
+          
+          
         }}
       />
+      
     </div>
   );
 }
