@@ -561,6 +561,104 @@ button:focus {
   font-family: monospace;
 }
 
+ /* --------- */
+/* Team */
+/* --------- */
+
+.team-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.team-container {
+  padding: 0 25px;
+}
+
+.team-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  margin-bottom: 40px !important;
+}
+
+/* Console Box Styles */
+.console-box {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 30px;
+  color: white;
+  font-family: monospace;
+  
+}
+
+/* Team Card Styles */
+.team-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+  
+}
+
+.team-card-view {
+  /* box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important; */
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+
+.team-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+
+.team-card-title {
+  font-size: 1.3em !important;
+  font-weight: 600 !important;
+  margin-bottom: 15px !important;
+  color: var(--imp-text-color) !important;
+}
+
+.team-card-description {
+  text-align: center !important;
+  font-size: 1.1em !important;
+  line-height: 1.6 !important;
+  margin-bottom: 20px !important;
+  white-space: pre-wrap !important;
+  color: #e6e6e6 !important;
+  
+}
+
+
+
+.team-card-row {
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.team-card-col {
+  margin-bottom: 30px;
+}
+
+.teamcard-img-top {
+  padding: 20px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
+  max-height: 300px !important;
+  object-fit: contain !important;
+  background-image: var(--section-background-color) !important;
+}
+
+
 /* Project Card Styles */
 .project-card {
   padding-top: 50px !important;
@@ -574,7 +672,7 @@ button:focus {
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
   background-color: transparent !important;
-  opacity: 0.9 !important;
+  opacity: 1 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
@@ -1058,8 +1156,6 @@ button:focus {
     padding-right: 10px;
     /* Ensure text doesn't overlap with icon */
   }
-  
-  
 
-  
+
 }
