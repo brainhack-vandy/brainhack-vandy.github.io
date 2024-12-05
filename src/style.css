@@ -485,6 +485,18 @@ button:focus {
 }
 
 /* --------- */
+/* Useful throughout website */
+/* --------- */
+
+.component-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  margin-bottom: 40px !important;
+}
+
+/* --------- */
 /* Footer */
 /* --------- */
 .footer {
@@ -1083,7 +1095,7 @@ button:focus {
   .schedule-card-view {
     flex-direction: column;
   }
-  
+
   .schedule-time {
     margin-bottom: 10px;
     padding-right: 0;

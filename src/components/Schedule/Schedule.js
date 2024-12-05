@@ -88,7 +88,8 @@ const ScheduleCalendar = () => {
   return (
     <Container fluid className="schedule-section">
       <Container>
-        <h1 className="project-heading">Event Schedule</h1>
+        <h1 className="component-heading">Tentative <strong className="purple">Event Schedule</strong>
+        </h1>
 
         {windowWidth < 768 && (
           <div className="date-selector">
@@ -121,6 +122,7 @@ const ScheduleCalendar = () => {
               center: 'title',
               right: windowWidth < 768 ? 'timeGridDay,listDay' : 'prev,next'
             }}
+            dayHeaderFormat={{ weekday: 'long', month: 'numeric', day: 'numeric', separator: '/' }}
             initialDate="2025-01-24"
             validRange={{
               start: '2025-01-24',
