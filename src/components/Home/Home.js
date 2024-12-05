@@ -6,6 +6,7 @@ import Introduction from "./Introduction";
 import Location from "./Location";
 import ProjectPitch from "./ProjectPitch";
 import Type from "./Type";
+import SponsorSection from "./Sponsors";
 
 const Home = () => {
   return (
@@ -49,6 +50,15 @@ const Home = () => {
                     </button>
                   </a>
                 </div>
+              <p className="event-date">
+                January 24-26, 2025
+              </p>
+              <div className="button-container">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX6AfQ0noO5hzIEO-SgBIcfsHfCuQyyEgLGxrP3N5UCg8w0w/viewform?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <button className="btn btn-primary application-button">
+                    Apply Here
+                  </button>
+                </a>
               </div>
             </Col>
 
@@ -65,6 +75,7 @@ const Home = () => {
 
       <Introduction />
       <ProjectPitch />
+      <SponsorSection />
       <Location />
     </section>
   );
