@@ -327,7 +327,8 @@ button:focus {
 #tsparticles {
   position: fixed !important;
   z-index: 0 !important;
-  pointer-events: none; /* This should already disable interactions */
+  pointer-events: none;
+  /* This should already disable interactions */
 }
 
 
@@ -341,8 +342,7 @@ button:focus {
   background-image: var(--image-gradient), url(./images/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding: 30px 0 !important;
 }
 
 .home-content {
@@ -351,42 +351,128 @@ button:focus {
   text-align: left;
 }
 
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 50px;
+}
+
 .heading {
   font-size: 2.4em !important;
-  padding-left: 50px !important;
+  margin: 0;
 }
 
 .heading-name {
   font-size: 2.5em !important;
-  padding-left: 45px !important;
+  margin: 0;
 }
 
 .main-name {
   color: #cd5ff8;
 }
 
+.type-wrapper {
+  margin: 0;
+}
+
+.type-container {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.type-fixed-text {
+  font-size: 1.5em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.type-writer-wrapper {
+  display: inline-block;
+}
+
+.Typewriter {
+  display: inline-block;
+}
+
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #be6adf !important;
-  font-weight: 600 !important;
+  font-size: 1.5em;
+  color: #be6adf;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #b562d6 !important;
+  font-size: 1.5em;
+  color: #b562d6;
 }
 
+.event-date {
+  font-size: 1.3em;
+  margin: 0;
+  padding: 0;
+}
+
+.button-wrapper {
+  margin: 0;
+}
+
+.application-button {
+  font-size: 1.1em;
+  padding: 0.8em 2em;
+}
+
+
 @media (max-width: 767px) {
+  .content-wrapper {
+    padding-left: 25px;
+    gap: 1.5rem;
+  }
+
+  .heading {
+    font-size: 2em !important;
+  }
+
+  .heading-name {
+    font-size: 2.1em !important;
+  }
+
+  .type-container {
+    gap: 0.3rem;
+  }
+
+  .type-fixed-text {
+    font-size: 1.2em;
+  }
+
   .Typewriter__wrapper {
-    font-size: 1.4em !important;
-    font-weight: 500 !important;
-    position: absolute !important;
+    font-size: 1.2em;
+    position: relative !important;
   }
 
   .Typewriter__cursor {
-    display: none !important;
+    font-size: 1.2em;
+  }
+
+  .event-date {
+    font-size: 1.1em;
+  }
+
+  .application-button {
+    font-size: 1em;
+    padding: 0.6em 1.6em;
   }
 }
+
+/* @media (max-width: 480px) {
+  .type-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+} */
 
 .myAvtar {
   justify-content: center !important;
@@ -1031,11 +1117,11 @@ button:focus {
 
 @media (max-width: 768px) {
   .schedule-section {
-      padding-top: 100px !important;
+    padding-top: 100px !important;
   }
-  
+
   .schedule-image-container {
-      padding: 15px;
+    padding: 15px;
   }
 }
 

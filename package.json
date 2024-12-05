@@ -15,6 +15,7 @@
     "react-parallax-tilt": "^1.7.252",
     "react-router-dom": "^6.27.0",
     "react-tsparticles": "^2.12.2",
+    "typewriter-effect": "^2.21.0",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
