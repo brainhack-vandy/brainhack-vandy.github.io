@@ -40,21 +40,21 @@
 /* Color variables for events */
 :root {
     /* Workshop */
-    --event-color-1: #795db4;
+    --event-color-1: #4b7399;
     /* Talk */
-    --event-color-2: #412788;
-    /* Panel */
-    --event-color-3: #323065;
-    /* Keynote */
-    --event-color-4: #564b74;
-    /* Breakout */
-    --event-color-5: #4959b7;
+    --event-color-2: #57886c;
+    /* Panel*/
+    --event-color-3: #d68060;
+    /* Keynote*/
+    --event-color-4: #9c4f7f;
+    /* Breakout*/
+    --event-color-5: #c19356;
     /* Networking */
-    --event-color-6: #3f4469;
+    --event-color-6: #9f6b99;
     /* Break */
-    --event-color-7: #7986cb;
+    --event-color-7: #8e7f9f;
     /* Other */
-    --event-color-8: #5d5765;
+    --event-color-8: #407088;
 }
 
 /* Event color classes */
