@@ -13,7 +13,7 @@
     color: white;
     padding: 0.5rem 0.75rem;
     border-radius: 6px;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     white-space: nowrap;
     transition: all 0.3s ease;
     min-width: 70px;
@@ -108,22 +108,22 @@
     background: rgba(98, 54, 134, 0.1);
     border-radius: 12px;
     padding: 0.5rem;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
 }
 
 .fc-toolbar-title {
-    font-size: 0.875rem !important;
+    font-size: 1rem !important;
     font-weight: 600 !important;
     color: white !important;
 }
 
 .fc-timegrid-slot-label {
-    font-size: 0.75rem !important;
+    font-size: 0.9rem !important;
     padding: 0.125rem !important;
 }
 
 .fc-col-header-cell-cushion {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: white !important;
     padding: 0.25rem !important;
@@ -143,7 +143,7 @@
 
 /* Button styles */
 .fc .fc-button {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     padding: 0.3rem 0.6rem;
     font-weight: 500;
 }
@@ -188,7 +188,7 @@
 .custom-event-content .event-title {
     color: white;
     font-weight: 600;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     line-height: 1;
     margin: 0;
 }
@@ -202,7 +202,7 @@
     position: absolute;
     top: 2px;
     right: 4px;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -221,7 +221,7 @@
 
 /* Adjust time labels to match new slot height */
 .fc-timegrid-slot-label {
-    font-size: 0.7rem !important;
+    font-size: 0.8rem !important;
     /* Slightly smaller font */
     padding: 0.1rem 0.125rem !important;
     /* Reduced padding */
@@ -263,6 +263,6 @@
     }
 
     .custom-event-content .event-title {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
     }
 }
