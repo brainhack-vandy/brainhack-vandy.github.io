@@ -6,7 +6,7 @@ import Schedule from "./components/Schedule";
 import Projects from "./components/Projects";
 import FAQ from "./components/Faq";
 import Footer from "./components/Footer";
-import Teams from './components/Teams';
+import Teams from './components/Team/Team';
 import {
   HashRouter as Router,
   Route,
