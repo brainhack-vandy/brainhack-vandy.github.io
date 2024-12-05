@@ -794,6 +794,7 @@ button:focus {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
+  margin: 0;
 }
 
 .team-card-title {
@@ -819,7 +820,9 @@ button:focus {
 }
 
 .team-card-col {
-  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 15px;
 }
 
 .teamcard-img-top {
@@ -868,6 +871,14 @@ button:focus {
   .teamcard-img-top {
     width: 180px !important;
     height: 180px !important;
+  }
+}
+
+/* Add this to your existing CSS */
+@media (min-width: 992px) {
+  .col-lg-5-cols {
+    flex: 0 0 20%;
+    max-width: 20%;
   }
 }
 

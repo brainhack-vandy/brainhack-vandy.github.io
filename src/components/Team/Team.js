@@ -3,7 +3,6 @@ import { Container, Row, Col, Form } from 'react-bootstrap';
 import Particle from '../Particle';
 import TeamCard from './TeamCard';
 import teamData from './teamData';
-import '../../style.css';
 
 const YearSelect = ({ years, currentYear, onYearChange }) => (
   <Form.Group className="year-select-container">
@@ -22,22 +21,12 @@ const YearSelect = ({ years, currentYear, onYearChange }) => (
   </Form.Group>
 );
 
-// Order of teams to display
-const teamOrder = [
-  "Leadership",
-  "TrainTrack Team",
-  "Marketing/Design Team",
-  "Development Team",
-  "Project Team",
-  "Operations Team"
-];
-
-const TeamCategory = ({ title, members }) => (
-  <>
-    <h2 className="team-category-heading">{title}</h2>
+const TeamSection = ({ title, members }) => (
+  <div className="team-section-container">
+    <h2 className="team-category-heading"></h2>
     <Row className="team-card-row">
       {members.map((member, index) => (
-        <Col md={4} className="team-card-col" key={`${member.title}-${index}`}>
+        <Col className="team-card-col col-lg-5-cols" md={3} sm={6} xs={12} key={`${member.title}-${index}`}>
           <TeamCard
             title={member.title}
             description={member.description}
@@ -48,28 +37,46 @@ const TeamCategory = ({ title, members }) => (
         </Col>
       ))}
     </Row>
-  </>
+  </div>
 );
 
 function Team() {
   const [currentYear, setCurrentYear] = useState("2025");
   const years = Object.keys(teamData).sort((a, b) => b - a);
 
-  const renderTeamsByCategory = (yearData) => {
+  const renderTeamSections = (yearData) => {
     if (!yearData || typeof yearData !== 'object') return null;
 
-    return teamOrder.map(category => {
-      const members = yearData[category];
-      if (!members || members.length === 0) return null;
+    return (
+      <>
+        {/* Team Leads Section */}
+        {yearData["Team Leads"] && (
+          <TeamSection
+            title="Team Leads"
+            members={yearData["Team Leads"]}
+          />
+        )}
 
-      return (
-        <TeamCategory
-          key={category}
-          title={category}
-          members={members}
-        />
-      );
-    });
+        {/* Team Members Section */}
+        {yearData["Team Members"] && (
+          <TeamSection
+            title="Team Members"
+            members={yearData["Team Members"]}
+          />
+        )}
+
+        {/* Faculty Leadership Section with Divider */}
+        {yearData["Faculty Leadership"] && (
+          <>
+            <hr className="team-divider" />
+            <TeamSection
+              title="Faculty Leadership"
+              members={yearData["Faculty Leadership"]}
+            />
+          </>
+        )}
+      </>
+    );
   };
 
   return (
@@ -88,7 +95,7 @@ function Team() {
           />
         </div>
 
-        {renderTeamsByCategory(teamData[currentYear])}
+        {renderTeamSections(teamData[currentYear])}
       </Container>
     </Container>
   );
