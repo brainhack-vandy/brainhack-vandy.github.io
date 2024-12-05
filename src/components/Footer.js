@@ -12,7 +12,36 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          {/* additional footer information */}
+          <span>
+            <h3>Design based on{" "}
+              <a
+                href="https://github.com/soumyajit4419/Portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "white" }}
+              >
+                soumyajit4419
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://brainhackwestern.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "white" }}
+              >
+                Brainhack Western
+              </a>
+              . Illustrations by{" "}
+              <a
+                href="https://storyset.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "white" }}
+              >
+                Storyset
+              </a>
+              .
+            </h3></span>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright @ 2025 BrainHack Vanderbilt</h3>
