@@ -8,7 +8,8 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineQuestionCircle,
-  AiOutlineCalendar
+  AiOutlineCalendar,
+  AiOutlineTeam
 } from "react-icons/ai";
 
 function NavBar() {
@@ -71,6 +72,13 @@ function NavBar() {
                 <AiOutlineQuestionCircle className="nav-icon" /> FAQ
               </Nav.Link>
             </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link as={Link} to="/team" onClick={() => updateExpanded(false)}>
+                <AiOutlineTeam className="nav-icon" /> Team
+              </Nav.Link>
+            </Nav.Item>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
