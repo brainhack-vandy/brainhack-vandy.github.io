@@ -9,7 +9,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineQuestionCircle,
   AiOutlineCalendar,
-  AiOutlineTeam
+  AiOutlineTeam,
   AiFillStar
 } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
