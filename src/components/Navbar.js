@@ -10,7 +10,10 @@ import {
   AiOutlineQuestionCircle,
   AiOutlineCalendar,
   AiOutlineTeam
+  AiFillStar
 } from "react-icons/ai";
+import Button from "react-bootstrap/Button";
+import { CgGitFork } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -56,14 +59,14 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/schedule" onClick={() => updateExpanded(false)}>
-                <AiOutlineCalendar className="nav-icon" /> Schedule
+              <Nav.Link as={Link} to="/projects" onClick={() => updateExpanded(false)}>
+                <AiOutlineFundProjectionScreen className="nav-icon" /> Projects
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/projects" onClick={() => updateExpanded(false)}>
-                <AiOutlineFundProjectionScreen className="nav-icon" /> Projects
+              <Nav.Link as={Link} to="/schedule" onClick={() => updateExpanded(false)}>
+                <AiOutlineCalendar className="nav-icon" /> Schedule
               </Nav.Link>
             </Nav.Item>
 
@@ -77,6 +80,17 @@ function NavBar() {
               <Nav.Link as={Link} to="/team" onClick={() => updateExpanded(false)}>
                 <AiOutlineTeam className="nav-icon" /> Team
               </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item className="fork-btn">
+              <Button
+                href="https://github.com/brainhack-vandy/brainhack-vandy.github.io"
+                target="_blank"
+                className="fork-btn-inner"
+              >
+                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                <AiFillStar style={{ fontSize: "1.1em" }} />
+              </Button>
             </Nav.Item>
 
           </Nav>

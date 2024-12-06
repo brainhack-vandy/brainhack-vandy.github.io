@@ -1,0 +1,268 @@
+/* Date selector styles */
+.date-selector {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    justify-content: center;
+}
+
+.date-button {
+    background-color: rgba(199, 112, 240, 0.2);
+    border: 1px solid #b06cd0;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    min-width: 70px;
+}
+
+.date-button:hover {
+    background-color: rgba(199, 112, 240, 0.4);
+}
+
+.date-button.active {
+    background-color: #c770f0;
+    font-weight: 600;
+}
+
+/* Calendar container styles */
+.schedule-container {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+    margin: 2rem 0;
+}
+
+/* Color variables for events */
+:root {
+    /* Workshop */
+    --event-color-1: #4b7399;
+    /* Talk */
+    --event-color-2: #57886c;
+    /* Panel*/
+    --event-color-3: #d68060;
+    /* Keynote*/
+    --event-color-4: #9c4f7f;
+    /* Breakout*/
+    --event-color-5: #c19356;
+    /* Networking */
+    --event-color-6: #9f6b99;
+    /* Break */
+    --event-color-7: #8e7f9f;
+    /* Other */
+    --event-color-8: #407088;
+}
+
+/* Event color classes */
+.fc-event.event-color-1 {
+    background-color: var(--event-color-1);
+    border-color: var(--event-color-1);
+}
+
+.fc-event.event-color-2 {
+    background-color: var(--event-color-2);
+    border-color: var(--event-color-2);
+}
+
+.fc-event.event-color-3 {
+    background-color: var(--event-color-3);
+    border-color: var(--event-color-3);
+}
+
+.fc-event.event-color-4 {
+    background-color: var(--event-color-4);
+    border-color: var(--event-color-4);
+}
+
+.fc-event.event-color-5 {
+    background-color: var(--event-color-5);
+    border-color: var(--event-color-5);
+}
+
+.fc-event.event-color-6 {
+    background-color: var(--event-color-6);
+    border-color: var(--event-color-6);
+}
+
+.fc-event.event-color-7 {
+    background-color: var(--event-color-7);
+    border-color: var(--event-color-7);
+}
+
+.fc-event.event-color-8 {
+    background-color: var(--event-color-8);
+    border-color: var(--event-color-8);
+}
+
+/* Event hover effects */
+.fc-event:hover {
+    filter: brightness(1.1);
+}
+
+/* FullCalendar custom styles */
+.fc {
+    background: rgba(98, 54, 134, 0.1);
+    border-radius: 12px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.fc-toolbar-title {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: white !important;
+}
+
+.fc-timegrid-slot-label {
+    font-size: 0.9rem !important;
+    padding: 0.125rem !important;
+}
+
+.fc-col-header-cell-cushion {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white !important;
+    padding: 0.25rem !important;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th,
+.fc-theme-standard .fc-scrollgrid {
+    border-color: rgba(199, 112, 240, 0.3) !important;
+}
+
+.fc-timegrid-slot-label,
+.fc-timegrid-axis-cushion {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+}
+
+/* Button styles */
+.fc .fc-button {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+    font-weight: 500;
+}
+
+.fc .fc-button-primary {
+    background-color: #c770f0;
+    border-color: #c770f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fc .fc-button-primary:hover {
+    background-color: #a355c9;
+    border-color: #a355c9;
+}
+
+.fc .fc-button-primary:not(:disabled):active,
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+    background-color: #8f40b9;
+    border-color: #8f40b9;
+}
+
+/* Event styles */
+/* Event styles */
+.custom-event-content {
+    padding: 0.125rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-event-content.clickable {
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.custom-event-content.clickable:hover {
+    transform: scale(1.02);
+}
+
+.custom-event-content .event-title {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1;
+    margin: 0;
+}
+
+.clickable-event {
+    position: relative;
+}
+
+.clickable-event::after {
+    content: '↗';
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Make time slots smaller */
+.fc-timegrid-slot {
+    height: 1.5rem !important;
+    /* Reduced from 1.75rem */
+}
+
+.fc-timegrid-event {
+    margin: 0;
+    border-radius: 3px;
+    min-height: 1.5rem;
+    /* Added to ensure minimum height */
+}
+
+/* Adjust time labels to match new slot height */
+.fc-timegrid-slot-label {
+    font-size: 0.8rem !important;
+    /* Slightly smaller font */
+    padding: 0.1rem 0.125rem !important;
+    /* Reduced padding */
+    height: 1.5rem !important;
+    /* Match slot height */
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    .schedule-container {
+        padding: 0.25rem;
+        margin: 1rem -0.5rem;
+    }
+
+    .fc {
+        padding: 0.25rem;
+        font-size: 0.7rem;
+    }
+
+    .fc-toolbar-title {
+        font-size: 0.75rem !important;
+    }
+
+    .custom-event-content .event-title {
+        font-size: 0.7rem;
+    }
+
+    .fc .fc-button {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .fc-timegrid-slot {
+        height: 1.25rem !important;
+    }
+
+    .fc-timegrid-event {
+        min-height: 1.25rem;
+    }
+
+    .custom-event-content .event-title {
+        font-size: 0.7rem;
+    }
+}

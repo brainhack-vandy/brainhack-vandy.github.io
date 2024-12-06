@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import LoadingAnimation from "../src/components/LoadingAnimation";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
-import Schedule from "./components/Schedule";
 import Projects from "./components/Projects";
 import FAQ from "./components/Faq";
 import Footer from "./components/Footer";
 import Teams from './components/Team/Team';
+import Schedule from "./components/Schedule/Schedule";
 import {
   HashRouter as Router,
   Route,
