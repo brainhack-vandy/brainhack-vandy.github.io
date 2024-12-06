@@ -672,7 +672,7 @@ button:focus {
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
   background-color: transparent !important;
-  opacity: 0.9 !important;
+  opacity: 1 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
@@ -841,6 +841,142 @@ button:focus {
     max-width: 200px;
   }
 
+}
+
+/* --------- */
+/* Team */
+/* --------- */
+.team-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.team-container {
+  padding: 0 25px;
+}
+
+.team-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  margin-bottom: 40px !important;
+}
+
+.team-category-heading {
+  color: var(--imp-text-color) !important;
+  font-size: 1.8em !important;
+  font-weight: 500 !important;
+  margin-top: 40px !important;
+  margin-bottom: 30px !important;
+  text-align: center !important;
+  padding-bottom: 10px !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.team-card {
+  padding: 20px !important;
+  height: 100% !important;
+}
+
+.team-card-view {
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease 0s !important;
+  height: 100% !important;
+  border: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  margin: 0;
+}
+
+.team-card-title {
+  font-size: 1.3em !important;
+  font-weight: 600 !important;
+  margin-top: 15px !important;
+  margin-bottom: 5px !important;
+  color: var(--imp-text-color) !important;
+  text-align: center !important;
+}
+
+.team-card-description {
+  text-align: center !important;
+  font-size: 1.1em !important;
+  line-height: 1.6 !important;
+  margin-bottom: 10px !important;
+  color: #e6e6e6 !important;
+}
+
+.team-card-row {
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.team-card-col {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 15px;
+}
+
+.teamcard-img-top {
+  padding: 10px !important;
+  opacity: 1 !important;
+  border-radius: 50% !important;
+  width: 250px !important;
+  /* Increased from 180px */
+  height: 250px !important;
+  /* Increased from 180px */
+  object-fit: cover !important;
+  display: block !important;
+  margin: 0 auto !important;
+  transition: transform 0.3s ease !important;
+}
+
+.team-card-view:hover .teamcard-img-top {
+  transform: scale(1.05) !important;
+}
+
+.github-link {
+  display: inline-block;
+  margin-left: 10px;
+  color: var(--imp-text-color) !important;
+  transition: color 0.3s ease !important;
+}
+
+.github-link:hover {
+  color: #b19cd9 !important;
+}
+
+.github-icon {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+/* Media queries for responsive image sizes */
+@media (max-width: 768px) {
+  .teamcard-img-top {
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .teamcard-img-top {
+    width: 180px !important;
+    height: 180px !important;
+  }
+}
+
+/* Add this to your existing CSS */
+@media (min-width: 992px) {
+  .col-lg-5-cols {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
 }
 
 /* --------- */
@@ -1305,4 +1441,5 @@ button:focus {
 .sponsor-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
+
 }

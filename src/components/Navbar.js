@@ -9,6 +9,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineQuestionCircle,
   AiOutlineCalendar,
+  AiOutlineTeam,
   AiFillStar
 } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
@@ -75,6 +76,12 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+            <Nav.Item>
+              <Nav.Link as={Link} to="/team" onClick={() => updateExpanded(false)}>
+                <AiOutlineTeam className="nav-icon" /> Team
+              </Nav.Link>
+            </Nav.Item>
+
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/brainhack-vandy/brainhack-vandy.github.io"
@@ -85,6 +92,7 @@ function NavBar() {
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
