@@ -568,6 +568,18 @@ button:focus {
 }
 
 /* --------- */
+/* Useful throughout website */
+/* --------- */
+
+.component-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  margin-bottom: 40px !important;
+}
+
+/* --------- */
 /* Footer */
 /* --------- */
 .footer {
@@ -1086,63 +1098,138 @@ button:focus {
   text-decoration: underline;
 }
 
-/* Schedule Section Styles */
-.schedule-container {
+/* --------- */
+/* Schedule General Styling (specific is in ScheduleCalendar.css) */
+/* --------- */
+
+.schedule-section {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
 }
 
-.schedule-heading {
+.schedule-card {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+.schedule-card-view {
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
-  font-size: 2.3em !important;
-  font-weight: 500 !important;
-  padding-top: 10px !important;
-  margin-bottom: 40px !important;
-  text-align: center !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  padding: 20px !important;
+  border-radius: 8px !important;
+}
+
+.schedule-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+
+.schedule-time {
+  color: var(--imp-text-color);
+  font-size: 1.2em;
+  font-weight: 600;
+  min-width: 120px;
+  padding-right: 20px;
 }
 
 .schedule-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+  flex-grow: 1;
 }
 
-.schedule-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+.schedule-title {
+  font-size: 1.2em !important;
+  font-weight: 500 !important;
+  margin-bottom: 10px !important;
+  color: white !important;
+}
+
+.schedule-description {
+  text-align: left !important;
+  font-size: 1em !important;
+  color: #e6e6e6 !important;
 }
 
 @media (max-width: 768px) {
-  .schedule-section {
-    padding-top: 100px !important;
+  .schedule-card-view {
+    flex-direction: column;
   }
 
-  .schedule-image-container {
-    padding: 15px;
+  .schedule-time {
+    margin-bottom: 10px;
+    padding-right: 0;
   }
 }
 
-/* Responsive Styles */
+.schedule-day-section {
+  margin-bottom: 40px;
+}
+
+.schedule-day-heading {
+  color: var(--imp-text-color);
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: left;
+  padding-left: 25px;
+}
+
+.schedule-card {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+.schedule-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.schedule-nav-button {
+  padding: 0.6em 1.5em !important;
+  font-size: 1em !important;
+  font-weight: 500 !important;
+  background-color: transparent !important;
+  border: 2px solid #623686 !important;
+  color: white !important;
+  transition: all 0.3s ease-out !important;
+}
+
+.schedule-nav-button:hover {
+  background-color: #623686 !important;
+  border-color: #623686 !important;
+  transform: translateY(-2px);
+}
+
+.schedule-nav-button.active {
+  background-color: #623686 !important;
+  border-color: #623686 !important;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+}
+
 @media (max-width: 768px) {
-  .faq-section {
-    padding-top: 100px !important;
+  .schedule-nav {
+    flex-direction: row;
+    gap: 10px;
   }
 
-  .faq-question {
-    font-size: 1em;
-    padding: 15px;
-  }
-
-  .faq-answer {
-    font-size: 0.95em;
-  }
-
-  .faq-question span {
-    padding-right: 10px;
-    /* Ensure text doesn't overlap with icon */
+  .schedule-nav-button {
+    padding: 0.5em 1em !important;
+    font-size: 0.9em !important;
   }
 }
 
@@ -1165,6 +1252,7 @@ button:focus {
   background-color: #a24dd386 !important;
   border-color: #a24dd386 !important;
 }
+
 .fork-btn-inner::after {
   display: none !important;
 }
@@ -1176,7 +1264,8 @@ button:focus {
   margin-top: 2rem;
   margin-bottom: 2rem;
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
-  overflow: hidden; /* Prevent horizontal scroll */
+  overflow: hidden;
+  /* Prevent horizontal scroll */
 }
 
 .sponsor-container {
@@ -1212,6 +1301,7 @@ button:focus {
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
+
 .sponsor-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
