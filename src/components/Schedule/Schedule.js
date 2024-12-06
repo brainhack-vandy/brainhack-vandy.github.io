@@ -32,17 +32,18 @@ const ScheduleCalendar = () => {
     }
   };
 
+  // add back the clickable-event class once the workshop and keynote links are available
   const getEventClassNames = (eventInfo) => {
     const baseClasses = [];
     switch (eventInfo.event.extendedProps.type) {
       case 'workshop':
-        return ['event-color-1', 'clickable-event'];
+        return ['event-color-1']; // return ['event-color-1', 'clickable-event'];
       case 'talk':
         return ['event-color-2'];
       case 'panel':
         return ['event-color-3'];
       case 'keynote':
-        return ['event-color-4', 'clickable-event'];
+        return ['event-color-4']; // return ['event-color-4', 'clickable-event'];
       case 'breakout':
         return ['event-color-5'];
       case 'networking':
