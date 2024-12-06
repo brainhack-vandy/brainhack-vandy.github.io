@@ -326,13 +326,11 @@ button:focus {
 
 #tsparticles {
   position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
   z-index: 0 !important;
-  /* Ensure particles are behind content */
+  pointer-events: none;
+  /* This should already disable interactions */
 }
+
 
 .home-header {
   padding-top: 80px !important;
@@ -340,12 +338,11 @@ button:focus {
 
 .home-section {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   background-image: var(--image-gradient), url(./images/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding: 30px 0 !important;
 }
 
 .home-content {
@@ -354,42 +351,128 @@ button:focus {
   text-align: left;
 }
 
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 50px;
+}
+
 .heading {
   font-size: 2.4em !important;
-  padding-left: 50px !important;
+  margin: 0;
 }
 
 .heading-name {
   font-size: 2.5em !important;
-  padding-left: 45px !important;
+  margin: 0;
 }
 
 .main-name {
   color: #cd5ff8;
 }
 
+.type-wrapper {
+  margin: 0;
+}
+
+.type-container {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.type-fixed-text {
+  font-size: 1.5em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.type-writer-wrapper {
+  display: inline-block;
+}
+
+.Typewriter {
+  display: inline-block;
+}
+
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #be6adf !important;
-  font-weight: 600 !important;
+  font-size: 1.5em;
+  color: #be6adf;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #b562d6 !important;
+  font-size: 1.5em;
+  color: #b562d6;
 }
 
+.event-date {
+  font-size: 1.3em;
+  margin: 0;
+  padding: 0;
+}
+
+.button-wrapper {
+  margin: 0;
+}
+
+.application-button {
+  font-size: 1.1em;
+  padding: 0.8em 2em;
+}
+
+
 @media (max-width: 767px) {
+  .content-wrapper {
+    padding-left: 25px;
+    gap: 1.5rem;
+  }
+
+  .heading {
+    font-size: 2em !important;
+  }
+
+  .heading-name {
+    font-size: 2.1em !important;
+  }
+
+  .type-container {
+    gap: 0.3rem;
+  }
+
+  .type-fixed-text {
+    font-size: 1.2em;
+  }
+
   .Typewriter__wrapper {
-    font-size: 1.4em !important;
-    font-weight: 500 !important;
-    position: absolute !important;
+    font-size: 1.2em;
+    position: relative !important;
   }
 
   .Typewriter__cursor {
-    display: none !important;
+    font-size: 1.2em;
+  }
+
+  .event-date {
+    font-size: 1.1em;
+  }
+
+  .application-button {
+    font-size: 1em;
+    padding: 0.6em 1.6em;
   }
 }
+
+/* @media (max-width: 480px) {
+  .type-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+} */
 
 .myAvtar {
   justify-content: center !important;
@@ -643,7 +726,7 @@ button:focus {
 }
 
 .year-select-container select {
-  width: 200px !important;
+  width: 100px !important;
   background-color: #623686 !important;
   color: white !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
@@ -983,6 +1066,8 @@ button:focus {
 
 .faq-answer {
   height: 0;
+  text-align: left;
+  padding: 1rem;
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease;
@@ -1013,6 +1098,45 @@ button:focus {
   text-decoration: underline;
 }
 
+/* Schedule Section Styles */
+.schedule-container {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.schedule-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  margin-bottom: 40px !important;
+  text-align: center !important;
+}
+
+.schedule-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.schedule-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .schedule-section {
+    padding-top: 100px !important;
+  }
+
+  .schedule-image-container {
+    padding: 15px;
+  }
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .faq-section {
@@ -1033,6 +1157,7 @@ button:focus {
     /* Ensure text doesn't overlap with icon */
   }
 }
+
 
 .schedule-section {
   position: relative !important;
@@ -1163,4 +1288,75 @@ button:focus {
     padding: 0.5em 1em !important;
     font-size: 0.9em !important;
   }
+}
+
+/* Fork Button Styles */
+.fork-btn {
+  font-size: 1.1em !important;
+  padding-top: 10px !important;
+}
+
+.fork-btn-inner {
+  line-height: 1.4em !important;
+  background-color: #934cce5e !important;
+  padding: 0.25rem 1.1rem !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+.fork-btn-inner:hover {
+  transform: translateY(-2px) !important;
+  background-color: #a24dd386 !important;
+  border-color: #a24dd386 !important;
+}
+.fork-btn-inner::after {
+  display: none !important;
+}
+
+/* Sponsors Section Styles */
+
+.sponsor-section {
+  padding: 4rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  overflow: hidden; /* Prevent horizontal scroll */
+}
+
+.sponsor-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.sponsor-icons {
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+}
+
+@media (max-width: 767px) {
+  .sponsor-icons {
+    margin: 10px !important;
+  }
+}
+
+.sponsor-icons:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+}
+.sponsor-icon-images {
+  padding: 20px !important;
+  line-height: 1.6 !important;
 }

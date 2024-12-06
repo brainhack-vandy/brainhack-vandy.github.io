@@ -22,7 +22,7 @@ const YearSelect = ({ years, currentYear, onYearChange }) => (
     >
       {years.map((year) => (
         <option key={year} value={year.toString()}>
-          BrainHack {year}
+          {year}
         </option>
       ))}
     </Form.Select>
@@ -33,7 +33,7 @@ const ComingSoon = () => (
   <div className="coming-soon">
     <h3 className="coming-soon-title">Coming Soon!</h3>
     <p className="coming-soon-text">
-      Project submissions for BrainHack 2025 will open later this year.
+      Projects for BrainHack Vanderbilt 2025 will appear here soon.
       Stay tuned for exciting new projects!
     </p>
   </div>
@@ -90,7 +90,7 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading text-center">
-          Project Pitches <strong className="purple">BrainHack</strong>
+          BrainHack <strong className="purple">Projects</strong>
         </h1>
 
         <ProjectPitchInstr />
@@ -108,7 +108,7 @@ function Projects() {
         ) : (
           <Row className="project-card-row">
             {projectData[currentYear].map((project, index) => (
-              <Col md={6} className="project-card-col" key={index}>
+              <Col md={4} className="project-card-col" key={index}>
                 <ProjectCard
                   title={project.title}
                   description={project.description}
