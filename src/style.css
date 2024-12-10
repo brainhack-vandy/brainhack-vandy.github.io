@@ -592,6 +592,11 @@ button:focus {
 .footer-copywright {
   text-align: center !important;
 }
+.footer-recognitions {
+  text-align: center !important;
+  font-size: .7em;
+  padding-top: 12px !important;
+}
 
 .footer-body {
   z-index: 1;
