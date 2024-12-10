@@ -84,7 +84,7 @@ function Team() {
       <Particle />
       <Container>
         <h1 className="team-heading text-center">
-          BrainHack <strong className="purple">Team</strong>
+          2025 <strong className="purple">Organizers</strong>
         </h1>
 
         <div className="d-flex justify-content-center">

@@ -3,21 +3,25 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function Sponsors() {
     const sponsors = [
-        
         {
-            href: 'https://engineering.vanderbilt.edu/ece',
-            imgSrc: 'assets/sponsors/ece.png',
-            alt: 'Electrical and Computer Engineering',
-        },
-        {
-            href: 'https://www.vanderbilt.edu/vise',
-            imgSrc: 'assets/sponsors/vise.png',
-            alt: 'Vanderbilt Institute for Surgery and Engineering',
+            href: 'https://www.vanderbilt.edu/valiant/',
+            imgSrc: 'assets/sponsors/valiant.png',
+            alt: 'Vanderbilt Lab for Immersive AI Translation',
         },
         {
             href: 'https://engineering.vanderbilt.edu/cs',
             imgSrc: 'assets/sponsors/cs.png',
             alt: 'Computer Science',
+        },
+        {
+            href: 'https://www.vanderbilt.edu/datascience',
+            imgSrc: 'assets/sponsors/dsi.png',
+            alt: 'Vanderbilt Data Science Institute',
+        },
+        {
+            href: 'https://engineering.vanderbilt.edu/ece',
+            imgSrc: 'assets/sponsors/ece.png',
+            alt: 'Electrical and Computer Engineering',
         },
         {
             href: 'https://medschool.vanderbilt.edu/brain-institute',
@@ -35,19 +39,24 @@ function Sponsors() {
             alt: 'Vanderbilt University School of Engineering',
         },
         {
-            href: 'https://www.vanderbilt.edu/datascience',
-            imgSrc: 'assets/sponsors/dsi.png',
-            alt: 'Vanderbilt Data Science Institute',
-        },
-        {
-            href: 'https://www.vumc.org/vuiis',
-            imgSrc: 'assets/sponsors/vuiis.png',
-            alt: 'Vanderbilt University Institute of Imaging Science',
-        },
-        {
             href: 'https://engineering.vanderbilt.edu/bme',
             imgSrc: 'assets/sponsors/bme.png',
             alt: 'Biomedical Engineering',
+        },
+        {
+            href: 'https://as.vanderbilt.edu/biological-sciences',
+            imgSrc: 'assets/sponsors/casbs.png',
+            alt: 'Biological Sciences',
+        },
+        {
+            href: 'https://as.vanderbilt.edu/psychology/',
+            imgSrc: 'assets/sponsors/casp.png',
+            alt: 'Psychology',
+        },
+        {
+            href: 'https://www.vanderbilt.edu/the-wondry/',
+            imgSrc: 'assets/sponsors/wondry.png',
+            alt: 'The Wondry',
         }
     ];
 
@@ -56,7 +65,7 @@ function Sponsors() {
             <Row className="justify-content-center">
                 <Col xs={7} lg={10}>
                     <h2 className="project-pitch-heading">
-                        2024 <span className="purple">Sponsors</span>
+                        2025 <span className="purple">Sponsors</span>
                     </h2>
                     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
                         {sponsors.map((sponsor, index) => (
