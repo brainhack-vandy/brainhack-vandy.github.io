@@ -28,16 +28,6 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://x.com/BrainhackVU"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaXTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
                 href="https://www.youtube.com/@BrainHackVanderbilt"
                 style={{ color: "white" }}
                 target="_blank"
