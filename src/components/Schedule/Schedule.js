@@ -3,7 +3,6 @@ import { Container } from 'react-bootstrap';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
-import listPlugin from '@fullcalendar/list';
 import { events } from './events';
 import './ScheduleCalendar.css';
 
@@ -18,40 +17,47 @@ const ScheduleCalendar = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Add effect to update calendar view when window width changes
+  useEffect(() => {
+    if (calendarRef.current) {
+      const calendarApi = calendarRef.current.getApi();
+      const isMobile = windowWidth < 768;
+      
+      // Update view
+      calendarApi.changeView(isMobile ? 'timeGridDay' : 'timeGridThreeDay');
+      
+      // Force re-render of the calendar
+      calendarApi.updateSize();
+    }
+  }, [windowWidth]);
+
   const dateButtons = [
-    { date: '2025-01-24', label: 'Friday 24' },
-    { date: '2025-01-25', label: 'Saturday 25' },
-    { date: '2025-01-26', label: 'Sunday 26' }
+    { date: '2025-01-24', label: 'Friday' },
+    { date: '2025-01-25', label: 'Saturday' },
+    { date: '2025-01-26', label: 'Sunday' }
   ];
 
   const handleDateSelect = (date) => {
     if (calendarRef.current) {
-      const calendarApi = calendarRef.current.getApi();
-      calendarApi.gotoDate(date);
+      calendarRef.current.getApi().gotoDate(date);
       setCurrentDate(date);
     }
   };
 
-  // add back the clickable-event class once the workshop and keynote links are available
   const getEventClassNames = (eventInfo) => {
-    const baseClasses = [];
     switch (eventInfo.event.extendedProps.type) {
-      case 'workshop':
-        return ['event-color-1']; // return ['event-color-1', 'clickable-event'];
-      case 'talk':
+      case 'educational':
+        return ['event-color-1', 'clickable-event'];
+      case 'events':
         return ['event-color-2'];
-      case 'panel':
+      case 'hacking':
         return ['event-color-3'];
       case 'keynote':
-        return ['event-color-4']; // return ['event-color-4', 'clickable-event'];
-      case 'breakout':
+        return ['event-color-4', 'clickable-event'];
+      case 'unconference':
         return ['event-color-5'];
-      case 'networking':
-        return ['event-color-6'];
-      case 'break':
-        return ['event-color-7'];
       default:
-        return ['event-color-8'];
+        return ['event-color-1'];
     }
   };
 
@@ -79,20 +85,14 @@ const ScheduleCalendar = () => {
     );
   };
 
-  const handleDatesSet = (dateInfo) => {
-    const newDate = dateInfo.start.toISOString().split('T')[0];
-    if (newDate !== currentDate) {
-      setCurrentDate(newDate);
-    }
-  };
+  const isMobile = windowWidth < 768;
 
   return (
     <Container fluid className="schedule-section">
       <Container>
-        <h1 className="component-heading">Tentative <strong className="purple">Event Schedule</strong>
-        </h1>
+        <h1 className="component-heading">Tentative <strong className="purple">Event Schedule</strong></h1>
 
-        {windowWidth < 768 && (
+        {isMobile && (
           <div className="date-selector">
             {dateButtons.map(({ date, label }) => (
               <button
@@ -109,8 +109,8 @@ const ScheduleCalendar = () => {
         <div className="schedule-container">
           <FullCalendar
             ref={calendarRef}
-            plugins={[dayGridPlugin, timeGridPlugin, listPlugin]}
-            initialView={windowWidth < 768 ? 'timeGridDay' : 'timeGridThreeDay'}
+            plugins={[dayGridPlugin, timeGridPlugin]}
+            initialView={isMobile ? 'timeGridDay' : 'timeGridThreeDay'}
             views={{
               timeGridThreeDay: {
                 type: 'timeGrid',
@@ -119,28 +119,26 @@ const ScheduleCalendar = () => {
               }
             }}
             headerToolbar={{
-              left: windowWidth < 768 ? 'prev,next' : 'timeGridThreeDay,listDay',
+              left: isMobile ? 'prev,next' : '',
               center: 'title',
-              right: windowWidth < 768 ? 'timeGridDay,listDay' : 'prev,next'
+              right: isMobile ? 'timeGridDay' : ''
             }}
-            dayHeaderFormat={{ weekday: 'long', month: 'numeric', day: 'numeric', separator: '/' }}
+            dayHeaderFormat={{ weekday: 'long' }}
             initialDate="2025-01-24"
             validRange={{
               start: '2025-01-24',
               end: '2025-01-27'
             }}
-            navLinks={false}
             slotMinTime="09:00:00"
             slotMaxTime="19:00:00"
             expandRows={true}
-            height={windowWidth < 768 ? 600 : 800}
+            height={isMobile ? 600 : 800}
             slotDuration="00:30:00"
             events={events}
             eventContent={renderEventContent}
             eventClassNames={getEventClassNames}
             eventDisplay="block"
             allDaySlot={false}
-            datesSet={handleDatesSet}
           />
         </div>
       </Container>

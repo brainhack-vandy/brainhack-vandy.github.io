@@ -7,7 +7,7 @@ export const events = [
         end: '2025-01-24T17:00:00',
         description: 'Initial registration and welcome reception',
         extendedProps: {
-            type: 'networking'
+            type: 'events'
         }
     },
     {
@@ -27,7 +27,7 @@ export const events = [
         end: '2025-01-24T19:00:00',
         description: 'Teams present their initial project ideas',
         extendedProps: {
-            type: 'panel'
+            type: 'hacking'
         }
     },
     // Saturday Events
@@ -38,7 +38,7 @@ export const events = [
         end: '2025-01-25T09:30:00',
         description: 'Morning registration and breakfast',
         extendedProps: {
-            type: 'break'
+            type: 'events'
         }
     },
     {
@@ -48,7 +48,7 @@ export const events = [
         end: '2025-01-25T10:00:00',
         description: 'Official start of hacking period',
         extendedProps: {
-            type: 'talk'
+            type: 'hacking'
         }
     },
     {
@@ -57,7 +57,7 @@ export const events = [
         start: '2025-01-25T10:00:00',
         end: '2025-01-25T10:30:00',
         extendedProps: {
-            type: 'workshop'
+            type: 'educational'
         }
     },
     {
@@ -66,12 +66,12 @@ export const events = [
         start: '2025-01-25T11:00:00',
         end: '2025-01-25T11:30:00',
         extendedProps: {
-            type: 'workshop'
+            type: 'educational'
         }
     },
     {
         id: 'sat-5',
-        title: 'Lunch + Keynote',
+        title: 'Open Science X Neuroscience Panel',
         start: '2025-01-25T12:00:00',
         end: '2025-01-25T13:00:00',
         description: 'Lunch break with keynote speaker',
@@ -86,7 +86,7 @@ export const events = [
         end: '2025-01-25T14:00:00',
         description: 'Educational sessions available on demand',
         extendedProps: {
-            type: 'breakout'
+            type: 'educational'
         }
     },
     {
@@ -95,7 +95,7 @@ export const events = [
         start: '2025-01-25T14:00:00',
         end: '2025-01-25T14:30:00',
         extendedProps: {
-            type: 'workshop'
+            type: 'educational'
         }
     },
     {
@@ -104,7 +104,7 @@ export const events = [
         start: '2025-01-25T14:30:00',
         end: '2025-01-25T15:00:00',
         extendedProps: {
-            type: 'panel'
+            type: 'unconference'
         }
     },
     {
@@ -113,7 +113,7 @@ export const events = [
         start: '2025-01-25T15:00:00',
         end: '2025-01-25T15:30:00',
         extendedProps: {
-            type: 'workshop'
+            type: 'educational'
         }
     },
     {
@@ -122,17 +122,27 @@ export const events = [
         start: '2025-01-25T15:30:00',
         end: '2025-01-25T16:00:00',
         extendedProps: {
-            type: 'panel'
+            type: 'unconference'
         }
     },
     {
         id: 'sat-11',
+        title: 'Hacking Continued',
+        start: '2025-01-25T16:00:00',
+        end: '2025-01-25T18:00:00',
+        description: 'Hacking period',
+        extendedProps: {
+            type: 'hacking'
+        }
+    },
+    {
+        id: 'sat-12',
         title: 'Social',
         start: '2025-01-25T18:00:00',
-        end: '2025-01-25T20:30:00',
+        end: '2025-01-25T19:30:00',
         description: 'Evening social event',
         extendedProps: {
-            type: 'networking'
+            type: 'events'
         }
     },
     // Sunday Events
@@ -140,20 +150,30 @@ export const events = [
         id: 'sun-1',
         title: 'Brunch',
         start: '2025-01-26T09:00:00',
-        end: '2025-01-2609:30:00',
+        end: '2025-01-2610:00:00',
         description: 'Morning brunch',
         extendedProps: {
-            type: 'break'
+            type: 'events'
         }
     },
     {
         id: 'sun-2',
+        title: 'Hacking Continued',
+        start: '2025-01-26T10:00:00',
+        end: '2025-01-26T12:30:00',
+        description: 'Hacking period',
+        extendedProps: {
+            type: 'hacking'
+        }
+    },
+    {
+        id: 'sun-3',
         title: 'Project Presentations + Wrap Up',
         start: '2025-01-26T12:30:00',
         end: '2025-01-26T14:00:00',
         description: 'Final project presentations and event conclusion',
         extendedProps: {
-            type: 'panel'
+            type: 'hacking'
         }
     }
 ];

@@ -39,22 +39,16 @@
 
 /* Color variables for events */
 :root {
-    /* Workshop */
-    --event-color-1: #4b7399;
-    /* Talk */
-    --event-color-2: #57886c;
-    /* Panel*/
-    --event-color-3: #d68060;
+    /* Educational */
+    --event-color-1: #2596be;
+    /* Events */
+    --event-color-2: #615f9f;
+    /* Hacking*/
+    --event-color-3: #3a2c4a;
     /* Keynote*/
-    --event-color-4: #9c4f7f;
-    /* Breakout*/
-    --event-color-5: #c19356;
-    /* Networking */
-    --event-color-6: #9f6b99;
-    /* Break */
-    --event-color-7: #8e7f9f;
-    /* Other */
-    --event-color-8: #407088;
+    --event-color-4: #5f929f;
+    /* Impromptu */
+    --event-color-5: #829f5f;
 }
 
 /* Event color classes */
@@ -81,21 +75,6 @@
 .fc-event.event-color-5 {
     background-color: var(--event-color-5);
     border-color: var(--event-color-5);
-}
-
-.fc-event.event-color-6 {
-    background-color: var(--event-color-6);
-    border-color: var(--event-color-6);
-}
-
-.fc-event.event-color-7 {
-    background-color: var(--event-color-7);
-    border-color: var(--event-color-7);
-}
-
-.fc-event.event-color-8 {
-    background-color: var(--event-color-8);
-    border-color: var(--event-color-8);
 }
 
 /* Event hover effects */
@@ -165,7 +144,6 @@
     border-color: #8f40b9;
 }
 
-/* Event styles */
 /* Event styles */
 .custom-event-content {
     padding: 0.125rem;
