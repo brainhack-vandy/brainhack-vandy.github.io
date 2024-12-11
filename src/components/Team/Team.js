@@ -1,32 +1,22 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Form } from 'react-bootstrap';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import Particle from '../Particle';
 import TeamCard from './TeamCard';
 import teamData from './teamData';
 
-const YearSelect = ({ years, currentYear, onYearChange }) => (
-  <Form.Group className="year-select-container">
-    <Form.Select
-      value={currentYear}
-      onChange={(e) => onYearChange(e.target.value)}
-      aria-label="Select BrainHack Year"
-      className="year-select"
-    >
-      {years.map((year) => (
-        <option key={year} value={year.toString()}>
-          {year}
-        </option>
-      ))}
-    </Form.Select>
-  </Form.Group>
-);
-
-const TeamSection = ({ title, members }) => (
+const TeamSection = ({ title, members, showDivider = false }) => (
   <div className="team-section-container">
-    <h2 className="team-category-heading"></h2>
+    {showDivider && <hr className="team-divider" />}
+    <h2 className="team-category-heading purple mb-4">{title}</h2>
     <Row className="team-card-row">
       {members.map((member, index) => (
-        <Col className="team-card-col col-lg-5-cols" md={3} sm={6} xs={12} key={`${member.title}-${index}`}>
+        <Col 
+          className="team-card-col col-lg-5-cols" 
+          md={3} 
+          sm={6} 
+          xs={12} 
+          key={`${member.title}-${index}`}
+        >
           <TeamCard
             title={member.title}
             description={member.description}
@@ -41,41 +31,42 @@ const TeamSection = ({ title, members }) => (
 );
 
 function Team() {
-  const [currentYear, setCurrentYear] = useState("2025");
-  const years = Object.keys(teamData).sort((a, b) => b - a);
-
-  const renderTeamSections = (yearData) => {
+  const renderTeamSections = (yearData, year) => {
     if (!yearData || typeof yearData !== 'object') return null;
 
     return (
-      <>
-        {/* Team Leads Section */}
-        {yearData["Team Leads"] && (
+      <div className="year-section">
+        {year !== "2025" && (
+          <>
+            <hr className="team-divider my-5" />
+            <h1 className="team-heading text-center mb-5">
+              {year} <strong className="purple">Team Members</strong>
+            </h1>
+          </>
+        )}
+
+        {yearData["Team Leads"]?.length > 0 && (
           <TeamSection
             title="Team Leads"
             members={yearData["Team Leads"]}
           />
         )}
 
-        {/* Team Members Section */}
-        {yearData["Team Members"] && (
+        {yearData["Team Members"]?.length > 0 && (
           <TeamSection
             title="Team Members"
             members={yearData["Team Members"]}
           />
         )}
 
-        {/* Faculty Leadership Section with Divider */}
-        {yearData["Faculty Leadership"] && (
-          <>
-            <hr className="team-divider" />
-            <TeamSection
-              title="Faculty Leadership"
-              members={yearData["Faculty Leadership"]}
-            />
-          </>
+        {yearData["Faculty Leadership"]?.length > 0 && (
+          <TeamSection
+            title="Faculty Leadership"
+            members={yearData["Faculty Leadership"]}
+            showDivider={true}
+          />
         )}
-      </>
+      </div>
     );
   };
 
@@ -83,19 +74,18 @@ function Team() {
     <Container fluid className="team-section">
       <Particle />
       <Container>
-        <h1 className="team-heading text-center">
+        <h1 className="team-heading text-center mb-5">
           2025 <strong className="purple">Organizers</strong>
         </h1>
 
-        <div className="d-flex justify-content-center">
-          <YearSelect
-            years={years}
-            currentYear={currentYear}
-            onYearChange={setCurrentYear}
-          />
-        </div>
+        {/* Render current year (2025) first */}
+        {renderTeamSections(teamData["2025"], "2025")}
 
-        {renderTeamSections(teamData[currentYear])}
+        {/* Render previous years */}
+        {Object.keys(teamData)
+          .sort((a, b) => b - a)
+          .filter(year => year !== "2025")
+          .map(year => renderTeamSections(teamData[year], year))}
       </Container>
     </Container>
   );

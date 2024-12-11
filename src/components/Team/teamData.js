@@ -3,90 +3,59 @@ const teamData = {
         "Team Leads": [
             {
                 title: "Richard Song",
-                description: "Hackathon Chair",
+                description: "Undergraduate Student",
+                team: "Hackathon Chair",
                 imgPath: "/images/team/Richard_Song.svg",
             },
             {
                 title: "Kim Rogge-Obando",
+                description: "Graduate Student",
                 imgPath: "/images/team/Kim_Rogge-Obando.svg",
-                team: "Team Lead"
+                team: "Project Team Lead"
             },
             {
                 title: "Sarah Goodale",
+                description: "Postdoctoral Researcher",
                 imgPath: "/images/team/Sarah_Goodale.svg",
-                team: "Team Lead"
+                team: "Operations Team Lead"
             },
             {
                 title: "Shansita Sharma",
+                description: "Undergraduate Student",
                 imgPath: "/images/team/placeholder1.svg",
-                team: "Team Lead"
+                team: "Dev Team Lead"
             },
             {
                 title: "Terra Lee",
+                description: "Undergraduate Student",
                 imgPath: "/images/team/Terra_Lee.svg",
-                team: "Team Lead"
+                team: "Marketing Team Lead"
             }
         ],
         "Team Members": [
             {
-                title: "Liza Akpoli",
-                description: "",
-                imgPath: "/images/team/Liza_Akpoli.svg",
-                team: "Project Team"
-            },
-            {
-                title: "Eunice Hahm",
-                description: "",
-                imgPath: "/images/team/placeholder1.svg",
-                team: "Project Team"
-            },
-            {
-                title: "Cynthia Chen",
-                description: "",
-                imgPath: "/images/team/placeholder1.svg",
-                team: "Project Team"
-            },
-            {
-                title: "Kristine Won",
-                description: "",
-                imgPath: "/images/team/placeholder1.svg",
-                team: "TrainTrack Team"
-            },
-            {
-                title: "Lily Kriegel",
-                description: "",
-                imgPath: "/images/team/Lily_Kriegel.svg",
-                team: "TrainTrack Team"
+                title: "Lucy Wu",
+                description: "Undergraduate Student",
+                imgPath: "/images/team/Lucy_Wu.svg",
+                team: "Operations Team"
             },
             {
                 title: "David Zaha",
-                description: "",
+                description: "Undergraduate Student",
                 imgPath: "/images/team/David_Zaha.svg",
                 team: "Development Team"
             },
             {
-                title: "Mashiur Khan",
-                description: "",
-                imgPath: "/images/team/placeholder2.svg",
-                team: "Development Team"
-            },
-            {
-                title: "Crystal Jiang",
-                description: "",
-                imgPath: "/images/team/placeholder1.svg",
-                team: "Marketing/Design Team"
+                title: "Sefika Ozturk",
+                description: "Undergraduate Student",
+                imgPath: "/images/team/Sefika_Ozturk.svg",
+                team: "Operations Team"
             },
             {
                 title: "Elyssa McMaster",
-                description: "",
+                description: "Graduate Student",
                 imgPath: "/images/team/Elyssa_McMaster.svg",
                 team: "Marketing/Design Team"
-            },
-            {
-                title: "Sefika Ozturk",
-                description: "",
-                imgPath: "/images/team/Sefika_Ozturk.svg",
-                team: "Operations Team"
             },
             {
                 title: "Tasfiea Tasnum",
@@ -95,14 +64,50 @@ const teamData = {
                 team: "Operations Team"
             },
             {
-                title: "Lucy Wu",
-                description: "",
-                imgPath: "/images/team/Lucy_Wu.svg",
-                team: "Operations Team"
+                title: "Lily Kriegel",
+                description: "Undergraduate Student",
+                imgPath: "/images/team/Lily_Kriegel.svg",
+                team: "TrainTrack Team"
+            },
+            {
+                title: "Eunice Hahm",
+                description: "Undergraduate Student",
+                imgPath: "/images/team/placeholder1.svg",
+                team: "Project Team"
+            },
+            {
+                title: "Mashiur Khan",
+                description: "Undergraduate Student",
+                imgPath: "/images/team/placeholder2.svg",
+                team: "Development Team"
+            },
+            {
+                title: "Crystal Jiang",
+                description: "Undergraduate Student",
+                imgPath: "/images/team/placeholder1.svg",
+                team: "Marketing/Design Team"
+            },
+            {
+                title: "Liza Akpoli",
+                description: "Undergraduate Student",
+                imgPath: "/images/team/Liza_Akpoli.svg",
+                team: "Project Team"
+            },
+            {
+                title: "Kristine Won",
+                description: "Undergraduate Student",
+                imgPath: "/images/team/placeholder1.svg",
+                team: "TrainTrack Team"
+            },
+            {
+                title: "Cynthia Chen",
+                description: "Undergraduate Student",
+                imgPath: "/images/team/placeholder1.svg",
+                team: "Project Team"
             },
             {
                 title: "Yusung Hwang",
-                description: "",
+                description: "Undergraduate Student",
                 imgPath: "/images/team/placeholder2.svg",
                 team: "Operations Team"
             }
@@ -110,12 +115,14 @@ const teamData = {
         "Faculty Leadership": [
             {
                 title: "Catie Chang",
-                description: "Faculty Advisor",
+                description: "Assistant Professor",
+                team: "Faculty Advisor",
                 imgPath: "/images/team/Catie_Chang.svg",
             },
             {
                 title: "Roza G. Bayrak",
-                description: "General Chair",
+                description: "Senior Research Engineer",
+                team: "General Chair",
                 imgPath: "/images/team/Roza_Bayrak.svg",
             }
         ]
