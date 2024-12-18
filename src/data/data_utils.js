@@ -17,36 +17,30 @@ function processIssues(issues) {
       // Initialize variables
       let infoLink = null;
       let imageLink = null;
-      let description = body;
+      let description = null;
   
       // Regular expressions
-      const imageRegex = /!\[(.*?)\]\((.*?)\)/g;
-      const linkRegex = /\[(https?:\/\/[^\]]+)\]\(url\)/g;
+      const linkRegex = /### Link to project repository\/sources\n\n([\s\S]*?)\n\n###/;
+    const imageRegex = /### Image\n\n!\[.*?\]\((.*?)\)/;
+      const descriptionRegex = /### Project Description\n\n([\s\S]*?)\n\n###/;
   
       // Extract image link
       const imageMatch = imageRegex.exec(body);
       if (imageMatch) {
-        imageLink = imageMatch[2]; // The URL is in the second capturing group
-        // Remove the image Markdown from the description
-        description = description.replace(imageMatch[0], '');
+        imageLink = imageMatch[1].trim(); // The URL is in the second capturing 
       }
   
       // Extract info link
       const linkMatch = linkRegex.exec(body);
-      if (linkMatch) {
-        infoLink = linkMatch[1]; // The URL is in the link text
-        // Remove the link Markdown from the description
-        description = description.replace(linkMatch[0], '');
+      if (linkMatch && linkMatch[1] !== '_No response_') {
+        infoLink = linkMatch[1].trim();
       }
   
-      // Remove any remaining Markdown links or images from the description
-      description = description.replace(imageRegex, '');
-      description = description.replace(linkRegex, '');
-  
-      // Trim the description
-      description = description.trim();
-  
-      // Create the Project object
+      const descriptionMatch = descriptionRegex.exec(body);
+        if (descriptionMatch) {
+            description = descriptionMatch[1].trim();
+        }
+
       const project = {
         title: title,
         description: description,
