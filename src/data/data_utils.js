@@ -68,6 +68,4 @@ function processIssues(issues) {
     return projects;
   }
 
-export default {
-    2024: processIssues(issues),
-}
+export default  processIssues(issues);
