@@ -27,17 +27,16 @@ const ComingSoon = () => (
   <div className="coming-soon">
     <h3 className="coming-soon-title">Coming Soon!</h3>
     <p className="coming-soon-text">
-      Projects for BrainHack Vanderbilt 2025 will appear here soon.
+      Projects for BrainHack Vanderbilt will appear here soon.
       Stay tuned for exciting new projects!
     </p>
   </div>
 );
 
 function Projects() {
-  const [currentYear, setCurrentYear] = useState("2024");
+  const [currentYear, setCurrentYear] = useState("2025");
 
-  
-console.log(`projectsData: ${projectsData}`);
+  console.log(`projectsData: ${projectsData}`);
   const years = Object.keys(projectsData).sort((a, b) => b - a);
 
   return (
@@ -58,7 +57,7 @@ console.log(`projectsData: ${projectsData}`);
           />
         </div>
 
-        {currentYear === "2025" ? (
+        {(projectsData[currentYear].length === 0) ? (
           <ComingSoon />
         ) : (
           <Row className="project-card-row">
