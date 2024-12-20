@@ -2,9 +2,7 @@ name: Update Issues and Deploy
 
 on:
   issues:
-    types: [opened, edited, deleted]
-  schedule:
-    - cron: '0 * * * *' # Every hour
+    types: [opened, edited, deleted, closed, labeled]
 
 permissions:
   contents: write
@@ -28,13 +26,10 @@ jobs:
           "https://api.github.com/repos/${{ github.repository }}/issues?state=open" \
           > src/data/issues.json
 
-      - name: Commit Changes
+      - name: Add Github Info
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add src/data/issues.json
-          git commit -m "Update issues data" || echo "No changes to commit"
-          git push
 
       - name: Install Dependencies
         run: npm install

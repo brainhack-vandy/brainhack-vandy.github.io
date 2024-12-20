@@ -1,14 +1,28 @@
 import issues from "./issues.json"
 
 function processIssues(issues) {
-    const projects = [];
+    const projects = {
+      2024: [],
+      2025: [],
+    };
     issues.forEach((issue) => {
       // Check if the issue has the "approved" label
       const hasApprovedLabel = issue.labels.some(
         (label) => label.name === 'approved'
       );
       if (!hasApprovedLabel) {
-        return; // Skip this issue if it's not approved
+        return; 
+      }
+
+      let yearLabel = null;
+      issue.labels.forEach
+      ((label) => {
+        if (label.name === '2024' || label.name === '2025') {
+            yearLabel = parseInt(label.name, 10);
+        }
+      });
+      if (!yearLabel) {
+        return;
       }
   
       const title = issue.title;
@@ -48,7 +62,7 @@ function processIssues(issues) {
         imgPath: imageLink,
       };
   
-      projects.push(project);
+      projects[yearLabel].push(project);
     });
     console.log(projects);
     return projects;
