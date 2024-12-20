@@ -1,5 +1,87 @@
 [
   {
+    "url": "https://api.github.com/repos/brainhack-vandy/brainhack-vandy.github.io/issues/46",
+    "repository_url": "https://api.github.com/repos/brainhack-vandy/brainhack-vandy.github.io",
+    "labels_url": "https://api.github.com/repos/brainhack-vandy/brainhack-vandy.github.io/issues/46/labels{/name}",
+    "comments_url": "https://api.github.com/repos/brainhack-vandy/brainhack-vandy.github.io/issues/46/comments",
+    "events_url": "https://api.github.com/repos/brainhack-vandy/brainhack-vandy.github.io/issues/46/events",
+    "html_url": "https://github.com/brainhack-vandy/brainhack-vandy.github.io/pull/46",
+    "id": 2753210129,
+    "node_id": "PR_kwDONDokG86F8Ho2",
+    "number": 46,
+    "title": "removed project action commits to main, fixed template text and project year",
+    "user": {
+      "login": "dgzct11",
+      "id": 60042905,
+      "node_id": "MDQ6VXNlcjYwMDQyOTA1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60042905?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dgzct11",
+      "html_url": "https://github.com/dgzct11",
+      "followers_url": "https://api.github.com/users/dgzct11/followers",
+      "following_url": "https://api.github.com/users/dgzct11/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dgzct11/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dgzct11/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dgzct11/subscriptions",
+      "organizations_url": "https://api.github.com/users/dgzct11/orgs",
+      "repos_url": "https://api.github.com/users/dgzct11/repos",
+      "events_url": "https://api.github.com/users/dgzct11/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dgzct11/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 7767911135,
+        "node_id": "LA_kwDONDokG88AAAABzwDq3w",
+        "url": "https://api.github.com/repos/brainhack-vandy/brainhack-vandy.github.io/labels/Priority:%20High",
+        "name": "Priority: High",
+        "color": "D93F0B",
+        "default": false,
+        "description": ""
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2024-12-20T17:56:47Z",
+    "updated_at": "2024-12-20T17:57:09Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "active_lock_reason": null,
+    "draft": false,
+    "pull_request": {
+      "url": "https://api.github.com/repos/brainhack-vandy/brainhack-vandy.github.io/pulls/46",
+      "html_url": "https://github.com/brainhack-vandy/brainhack-vandy.github.io/pull/46",
+      "diff_url": "https://github.com/brainhack-vandy/brainhack-vandy.github.io/pull/46.diff",
+      "patch_url": "https://github.com/brainhack-vandy/brainhack-vandy.github.io/pull/46.patch",
+      "merged_at": null
+    },
+    "body": null,
+    "closed_by": null,
+    "reactions": {
+      "url": "https://api.github.com/repos/brainhack-vandy/brainhack-vandy.github.io/issues/46/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "timeline_url": "https://api.github.com/repos/brainhack-vandy/brainhack-vandy.github.io/issues/46/timeline",
+    "performed_via_github_app": null,
+    "state_reason": null
+  },
+  {
     "url": "https://api.github.com/repos/brainhack-vandy/brainhack-vandy.github.io/issues/42",
     "repository_url": "https://api.github.com/repos/brainhack-vandy/brainhack-vandy.github.io",
     "labels_url": "https://api.github.com/repos/brainhack-vandy/brainhack-vandy.github.io/issues/42/labels{/name}",
