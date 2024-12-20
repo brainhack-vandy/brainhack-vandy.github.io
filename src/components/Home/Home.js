@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeImg from "../../images/landing.svg";
 import Particle from "../Particle";
 import Introduction from "./Introduction";
 import Location from "./Location";
@@ -55,7 +54,7 @@ const Home = () => {
 
             <Col md={5} className="home-image-container">
               <img
-                src={homeImg}
+                src="/assets/landing.svg"
                 alt="home pic"
                 className="img-fluid home-image"
               />

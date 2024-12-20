@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../images/science1.svg";
 import Tilt from "react-parallax-tilt";
 
 function Introduction() {
@@ -52,7 +51,7 @@ function Introduction() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src="assets/science1.svg" className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
