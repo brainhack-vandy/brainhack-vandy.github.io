@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
+import './home.css'
 
 function Sponsors() {
     const sponsors = [
@@ -71,7 +72,7 @@ function Sponsors() {
                         {sponsors.map((sponsor, index) => (
                             <Col key={index} lg={3} className="sponsor-icons">
                                 <a href={sponsor.href} target="_blank" rel="noopener noreferrer">
-                                    <img src={sponsor.imgSrc} alt={sponsor.alt} style={{ width: "100%", height: "auto" }} />
+                                    <img src={sponsor.imgSrc} alt={sponsor.alt} className="sponsor-image" />
                                 </a>
                             </Col>
                         ))}
