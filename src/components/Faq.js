@@ -35,28 +35,20 @@ const FAQ = () => {
 
     const faqData = [
         {
-            question: "How do I register for BrainHack?",
-            answer: "Our registration will open in late November the week before Thanksgiving. You can register by visiting the homepage of our website and clicking 'Register'. From there, you'll fill out a short form with some of your basic information, and we'll get in touch with you before BrainHack!"
+            question: "Who can come to BrainHack?",
+            answer: "Anyone, virtually. Vanderbilt affiliates can choose to attend in-person. However, the seats are limited. Either way don't forget to register!"
         },
         {
-            question: "Who should register for BrainHack?",
-            answer: "We welcome people from all backgrounds, ranging from those with minimal experience in coding and research, to seasoned veterans in the neuroscience community. Anyone interested in making connections in the neuroscience and open science community is encouraged to register."
-        },
-        {
-            question: "How do I become a volunteer for BrainHack?",
-            answer: "Our volunteer registration form will open in January. Come back to our website then to register as a volunteer!"
-        },
-        {
-            question: "How do projects work at BrainHack?",
-            answer: "Before the BrainHack, the organizers will be actively recruiting individuals interested in pitching projects. During the BrainHack, attendees will be introduced to these projects and will be able to work closely together on addressing the goals that the project pitcher set out."
+            question: "How can I volunteer for BrainHack?",
+            answer: "Fill out the volunteer section in the registration form. Or reach out to us at brianhack.vanderbilt@gmail.com througout the year."
         },
         {
             question: "What kind of projects are suitable for BrainHack?",
-            answer: "Any project that is broadly related to neuroscience that involves some data science component. That could be analyzing patterns in fMRI data, creating a data loader pipeline for a neural spiking dataset, preprocessing calcium imaging traces, running stats, etc. You can check out previous year's projects here: https://github.com/brainhack-vandy/projects"
+            answer: "Any project that is broadly related to neuroscience and can be made publicly available. Check out previous year's projects here: https://github.com/brainhack-vandy/projects"
         },
         {
             question: "Who should pitch a project?",
-            answer: "Anyone who is passionate about collaborative research at the intersection of neuroscience and data science. Anyone who is in need of help with data analytics with your research project, or simply looking to connect with like-minded people in neuroscience. Anyone who is looking for help interpreting your research findings, or need someone with deep expertise."
+            answer: "Anyone who is passionate about collaborative research at the intersection of neuroscience and open science. "
         },
         {
             question: "Will my project be judged at BrainHack?",
@@ -64,23 +56,19 @@ const FAQ = () => {
         },
         {
             question: "Where will BrainHack be held?",
-            answer: "We will be held both in person and hybrid over discord! The in-person component will be held on the 2nd floor of Alumni Hall."
-        },
-        {
-            question: "When will BrainHack be held?",
-            answer: "BrainHack will be held from Friday evening on 24 January 2025 to Sunday afternoon on 26 January 2025."
+            answer: "BrainHack Vanderbilt is hybrid. The in-person component will be held on the 2nd floor of Alumni Hall."
         },
         {
             question: "What is the format of BrainHack Vanderbilt?",
-            answer: "BrainHack Vanderbilt will contain 3 primary components: HackTrack, TrainTrack, and EventTrack. In HackTrack, attendees are able to work on any of the projects that have been pitched beforehand and available during BrainHack. In TrainTrack, there will be speakers giving educational workshops covering topics ranging from basics of coding to analyzing neuroimaging. In EventTrack, attendees can participate in a variety of fun events, ranging from playing neuroscience jeopardy to engaging in social mixers."
+            answer: "BrainHack Vanderbilt will contain 3 primary components: HackTrack, TrainTrack, and EventTrack. In HackTrack, attendees will join teams to work on one (or more) of the projects that have been pitched! In TrainTrack, we will host educational workshops covering topics ranging from basics of coding to analyzing neuroimaging. In EventTrack, attendees can participate in a variety of events, ranging from keynote to panels to engaging in social mixers."
         },
         {
             question: "I have no prior coding experience. Can I still participate in BrainHack?",
-            answer: "Yes! BrainHack is an event tailored to individuals of all backgrounds. We encourage collaboration between seasoned researchers and those who are just getting started with research."
+            answer: "Yes! BrainHack welcomes individuals from all backgrounds. We encourage collaboration between seasoned researchers and those who are just getting started with research."
         },
         {
             question: "BrainHack is meant to foster open science. What exactly does that mean?",
-            answer: "Open science generally refers to the process of publicizing and democratizing the scientific process. This means open sourcing code, curating publicly available datasets, documenting code clearly, and overall eliminating barriers to entry in scientific research."
+            answer: "Open Science generally refers to the process of publicizing and democratizing the scientific process. This means open sourcing code, curating and using publicly available datasets, documenting code clearly, and overall eliminating barriers to entry in scientific research."
         },
         {
             question: "How will we be communicating during BrainHack?",
@@ -88,10 +76,10 @@ const FAQ = () => {
         },
         {
             question: "What should I bring?",
-            answer: "A device you can write code and/or make designs on, and a compatible charger."
+            answer: "Your laptop and will collaborate attitude!"
         },
         {
-            question: "Is there free food and merch?",
+            question: "Is there free food and fantastic merch?",
             answer: "Yes!"
         }
     ];
