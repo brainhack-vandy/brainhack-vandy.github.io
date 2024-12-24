@@ -1,3 +1,41 @@
+.schedule-section {
+    position: relative !important;
+    padding-top: 150px !important;
+    padding-bottom: 30px !important;
+    background-image: var(--section-background-color) !important;
+}
+
+.schedule-card {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+
+.schedule-card-view {
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+    color: white !important;
+    background-color: transparent !important;
+    opacity: 0.9 !important;
+    transition: all 0.5s ease 0s !important;
+    padding: 20px !important;
+    border-radius: 8px !important;
+}
+
+.schedule-card-view:hover {
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+
+@media (max-width: 768px) {
+    .schedule-card-view {
+        flex-direction: column;
+    }
+}
+
 /* Date selector styles */
 .date-selector {
     display: flex;

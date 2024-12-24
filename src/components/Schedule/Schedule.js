@@ -4,7 +4,7 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import { events } from './events';
-import './ScheduleCalendar.css';
+import './schedule.css';
 
 const ScheduleCalendar = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -22,10 +22,10 @@ const ScheduleCalendar = () => {
     if (calendarRef.current) {
       const calendarApi = calendarRef.current.getApi();
       const isMobile = windowWidth < 768;
-      
+
       // Update view
       calendarApi.changeView(isMobile ? 'timeGridDay' : 'timeGridThreeDay');
-      
+
       // Force re-render of the calendar
       calendarApi.updateSize();
     }
@@ -90,7 +90,7 @@ const ScheduleCalendar = () => {
   return (
     <Container fluid className="schedule-section">
       <Container>
-        <h1 className="component-heading">Tentative <strong className="purple">Event Schedule</strong></h1>
+        <h1 className="page-heading">Tentative <strong className="purple">Event Schedule</strong></h1>
 
         {isMobile && (
           <div className="date-selector">
