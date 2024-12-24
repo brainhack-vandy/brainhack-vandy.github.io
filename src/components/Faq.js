@@ -104,7 +104,7 @@ const FAQ = () => {
         <section>
             <Container fluid className="faq-section" id="faq">
                 <Container>
-                    <h1 className="project-heading">
+                    <h1 className="page-heading">
                         Frequently Asked <strong className="purple">Questions</strong>
                     </h1>
                     <Row className="justify-content-center">

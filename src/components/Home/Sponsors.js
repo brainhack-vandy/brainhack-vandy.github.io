@@ -65,7 +65,7 @@ function Sponsors() {
         <div className="sponsor-section">
             <Row className="justify-content-center">
                 <Col xs={7} lg={10}>
-                    <h2 className="project-pitch-heading">
+                    <h2 className="page-heading">
                         2025 <span className="purple">Sponsors</span>
                     </h2>
                     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>

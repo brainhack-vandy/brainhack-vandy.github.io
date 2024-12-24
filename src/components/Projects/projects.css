@@ -1,0 +1,188 @@
+.project-guidelines {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.project-guidelines-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-guidelines-item {
+    margin-bottom: 0.5rem;
+    padding-left: 1.2em;
+    position: relative;
+}
+
+.project-guidelines-item::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #c770f0;
+}
+
+.project-section {
+    position: relative !important;
+    padding-top: 150px !important;
+    padding-bottom: 30px !important;
+    background-image: var(--section-background-color) !important;
+}
+
+/* Project Card Styles */
+.project-card {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    height: auto !important;
+}
+
+.project-card-view {
+    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+    color: white !important;
+    background-color: transparent !important;
+    opacity: 1 !important;
+    transition: all 0.5s ease 0s !important;
+    height: 100% !important;
+}
+
+.project-card-view:hover {
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+
+.project-card-row {
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.project-card-col {
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    padding: 20px !important;
+    opacity: 0.8 !important;
+    border-radius: 10px !important;
+    max-height: 300px !important;
+    object-fit: contain !important;
+    background-color: rgba(15, 6, 33, 0.9) !important;
+}
+
+/* Year Select Styles */
+.year-select-container {
+    position: relative !important;
+    z-index: 2 !important;
+    /* Higher z-index to appear above particles */
+    margin-bottom: 30px;
+}
+
+.year-select-container select {
+    width: 100px !important;
+    background-color: #623686 !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    cursor: pointer !important;
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
+    font-size: 1.1em !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+
+.year-select-container select:hover {
+    background-color: #6d20c5d7 !important;
+}
+
+.year-select-container select:focus {
+    box-shadow: none !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Style the dropdown options */
+.year-select-container select option {
+    background-color: #623686 !important;
+    color: white !important;
+    padding: 8px 12px !important;
+}
+
+/* Year Select Styles */
+.year-select {
+    background-color: #0c0513 !important;
+    color: white !important;
+    border: 1px solid var(--imp-text-color) !important;
+    cursor: pointer !important;
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
+    font-size: 1.1em !important;
+    width: 200px !important;
+    margin-bottom: 30px !important;
+    /* Add custom white dropdown arrow */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.75rem center !important;
+    background-size: 1em !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+}
+
+.year-select:hover {
+    border-color: #a94cce !important;
+}
+
+.year-select:focus {
+    box-shadow: none !important;
+    border-color: #a94cce !important;
+}
+
+/* Ensure dropdown options are visible */
+.year-select option {
+    background-color: #0c0513 !important;
+    color: white !important;
+    padding: 8px 12px !important;
+}
+
+/* Coming Soon Styles */
+.coming-soon {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(15, 6, 33, 0.9);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.coming-soon-title {
+    color: var(--imp-text-color);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.coming-soon-text {
+    color: #e6e6e6;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+
+    .card-img-top {
+        max-height: 250px !important;
+    }
+
+    .project-card {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .year-select {
+        width: 100%;
+        max-width: 200px;
+    }
+
+}
