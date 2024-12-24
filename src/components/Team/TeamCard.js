@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { BsGithub } from "react-icons/bs";
+import './team.css';
 
 function TeamCard(props) {
     const hasGitHub = props.ghLink && props.ghLink.trim() !== "" && props.ghLink !== "https://github.com";

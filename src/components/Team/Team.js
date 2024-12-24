@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Particle from '../Particle';
 import TeamCard from './TeamCard';
 import teamData from './teamData';
+import './team.css';
 
 const TeamSection = ({ title, members, showDivider = false }) => (
   <div className="team-section-container">
@@ -10,11 +11,11 @@ const TeamSection = ({ title, members, showDivider = false }) => (
     <h2 className="team-category-heading purple mb-4">{title}</h2>
     <Row className="team-card-row">
       {members.map((member, index) => (
-        <Col 
-          className="team-card-col col-lg-5-cols" 
-          md={3} 
-          sm={6} 
-          xs={12} 
+        <Col
+          className="team-card-col col-lg-5-cols"
+          md={3}
+          sm={6}
+          xs={12}
           key={`${member.title}-${index}`}
         >
           <TeamCard
