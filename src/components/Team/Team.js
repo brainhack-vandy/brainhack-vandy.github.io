@@ -45,25 +45,10 @@ function Team() {
           </>
         )}
 
-        {yearData["Team Leads"]?.length > 0 && (
+        {yearData["Organizers"]?.length > 0 && (
           <TeamSection
-            title="Team Leads"
-            members={yearData["Team Leads"]}
-          />
-        )}
-
-        {yearData["Team Members"]?.length > 0 && (
-          <TeamSection
-            title="Team Members"
-            members={yearData["Team Members"]}
-          />
-        )}
-
-        {yearData["Faculty Leadership"]?.length > 0 && (
-          <TeamSection
-            title="Faculty Leadership"
-            members={yearData["Faculty Leadership"]}
-            showDivider={true}
+            title=""
+            members={yearData["Organizers"]}
           />
         )}
       </div>

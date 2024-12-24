@@ -1,11 +1,23 @@
 const teamData = {
     "2025": {
-        "Team Leads": [
+        "Organizers": [
             {
                 title: "Richard Song",
                 description: "Undergraduate Student",
                 team: "Hackathon Chair",
-                imgPath: "assets/team/Richard_Song.svg",
+                imgPath: "/images/team/Richard_Song.svg",
+            },
+            {
+                title: "Roza G. Bayrak",
+                description: "Senior Research Engineer",
+                team: "General Chair",
+                imgPath: "/images/team/Roza_Bayrak.svg",
+            },
+            {
+                title: "Catie Chang",
+                description: "Assistant Professor",
+                team: "Faculty Advisor",
+                imgPath: "/images/team/Catie_Chang.svg",
             },
             {
                 title: "Kim Rogge-Obando",
@@ -30,100 +42,84 @@ const teamData = {
                 description: "Undergraduate Student",
                 imgPath: "assets/team/Terra_Lee.svg",
                 team: "Marketing Team Lead"
-            }
-        ],
-        "Team Members": [
+            },
             {
                 title: "Lucy Wu",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Lucy_Wu.svg",
-                team: "Operations Team"
+                imgPath: "/images/team/Lucy_Wu.svg",
+                team: "Operations"
             },
             {
                 title: "David Zaha",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/David_Zaha.svg",
-                team: "Development Team"
+                imgPath: "/images/team/David_Zaha.svg",
+                team: "Development"
             },
             {
                 title: "Sefika Ozturk",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Sefika_Ozturk.svg",
-                team: "Operations Team"
+                imgPath: "/images/team/Sefika_Ozturk.svg",
+                team: "Operations"
             },
             {
                 title: "Elyssa McMaster",
                 description: "Graduate Student",
-                imgPath: "assets/team/Elyssa_McMaster.svg",
-                team: "Marketing/Design Team"
+                imgPath: "/images/team/Elyssa_McMaster.svg",
+                team: "Marketing/Design"
             },
             {
                 title: "Tasfiea Tasnum",
                 description: "",
-                imgPath: "assets/team/Tasfiea_Tasnum.svg",
-                team: "Operations Team"
+                imgPath: "/images/team/Tasfiea_Tasnum.svg",
+                team: "Operations"
             },
             {
                 title: "Lily Kriegel",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Lily_Kriegel.svg",
-                team: "TrainTrack Team"
+                imgPath: "/images/team/Lily_Kriegel.svg",
+                team: "TrainTrack"
             },
             {
                 title: "Eunice Hahm",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder1.svg",
-                team: "Project Team"
+                imgPath: "/images/team/placeholder1.svg",
+                team: "Project"
             },
             {
                 title: "Mashiur Khan",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder2.svg",
-                team: "Development Team"
+                imgPath: "/images/team/placeholder2.svg",
+                team: "Development"
             },
             {
                 title: "Crystal Jiang",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder1.svg",
-                team: "Marketing/Design Team"
+                imgPath: "/images/team/placeholder1.svg",
+                team: "Marketing/Design"
             },
             {
                 title: "Liza Akpoli",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Liza_Akpoli.svg",
-                team: "Project Team"
+                imgPath: "/images/team/Liza_Akpoli.svg",
+                team: "Project"
             },
             {
                 title: "Kristine Won",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder1.svg",
-                team: "TrainTrack Team"
+                imgPath: "/images/team/placeholder1.svg",
+                team: "TrainTrack"
             },
             {
                 title: "Cynthia Chen",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder1.svg",
-                team: "Project Team"
+                imgPath: "/images/team/placeholder1.svg",
+                team: "Project"
             },
             {
                 title: "Yusung Hwang",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder2.svg",
-                team: "Operations Team"
-            }
-        ],
-        "Faculty Leadership": [
-            {
-                title: "Catie Chang",
-                description: "Assistant Professor",
-                team: "Faculty Advisor",
-                imgPath: "assets/team/Catie_Chang.svg",
-            },
-            {
-                title: "Roza G. Bayrak",
-                description: "Senior Research Engineer",
-                team: "General Chair",
-                imgPath: "assets/team/Roza_Bayrak.svg",
+                imgPath: "/images/team/placeholder2.svg",
+                team: "Operations"
             }
         ]
     }
