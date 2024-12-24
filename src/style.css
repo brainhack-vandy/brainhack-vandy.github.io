@@ -637,17 +637,24 @@ section {
 .footer {
   flex-shrink: 0;
   background-color: rgb(10, 4, 22);
-  padding: 20px 0 !important;
   position: relative;
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  bottom: 0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 
 .footer-copywright,
-.footer-body,
-.footer-recognitions {
+.footer-body {
   text-align: center !important;
   padding: 5px 0;
+}
+
+.footer-recognitions {
+  text-align: center !important;
+  font-size: 0.7em;
+  padding-top: 5px;
 }
 
 .footer h3 {

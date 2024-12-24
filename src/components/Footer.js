@@ -63,7 +63,7 @@ function Footer() {
               >
                 Brainhack Western
               </a>
-              . Illustrations by{" "}
+              .<br />Illustrations by{" "}
               <a
                 href="https://storyset.com/"
                 target="_blank"
