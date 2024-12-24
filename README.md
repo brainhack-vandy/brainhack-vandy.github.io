@@ -1,5 +1,19 @@
 # BrainHack Vanderbilt
 
+## :mega: Project Submission Instructions
+
+[For project leads]  Projects submission instructions:
+
+1. Create a new issue by going to the issues tab in the repository nagivation bar and clicking on "New Issue"
+2. Select the "Project submission template" and fill out the form
+
+[For reviewers] Project approval and deployment instructions:
+
+1. Select the "approved" tag for the project issue
+2. Select the year for the project issue
+
+The github actions workflow will auto-deploy the project once it has been approved.
+
 ## :star: Setup Instructions
 
 To set up the repository:
