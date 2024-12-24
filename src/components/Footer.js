@@ -15,8 +15,8 @@ function Footer() {
             <h3>Copyright @ 2025 BrainHack Vanderbilt</h3>
           </Col>
           <Col md={4} className="footer-body">
-            <ul className="footer-icons">
-              <li className="social-icons">
+            <ul className="footer-icons-section">
+              <li className="footer-social-icons">
                 <a
                   href="https://github.com/brainhack-vandy"
                   target="_blank"
@@ -25,7 +25,7 @@ function Footer() {
                   <AiFillGithub />
                 </a>
               </li>
-              <li className="social-icons">
+              <li className="footer-social-icons">
                 <a
                   href="https://www.youtube.com/@BrainHackVanderbilt"
                   target="_blank"
@@ -34,7 +34,7 @@ function Footer() {
                   <AiFillYoutube />
                 </a>
               </li>
-              <li className="social-icons">
+              <li className="footer-social-icons">
                 <a
                   href="https://www.instagram.com/brainhackvu/"
                   target="_blank"

@@ -87,8 +87,8 @@ function NavBar() {
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <CgGitFork className="fork-btn-subicon" />{" "}
+                <AiFillStar className="fork-btn-subicon" />
               </Button>
             </Nav.Item>
 
