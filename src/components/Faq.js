@@ -39,20 +39,27 @@ const FAQ = () => {
             answer: "Anyone, virtually. Vanderbilt affiliates can choose to attend in-person. However, the seats are limited. Either way don't forget to register!"
         },
         {
-            question: "How can I volunteer for BrainHack?",
-            answer: "Fill out the volunteer section in the registration form. Or reach out to us at brianhack.vanderbilt@gmail.com througout the year."
+            question: "I have no prior coding experience. Can I still participate in BrainHack?",
+            answer: "Yes! BrainHack is designed to be accessible to everyone. During the event, we offer beginner-friendly workshops in our TrainTrack to help you get started with coding basics. You'll have opportunities to pair with experienced programmers on projects, learn through hands-on experience, and build your skills in a supportive environment. Many of our most successful collaborations have included team members who were just starting their coding journey!"
         },
+        {
+            question: "I have no neuroscience background. Can I still participate in BrainHack?",
+            answer: "Yes! BrainHack welcomes individuals from all backgrounds. We encourage collaboration between neuroscience experts and those from other fields like computer science, mathematics, statistics, or any other discipline. Your unique perspective and skills can contribute to innovative solutions in neuroscience research."
+        },
+        {
+            question: "How does remote participation work?",
+            answer: "Remote participants can fully engage through Discord, where we'll host virtual rooms for project collaboration, workshops, and social interactions. You'll be able to join video calls, share screens, participate in discussions, and contribute to projects just like in-person attendees. All presentations and workshops will be streamed with interactive Q&A sessions."
+        },
+        {
+            question: "What does BrainHack mean by 'fostering open science'?",
+            answer: "Open Science is about making the entire scientific process transparent, collaborative, and accessible to everyone. When scientists openly share their methods, data, code, and findings, it allows others to verify their work, build upon it, and contribute their own insights. At BrainHack, we put these principles into practice by working together on shared tools and datasets, documenting everything clearly, and welcoming participants from any background or skill level to join in the research process. Instead of keeping scientific knowledge locked behind institutional walls, we're creating an environment where everyone can learn, participate, and advance science together."        },
         {
             question: "What kind of projects are suitable for BrainHack?",
             answer: "Any project that is broadly related to neuroscience and can be made publicly available. Check out previous year's projects here: https://github.com/brainhack-vandy/projects"
         },
         {
-            question: "Who should pitch a project?",
-            answer: "Anyone who is passionate about collaborative research at the intersection of neuroscience and open science. "
-        },
-        {
             question: "Will my project be judged at BrainHack?",
-            answer: "Nope! BrainHack is a purely collaborative event, and we encourage you to work with each other on projects."
+            answer: "No. BrainHack is a purely collaborative event, and we encourage you to work with each other on projects."
         },
         {
             question: "Where will BrainHack be held?",
@@ -63,16 +70,8 @@ const FAQ = () => {
             answer: "BrainHack Vanderbilt will contain 3 primary components: HackTrack, TrainTrack, and EventTrack. In HackTrack, attendees will join teams to work on one (or more) of the projects that have been pitched! In TrainTrack, we will host educational workshops covering topics ranging from basics of coding to analyzing neuroimaging. In EventTrack, attendees can participate in a variety of events, ranging from keynote to panels to engaging in social mixers."
         },
         {
-            question: "I have no prior coding experience. Can I still participate in BrainHack?",
-            answer: "Yes! BrainHack welcomes individuals from all backgrounds. We encourage collaboration between seasoned researchers and those who are just getting started with research."
-        },
-        {
-            question: "BrainHack is meant to foster open science. What exactly does that mean?",
-            answer: "Open Science generally refers to the process of publicizing and democratizing the scientific process. This means open sourcing code, curating and using publicly available datasets, documenting code clearly, and overall eliminating barriers to entry in scientific research."
-        },
-        {
-            question: "How will we be communicating during BrainHack?",
-            answer: "After all attendees have been approved, you will receive a discord invite. We will be posting announcements during the event there, and you will be able to communicate with the virtual attendees there as well."
+            question: "What happens after BrainHack?",
+            answer: "Projects and collaborations often continue beyond the event. You'll have access to: 1) Our Discord community for ongoing discussions, 2) Project repositories on GitHub, 3) Resources and materials from workshops, and 4) Opportunities to join future BrainHack events or get involved in organizing them."
         },
         {
             question: "What should I bring?",
@@ -81,6 +80,10 @@ const FAQ = () => {
         {
             question: "Is there free food and fantastic merch?",
             answer: "Yes!"
+        },
+        {
+            question: "How can I volunteer for BrainHack?",
+            answer: "Fill out the volunteer section in the registration form. Or reach out to us at brianhack.vanderbilt@gmail.com througout the year."
         }
     ];
 
