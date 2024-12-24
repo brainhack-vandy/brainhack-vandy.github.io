@@ -5,19 +5,19 @@ const teamData = {
                 title: "Richard Song",
                 description: "Undergraduate Student",
                 team: "Hackathon Chair",
-                imgPath: "/images/team/Richard_Song.svg",
+                imgPath: "assets/team/Richard_Song.svg",
             },
             {
                 title: "Roza G. Bayrak",
                 description: "Senior Research Engineer",
                 team: "General Chair",
-                imgPath: "/images/team/Roza_Bayrak.svg",
+                imgPath: "assets/team/Roza_Bayrak.svg",
             },
             {
                 title: "Catie Chang",
                 description: "Assistant Professor",
                 team: "Faculty Advisor",
-                imgPath: "/images/team/Catie_Chang.svg",
+                imgPath: "assets/team/Catie_Chang.svg",
             },
             {
                 title: "Kim Rogge-Obando",
@@ -46,79 +46,79 @@ const teamData = {
             {
                 title: "Lucy Wu",
                 description: "Undergraduate Student",
-                imgPath: "/images/team/Lucy_Wu.svg",
+                imgPath: "assets/team/Lucy_Wu.svg",
                 team: "Operations"
             },
             {
                 title: "David Zaha",
                 description: "Undergraduate Student",
-                imgPath: "/images/team/David_Zaha.svg",
+                imgPath: "assets/team/David_Zaha.svg",
                 team: "Development"
             },
             {
                 title: "Sefika Ozturk",
                 description: "Undergraduate Student",
-                imgPath: "/images/team/Sefika_Ozturk.svg",
+                imgPath: "assets/team/Sefika_Ozturk.svg",
                 team: "Operations"
             },
             {
                 title: "Elyssa McMaster",
                 description: "Graduate Student",
-                imgPath: "/images/team/Elyssa_McMaster.svg",
+                imgPath: "assets/team/Elyssa_McMaster.svg",
                 team: "Marketing/Design"
             },
             {
                 title: "Tasfiea Tasnum",
                 description: "",
-                imgPath: "/images/team/Tasfiea_Tasnum.svg",
+                imgPath: "assets/team/Tasfiea_Tasnum.svg",
                 team: "Operations"
             },
             {
                 title: "Lily Kriegel",
                 description: "Undergraduate Student",
-                imgPath: "/images/team/Lily_Kriegel.svg",
+                imgPath: "assets/team/Lily_Kriegel.svg",
                 team: "TrainTrack"
             },
             {
                 title: "Eunice Hahm",
                 description: "Undergraduate Student",
-                imgPath: "/images/team/placeholder1.svg",
+                imgPath: "assets/team/placeholder1.svg",
                 team: "Project"
             },
             {
                 title: "Mashiur Khan",
                 description: "Undergraduate Student",
-                imgPath: "/images/team/placeholder2.svg",
+                imgPath: "assets/team/placeholder2.svg",
                 team: "Development"
             },
             {
                 title: "Crystal Jiang",
                 description: "Undergraduate Student",
-                imgPath: "/images/team/placeholder1.svg",
+                imgPath: "assets/team/placeholder1.svg",
                 team: "Marketing/Design"
             },
             {
                 title: "Liza Akpoli",
                 description: "Undergraduate Student",
-                imgPath: "/images/team/Liza_Akpoli.svg",
+                imgPath: "assets/team/Liza_Akpoli.svg",
                 team: "Project"
             },
             {
                 title: "Kristine Won",
                 description: "Undergraduate Student",
-                imgPath: "/images/team/placeholder1.svg",
+                imgPath: "assets/team/placeholder1.svg",
                 team: "TrainTrack"
             },
             {
                 title: "Cynthia Chen",
                 description: "Undergraduate Student",
-                imgPath: "/images/team/placeholder1.svg",
+                imgPath: "assets/team/placeholder1.svg",
                 team: "Project"
             },
             {
                 title: "Yusung Hwang",
                 description: "Undergraduate Student",
-                imgPath: "/images/team/placeholder2.svg",
+                imgPath: "assets/team/placeholder2.svg",
                 team: "Operations"
             }
         ]
