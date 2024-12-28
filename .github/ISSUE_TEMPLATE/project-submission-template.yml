@@ -7,9 +7,6 @@ description: Fill in this template to submit a project
 
 labels: [project-proposal]
 
-# assignees:
-#   - octocat
-
 body:
   - type: markdown
     attributes:
@@ -20,7 +17,7 @@ body:
 
         To submit a project:
 
-        - register for [BrainHack Vanderbilt 2025](https://brainhack-vandy.github.io/)
+        - first register for [BrainHack Vanderbilt 2025](https://brainhack-vandy.github.io/)
 
         - fill in all the required items (marked with a red asterisk `*`) in the form below. Note that if you are missing some information but still want to submit a project, you can always input placeholder content.
 
@@ -29,13 +26,9 @@ body:
         - add a comment saying:
         > Hi @brainhack-vandy/project-monitors my project is ready!
 
-        After the issue is submitted, we will assign a `project monitor` to review your submission.
-
-        After approval we will add the label `approved` and your project will appear on [our Projects page](https://brainhack-vandy.github.io/#/projects).
-
         Note that you can always update your issue after clicking on `Submit new issue`. This will also change your page on the website accordingly.
 
-        If at any time you need help from us or anything is unclear, please ping the project monitors (`@brainhack-vandy/project-monitors`) in a comment. Our team is here to help!
+        If at any time you need help from us or anything is unclear, please add your questions in a comment. Our team is here to help!
 
   # ----------------------------------------------------------------------------
   # PROJECT INFO
@@ -53,14 +46,15 @@ body:
   - type: textarea
     attributes:
       label: Title
-      description: Add a longer title to describe your project.
+      description: Add a short title (30 characters or less). This title will be used as
+        the title of your project on our website.
     validations:
       required: true
 
   - type: textarea
     attributes:
       label: Leaders
-      description: Add the full name (and Twitter / Mattermost handle if possible)
+      description: Add the full name (and Github handle if possible)
         of the project leaders.
     validations:
       required: true
@@ -68,13 +62,12 @@ body:
   - type: textarea
     attributes:
       label: Collaborators
-      description: Add the full names (and Twitter / Mattermost handle if possible)
+      description: Add the full names (and Github handles if possible)
         of any person contributing to the project.
-      placeholder: Please add current collaborators within your proposed project
+      placeholder: "Please add if any existing collaborators within your proposed project. 
+        \nRemember you will recruit collaborators during the event."
     validations:
       required: false
-
-  
 
   - type: textarea
     attributes:
@@ -84,8 +77,6 @@ body:
       value: |
         - What are you doing, for whom, and why?
         - What makes your project special and exciting?
-        - How to get started?
-        - Where to find key resources?
     validations:
       required: true
 
@@ -93,14 +84,14 @@ body:
     attributes:
       label: Link to project repository/sources
       description: If your project already exists, please provide a link to project
-        repository/sources (e.g., Github link)
+        repository/sources (e.g., Github link).
       placeholder: https://github.com/user_name/my_awesome_project
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Goals for Brainhack Global
+      label: Concerete Goals with Specific Tasks for Brainhack Vanderbilt 2025
       description: "Add a list of milestones or deliverables that you expect to achieve
         during the event.\nTry to provide goals of varying complexity for contributors
         with different sets of skills"
@@ -121,15 +112,6 @@ body:
 
   - type: textarea
     attributes:
-      label: Communication channels
-      description: Add the the project communication channels (Slack, Mattermost or
-        other).
-      placeholder: https://mattermost.brainhack.org/brainhack/channels/my_awesome_project
-    validations:
-      required: true
-
-  - type: textarea
-    attributes:
       label: Skills
       description: "Add a list of skills needed to contribute to this project.\nTry
         to think of both coding and non-coding skills.\nYou can provide predefined
@@ -139,7 +121,8 @@ body:
         share the experiences."
       placeholder: |
         - Python: advanced
-        - FSL: basics
+        - Git: intermediate
+        - FSL: basic working knowledge
     validations:
       required: true
 
@@ -147,7 +130,7 @@ body:
     attributes:
       label: Onboarding documentation
       description: Provide links to onboarding documents if you have some (for example
-        a `CONTRIBUTING.md`)
+        a `CONTRIBUTING.md` or a `README.md` file).
     validations:
       required: false
 
@@ -164,11 +147,11 @@ body:
 
   - type: textarea
     attributes:
-      label: Data to use
+      label: Public data to use
       description: If your project uses data, add a short description of the data
-        and a link to its source.
+        and a link to its source. If you don't have data, please write `No data`.
     validations:
-      required: false
+      required: true
 
   - type: dropdown
     attributes:
@@ -181,7 +164,7 @@ body:
         - '2'
         - '3'
         - '4'
-        - more
+        - '4+'
     validations:
       required: true
 
@@ -189,15 +172,14 @@ body:
     attributes:
       label: Credit to collaborators
       description: Describe how you will credit new members to your project.
-      placeholder: Project contributors are listed on the project README using [all-contributors
-        github bot](https://github.com/all-contributors/all-contributors).
+      placeholder: E.g. Project contributors are listed on the project README.
     validations:
       required: true
 
   - type: textarea
     attributes:
       label: Image
-      description: Provide an image of your project for the Brainhack Global website.
+      description: Provide an image to used for your project on the Brainhack Vanderbilt website. If you dont have one, we will use a default image.
     validations:
       required: true
 
@@ -217,6 +199,7 @@ body:
       label: Type
       multiple: true
       options:
+        - finding_public_resources
         - coding_methods
         - data_management
         - documentation
@@ -290,11 +273,13 @@ body:
         - fMRIPrep
         - Freesurfer
         - FSL
+        - HuggingFace
         - Jupyter
         - MNE
         - MRtrix
         - Nipype
         - NWB
+        - Pytorch
         - SPM
         - other
     validations:
@@ -337,6 +322,8 @@ body:
         - fNIRS
         - MEG
         - MRI
+        - Neurophysiology
+        - Peripheral physiology
         - PET
         - TDCS
         - TMS
@@ -383,4 +370,3 @@ body:
       options:
         - label: 'Add a comment below the main post of your issue saying: `Hi @brainhack-vandy/project-monitors
             my project is ready!`'
-        - label: Twitter-sized summary of your project pitch.
