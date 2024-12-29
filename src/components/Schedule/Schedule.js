@@ -47,13 +47,13 @@ const ScheduleCalendar = () => {
   const getEventClassNames = (eventInfo) => {
     switch (eventInfo.event.extendedProps.type) {
       case 'educational':
-        return ['event-color-1', 'clickable-event'];
+        return ['event-color-1']; // append back 'clickable-event' when link is needed
       case 'events':
         return ['event-color-2'];
       case 'hacking':
         return ['event-color-3'];
       case 'keynote':
-        return ['event-color-4', 'clickable-event'];
+        return ['event-color-4'];
       case 'unconference':
         return ['event-color-5'];
       default:

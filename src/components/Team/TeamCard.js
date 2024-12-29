@@ -8,7 +8,7 @@ function TeamCard(props) {
 
     return (
         <Card className="team-card-view">
-            <Card.Img variant="top" src={props.imgPath} alt="card-img" className="teamcard-img-top" />
+            <Card.Img variant="top" src={props.imgPath} alt="card-img" className="teamcard-img-top" loading="eager" />
             <Card.Body>
                 <Card.Title className="team-card-title">
                     {props.title}
