@@ -25,18 +25,21 @@ function processIssues(issues) {
         return;
       }
   
-      const title = issue.title;
+      
       const body = issue.body || '';
   
       // Initialize variables
       let infoLink = null;
       let imageLink = null;
       let description = null;
+      let title = null;
   
       // Regular expressions
-      const linkRegex = /### Link to project repository\/sources\n\n([\s\S]*?)\n\n###/;
-    const imageRegex = /### Image\n\n!\[.*?\]\((.*?)\)/;
-      const descriptionRegex = /### Project Description\n\n([\s\S]*?)\n\n###/;
+      const linkRegex = /### Link to project repository\/sources([\s\S]*?)###/;
+      const imageRegex = /### Image!\[.*?\]\((.*?)\)/;
+      const descriptionRegex = /### Project Description([\s\S]*?)###/;
+
+      const titleRegex = /### Title([\s\S]*?)###/;
   
       // Extract image link
       const imageMatch = imageRegex.exec(body);
@@ -55,6 +58,13 @@ function processIssues(issues) {
             description = descriptionMatch[1].trim();
         }
 
+
+      const titleMatch = titleRegex.exec(body);
+      if (titleMatch) {
+          title = titleMatch[1].trim();
+      }
+
+      
       const project = {
         title: title,
         description: description,
