@@ -5,7 +5,8 @@ name: Project submission template
 
 description: Fill in this template to submit a project
 
-labels: [project-proposal]
+title: "Project: "
+labels: ["project-proposal"]
 
 body:
   - type: markdown
