@@ -12,10 +12,21 @@ import {
   HashRouter as Router,
   Route,
   Routes,
-  Navigate
+  Navigate,
+  useLocation
 } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -30,6 +41,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <LoadingAnimation load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
