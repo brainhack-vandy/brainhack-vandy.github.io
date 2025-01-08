@@ -53,7 +53,7 @@ const ScheduleCalendar = () => {
       case 'hacking':
         return ['event-color-3'];
       case 'keynote':
-        return ['event-color-4'];
+        return ['event-color-4', 'clickable-event'];
       case 'unconference':
         return ['event-color-5'];
       default:
@@ -62,14 +62,12 @@ const ScheduleCalendar = () => {
   };
 
   const renderEventContent = (eventInfo) => {
-    const isClickable = ['workshop', 'keynote'].includes(eventInfo.event.extendedProps.type);
+    const isKeynote = eventInfo.event.extendedProps.type === 'keynote'
 
-    if (isClickable) {
+    if (isKeynote) {
       return (
         <a
-          href="https://brainhack-vandy.github.io/"
-          target="_blank"
-          rel="noopener noreferrer"
+          href={`#/speakers`}
           className="custom-event-content clickable"
           onClick={(e) => e.stopPropagation()}
         >
@@ -77,6 +75,22 @@ const ScheduleCalendar = () => {
         </a>
       );
     }
+
+    // const isWorkshop = eventInfo.event.extendedProps.type === 'workshop';
+
+    // if (isWorkshop) {
+    //   return (
+    //     <a
+    //       href="https://brainhack-vandy.github.io/"
+    //       target="_blank"
+    //       rel="noopener noreferrer"
+    //       className="custom-event-content clickable"
+    //       onClick={(e) => e.stopPropagation()}
+    //     >
+    //       <div className="event-title">{eventInfo.event.title}</div>
+    //     </a>
+    //   );
+    // }
 
     return (
       <div className="custom-event-content">
