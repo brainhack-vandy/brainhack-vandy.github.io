@@ -36,7 +36,7 @@ const ProjectPitchInstr = () => {
                 </a>
               </div>
               <p className="project-pitch-text mt-4">
-                Scroll down to see some examples from last year's BrainHack Vanderbilt.
+                Submission Deadline: January 10th, 2025
               </p>
             </div>
           </Col>
