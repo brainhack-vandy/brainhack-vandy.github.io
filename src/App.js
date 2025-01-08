@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import FAQ from "./components/Faq";
+import Speakers from "./components/Speakers/Speakers";
 import Footer from "./components/Footer";
 import Teams from './components/Team/Team';
 import Schedule from "./components/Schedule/Schedule";
@@ -38,6 +39,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/team" element={<Teams />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/speakers" element={<Speakers />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
