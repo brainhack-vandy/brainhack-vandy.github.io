@@ -72,7 +72,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Project Description
+      label: Project description
       description: "Add a brief description of the project.\nTry to include all the
         relevant information to answer the following questions."
       value: |
@@ -92,7 +92,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Concerete Goals with Specific Tasks for Brainhack Vanderbilt 2025
+      label: Concerete goals with specific tasks for Brainhack Vanderbilt 2025
       description: "Add a list of milestones or deliverables that you expect to achieve
         during the event.\nTry to provide goals of varying complexity for contributors
         with different sets of skills"
@@ -180,7 +180,14 @@ body:
   - type: textarea
     attributes:
       label: Image
-      description: Provide an image to used for your project on the Brainhack Vanderbilt website. If you dont have one, we will use a default image.
+      description: Provide a representative image for your project to be featured on our website and social media platforms. If you dont have one, we will use a default image.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Project summary - maximum 160 characters. 
+      description: This concise summary will be featured on our website and social media platforms.
     validations:
       required: true
 
