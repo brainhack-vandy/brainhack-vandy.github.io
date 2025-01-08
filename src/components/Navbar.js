@@ -13,6 +13,8 @@ import {
 } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
 import { CgGitFork } from "react-icons/cg";
+import { RiSpeakLine } from "react-icons/ri";
+
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -72,6 +74,12 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link as={Link} to="/faq" onClick={() => updateExpanded(false)}>
                 <AiOutlineQuestionCircle className="nav-icon" /> FAQ
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link as={Link} to="/speakers" onClick={() => updateExpanded(false)}>
+                <RiSpeakLine className="nav-icon" /> Speakers
               </Nav.Link>
             </Nav.Item>
 
