@@ -1,6 +1,13 @@
 // Instructions: id all keynote speakers as "keynote-[number]" and all panelists as "panelist-[number]"
 const speakerData = [
     {
+        id: "keynote-1",
+        name: "Anastasia Yendiki",
+        bio: "",
+        imgPath: "assets/speakers/anastasia_yendiki.jpg",
+        link: "https://dmri.mgh.harvard.edu/a-y/"
+    },
+    {
         id: "panelist-1",
         name: "Adina Wagner",
         bio: "Dr. Adina Wagner is a Scientific Coordinator and Software Developer at the Psychoinformatics Lab at Jülich Research Centre in Jülich, Germany. Her work focuses on advancing open and reproducible scientific practices in neuroscience through open-source software development. She played a key role in developing DataLad, a free and open-source distributed data management system that enhances data tracking, structure, reproducibility, and collaboration while integrating with widely used data infrastructure. Dr. Wagner earned her PhD in neuroinformatics at the Heinrich Heine University Düsseldorf, Germany, with projects intersecting experimental psychology, MEG, and research data management in high throughput computing.",
@@ -19,7 +26,7 @@ const speakerData = [
         name: "Megan Peters",
         bio: "Dr. Megan Peters is an Associate Professor in Cognitive Sciences at the University of California, Irvine, investigating how the brain processes uncertainty and adapts to noisy, incomplete information. She has transformed computational neuroscience education as Co-founder and President of Neuromatch Academy, which has trained thousands of students globally through its innovative online platform combining interactive tutorials with hands-on collaborative projects. Dr. Peters earned her Ph.D. in computational cognitive neuroscience (psychology) from UCLA, where she also completed her postdoc.",
         imgPath: "assets/speakers/megan_peters.jpg",
-        link: "https://faculty.uci.edu/profile/?facultyId=6594"
+        link: "https://faculty.sites.uci.edu/cnclab/people/"
     },
     {
         id: "panelist-4",
@@ -40,7 +47,7 @@ const speakerData = [
         name: "Katja Heuer",
         bio: "Dr. Katja Heuer is a Postdoctoral Researcher at Institut Pasteur in Paris, France where she studies brain development, specifically brain organization and folding, using neuroimaging and histology. Dr. Heuer has contributed to the open neuroscience community by developing a host of groundbreaking tools to facilitate access to open data and foster global collaboration. Some of these tools include BrainBox and MicroDraw, allowing researchers to analyze and collaborate on publicly available neuroimaging and histology datasets. Previously, Dr. Heuer completed her PhD in Neuroscience at the Max Planck Institute in Germany.",
         imgPath: "assets/speakers/katja_heuer.jpg",
-        link: "https://research.pasteur.fr/en/member/katja-heuer/"
+        link: "https://katjaq.github.io/"
     }
 ];
 
