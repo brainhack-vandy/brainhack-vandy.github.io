@@ -180,14 +180,14 @@ body:
   - type: textarea
     attributes:
       label: Image
-      description: Provide a representative image for your project to be featured on our website and social media platforms. If you dont have one, we will use a default image.
+      description: Provide a representative image for your project to be featured on our website and social media platforms. If you dont have one, we will use a default image. Please upload the image using the button below this text box.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Project summary - maximum 160 characters. 
-      description: This concise summary will be featured on our website and social media platforms.
+      label: Project Summary
+      description: Maximum 160 characters. This concise summary will be featured on our website and social media platforms.
     validations:
       required: true
 
