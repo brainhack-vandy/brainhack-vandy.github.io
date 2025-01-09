@@ -28,7 +28,7 @@ const ProjectPitchInstr = () => {
               <div className="project-pitch-button-container mt-4">
                 <a
                   className="btn project-pitch-submit-button"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScLJXlY4obEaS8U5z4kiayC_9YKHTgxiPAfatZzvCMrW4Q_kQ/viewform"
+                  href="https://github.com/brainhack-vandy/brainhack-vandy.github.io/issues/new?assignees=&labels=project-proposal&projects=&template=project-submission-template.yml&title=Project%3A+"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -126,6 +126,7 @@ function Projects() {
                   imgPath={project.imgPath}
                   ghLink={project.ghLink}
                   demoLink={project.demoLink}
+                  issueLink={project.issueLink}
                 />
               </Col>
             ))}
