@@ -73,6 +73,18 @@
     background-color: rgba(15, 6, 33, 0.9) !important;
 }
 
+.project-details-btn.btn-primary {
+    display: inline-flex !important;       /* forces inline-flex override */
+    align-items: center !important;        /* vertical centering */
+    justify-content: center !important;    /* horizontal centering (if needed) */
+   
+    /* optional tweaks if needed */
+    vertical-align: middle !important;
+    /* line-height: 1; <-- might also help if text is off-center */
+  }
+
+
+
 /* Year Select Styles */
 .year-select-container {
     position: relative !important;
@@ -80,6 +92,7 @@
     /* Higher z-index to appear above particles */
     margin-bottom: 30px;
 }
+
 
 .year-select-container select {
     width: 100px !important;
