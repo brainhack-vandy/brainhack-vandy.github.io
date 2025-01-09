@@ -32,9 +32,9 @@ const teamData = {
                 team: "Operations Team Lead"
             },
             {
-                title: "Shansita Sharma",
+                title: "Shansita D. Sharma",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder1.svg",
+                imgPath: "assets/team/Shansita_DS.svg",
                 team: "Dev Team Lead"
             },
             {
