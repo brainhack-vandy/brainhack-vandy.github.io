@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import { TbBulbFilled } from "react-icons/tb";
 import './projects.css';
 
 function ProjectCards(props) {
@@ -21,8 +21,8 @@ function ProjectCards(props) {
                 <Card.Text style={{ textAlign: "justify" }}>
                     {props.description}
                 </Card.Text>
-                <Button variant="primary" href={props.ghLink} target="_blank">
-                    <BsGithub /> &nbsp;GitHub
+                <Button className="project-details-btn" variant="primary" href={props.issueLink} target="_blank">
+                    <TbBulbFilled /> &nbsp;Project Details
                 </Button>
                 {"\n"}
                 {"\n"}

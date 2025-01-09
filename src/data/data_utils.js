@@ -37,7 +37,7 @@ function processIssues(issues) {
       // Regular expressions
       const linkRegex = /### Link to project repository\/sources([\s\S]*?)###/;
       const imageRegex = /### Image!\[.*?\]\((.*?)\)/;
-      const descriptionRegex = /### Project Description([\s\S]*?)###/;
+      const descriptionRegex = /### Project Summary([\s\S]*?)###/;
 
       const titleRegex = /### Title([\s\S]*?)###/;
   
@@ -70,6 +70,7 @@ function processIssues(issues) {
         description: description,
         ghLink: infoLink,
         imgPath: imageLink,
+        issueLink: `https://github.com/brainhack-vandy/brainhack-vandy.github.io/issues/${issue.number}`,
       };
   
       projects[yearLabel].push(project);
