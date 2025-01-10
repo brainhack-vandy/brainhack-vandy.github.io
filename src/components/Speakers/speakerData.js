@@ -3,7 +3,7 @@ const speakerData = [
     {
         id: "keynote-1",
         name: "Anastasia Yendiki",
-        bio: "",
+        bio: "Dr. Anastasia Yendiki is an Associate Professor at Harvard Medical School and an Associate Investigator at Massachusetts General Hospital in the Martinos Center for Biomedical Imaging. She received her PhD in Electrical Engineering from the University of Michigan Ann Arbor, where she worked on inverse problems in tomographic image reconstruction. She then completed her postdoc in the Martinos Center where she trained in functional and diffusion-weighted MRI. Her current research focuses on computational methods for mapping white-matter axon bundles with the goal of providing a reliable, non-invasive tool for the study of brain connections in patients with neurologic and psychiatric conditions. Dr. Yendiki has served as a leader in organizing multiple BrainHack events in Boston and for the BRAIN initiative, and has championed open access and building sustainable open-source tools throughout her career.",
         imgPath: "assets/speakers/anastasia_yendiki.jpg",
         link: "https://dmri.mgh.harvard.edu/a-y/"
     },
