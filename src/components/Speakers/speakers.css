@@ -1,0 +1,122 @@
+.speaker-category-heading {
+    color: var(--imp-text-color) !important;
+    font-size: 1.8em !important;
+    font-weight: 500 !important;
+    margin-top: 40px !important;
+    margin-bottom: 30px !important;
+    text-align: center !important;
+    padding-bottom: 10px !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.speaker-section-group {
+    margin-bottom: 60px;
+}
+
+.speaker-section {
+    position: relative !important;
+    padding-top: 150px !important;
+    padding-bottom: 30px !important;
+    background-image: var(--section-background-color) !important;
+}
+
+.speaker-row {
+    margin-bottom: 80px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.speaker-row.clickable {
+    cursor: pointer;
+}
+
+.speaker-link {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: block;
+}
+
+.speaker-row:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.speaker-row.clickable:hover::after {
+    content: "View Profile →";
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    color: var(--imp-text-color);
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.speaker-content {
+    align-items: center;
+    padding: 20px;
+}
+
+.speaker-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.speaker-row:hover .speaker-img {
+    transform: scale(1.05);
+}
+
+.speaker-img-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speaker-name {
+    color: var(--imp-text-color);
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.speaker-bio {
+    color: #e6e6e6;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+    .speaker-content {
+        text-align: center !important;
+    }
+
+    .speaker-img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .speaker-info {
+        text-align: center !important;
+    }
+
+    .speaker-name {
+        font-size: 1.8em;
+    }
+
+    .speaker-bio {
+        font-size: 1em;
+    }
+
+    .speaker-row.clickable:hover::after {
+        position: static;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
