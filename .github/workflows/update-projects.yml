@@ -3,6 +3,9 @@ name: Update Issues and Deploy
 on:
   issues:
     types: [opened, edited, deleted, closed, labeled]
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
