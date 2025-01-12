@@ -72,12 +72,6 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/faq" onClick={() => updateExpanded(false)}>
-                <AiOutlineQuestionCircle className="nav-icon" /> FAQ
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
               <Nav.Link as={Link} to="/speakers" onClick={() => updateExpanded(false)}>
                 <RiSpeakLine className="nav-icon" /> Speakers
               </Nav.Link>
@@ -86,6 +80,13 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link as={Link} to="/team" onClick={() => updateExpanded(false)}>
                 <AiOutlineTeam className="nav-icon" /> Team
+              </Nav.Link>
+            </Nav.Item>
+
+
+            <Nav.Item>
+              <Nav.Link as={Link} to="/faq" onClick={() => updateExpanded(false)}>
+                <AiOutlineQuestionCircle className="nav-icon" /> FAQ
               </Nav.Link>
             </Nav.Item>
 
