@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
-import { TbBulbFilled } from "react-icons/tb";
+import { PiCursorClickBold } from "react-icons/tb";
 import './projects.css';
 
 function ProjectCards(props) {
@@ -22,7 +22,7 @@ function ProjectCards(props) {
                     {props.description}
                 </Card.Text>
                 <Button className="project-details-btn" variant="primary" href={props.issueLink} target="_blank">
-                    <TbBulbFilled /> &nbsp;Project Details
+                    <PiCursorClickBold /> &nbsp;Project Details
                 </Button>
                 {"\n"}
                 {"\n"}
