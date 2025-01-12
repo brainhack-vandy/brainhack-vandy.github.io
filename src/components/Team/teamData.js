@@ -62,18 +62,6 @@ const teamData = {
                 team: "Operations"
             },
             {
-                title: "Elyssa McMaster",
-                description: "Graduate Student",
-                imgPath: "assets/team/Elyssa_McMaster.svg",
-                team: "Marketing/Design"
-            },
-            {
-                title: "Tasfiea Tasnum",
-                description: "",
-                imgPath: "assets/team/Tasfiea_Tasnum.svg",
-                team: "Operations"
-            },
-            {
                 title: "Lily Kriegel",
                 description: "Undergraduate Student",
                 imgPath: "assets/team/Lily_Kriegel.svg",
@@ -114,12 +102,6 @@ const teamData = {
                 description: "Undergraduate Student",
                 imgPath: "assets/team/placeholder1.svg",
                 team: "Project"
-            },
-            {
-                title: "Yusung Hwang",
-                description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder2.svg",
-                team: "Operations"
             }
         ]
     }
