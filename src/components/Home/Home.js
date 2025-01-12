@@ -64,7 +64,7 @@ const Home = () => {
       </Container>
 
       <Introduction />
-      <ProjectPitch />
+      {/* <ProjectPitch /> */}
       <SponsorSection />
       <Location />
     </section>
