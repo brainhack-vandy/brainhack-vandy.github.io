@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
-import { PiCursorClickBold } from "react-icons/tb";
+import { PiCursorClickBold } from "react-icons/pi";
 import './projects.css';
 
 function ProjectCards(props) {
