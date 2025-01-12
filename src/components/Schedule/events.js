@@ -74,7 +74,7 @@ export const events = [
         title: 'Open Science X Neuroscience Panel',
         start: '2025-01-25T12:00:00',
         end: '2025-01-25T13:00:00',
-        description: 'Lunch break with keynote speaker',
+        description: 'Moderated panel discussion',
         extendedProps: {
             type: 'keynote'
         }
