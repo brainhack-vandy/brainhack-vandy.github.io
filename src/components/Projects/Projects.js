@@ -114,8 +114,20 @@ function Projects() {
           />
         </div>
 
-        {(projectsData[currentYear].length === 0) ? (
+        {(projectsData[currentYear].length === 0 && currentYear !== '2024') ? (
           <ComingSoon />
+        ) : (projectsData[currentYear].length === 0 && currentYear === '2024') ? (
+          <p className="coming-soon-text">
+            To see the projects pitched in 2024, please visit{' '}
+            <a 
+              href="https://github.com/brainhack-vandy/projects/tree/main/2024"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-700 underline"
+            >
+              brainhack-vandy/projects/2024
+            </a>
+          </p>
         ) : (
           <Row className="project-card-row">
             {projectsData[currentYear].map((project, index) => (
