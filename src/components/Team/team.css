@@ -88,20 +88,29 @@
     transform: scale(1.05) !important;
 }
 
-.github-link {
+.github-link,
+.website-link {
     display: inline-block;
-    margin-left: 10px;
+    margin: 0 10px;
     color: var(--imp-text-color) !important;
     transition: color 0.3s ease !important;
 }
 
-.github-link:hover {
+.github-link:hover,
+.website-link:hover {
     color: #b19cd9 !important;
 }
 
-.github-icon {
-    font-size: 1.2em;
+.github-icon,
+.website-icon {
+    font-size: 1.5em;
     vertical-align: middle;
+}
+
+.team-card-view .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /* Media queries for responsive image sizes */
