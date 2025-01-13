@@ -23,6 +23,7 @@ const TeamSection = ({ title, members, showDivider = false }) => (
             description={member.description}
             imgPath={member.imgPath}
             ghLink={member.ghLink}
+            websiteLink={member.websiteLink}
             team={member.team}
           />
         </Col>
