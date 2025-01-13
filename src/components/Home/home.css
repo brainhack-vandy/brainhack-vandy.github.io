@@ -388,6 +388,56 @@
     }
 }
 
+/* --------- 
+  Hosts Section styles
+  --------- */
+.hosts-section {
+    padding: 4rem 0;
+    background-color: rgba(98, 54, 134, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.host-row {
+    gap: 1.5rem;
+}
+
+.host-text {
+    color: white;
+    font-size: 1.2em;
+    white-space: nowrap;
+}
+
+.host-logo {
+    width: 220px;
+    height: 120px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.host-logo:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 767px) {
+    .host-row {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .host-text {
+        font-size: 1.1em;
+    }
+
+    .host-logo {
+        width: 140px;
+        height: 60px;
+    }
+
+    .text-end {
+        text-align: center !important;
+    }
+}
 
 /* --------- 
   Sponsor Section styles
