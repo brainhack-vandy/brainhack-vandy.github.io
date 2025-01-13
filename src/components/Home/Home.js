@@ -3,8 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Introduction from "./Introduction";
 import Location from "./Location";
-import ProjectPitch from "./ProjectPitch";
+// import ProjectPitch from "./ProjectPitch";
 import Type from "./Type";
+import Hosts from "./Hosts";
 import SponsorSection from "./Sponsors";
 
 const Home = () => {
@@ -64,6 +65,7 @@ const Home = () => {
       </Container>
 
       <Introduction />
+      <Hosts />
       {/* <ProjectPitch /> */}
       <SponsorSection />
       <Location />
