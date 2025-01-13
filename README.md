@@ -54,17 +54,38 @@ npm start
 ## :outbox_tray: Deployment Instructions
 *[For the PR reviewer only]*
 
-Pushing updates to the website from the main branch is a 1-step process:
-1. Push ***source code*** to the main branch:
+To merge changes into the main branch from pull requests from other branch:
+1. ***Pull*** the most recent main branch.
 
-    Run the following commands on the terminal to push updates to the main branch
+    Run the following commands on the terminal to pull remote main to the local main:
     ```
-    git add <files>
-    git commit -m "Commit message"
-    git push -f --set-upstream origin main
+    git checkout main
+    git pull
     ```
 
-Changes pushed to the main branch will result in an automated deployment action that will update the website. 
+2. ***Rebase*** the branch to this most recent version of main
+
+    Run the following commands on the terminal to rebase the branch to the most recent main
+    ```
+    git checkout <branch-name>
+    git fetch origin
+    git rebase origin/main
+    ```
+
+    If there are any merge conflicts rising during the rebase, resolve them locally and push the rebased branch with `git push`.
+
+3. ***Preview*** the website locally:
+
+    On the rebased branch, check everything works as expected by running the website locally:
+    ```
+    npm run start
+    ```
+
+4. ***Merge*** on Github:
+
+    Go to the pull request on the Github website. The merge automatically button should be enabled since the branch has already been rebased to main. Click merge.
+    
+Merging the PR modifies the main branch. Changes pushed to the main branch will result in an automated deployment action that will update the website. 
 
 ---
 Design based on [@soumyajit4419/Porfolio](https://github.com/soumyajit4419/Portfolio) and [BrainHack Western](https://brainhackwestern.github.io/).
