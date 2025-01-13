@@ -12,21 +12,26 @@ function Hosts() {
                             <span className="host-text">Brought to you by</span>
                         </Col>
                         <Col xs="auto">
-                            <img
-                                src="/assets/neurdy_logo_color.png"
-                                alt="NEURDY Lab Logo"
-                                className="host-logo"
-                            />
+                            <a href="https://www.cchanglab.net/" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="/assets/neurdy_logo_color.png"
+                                    alt="NEURDY Lab Logo"
+                                    className="host-logo"
+                                />
+                            </a>
                         </Col>
                         <Col className="text-end">
                             <span className="host-text">co-hosted with</span>
                         </Col>
                         <Col xs="auto">
-                            <img
-                                src="/assets/vandyhacks_logo.png"
-                                alt="VandyHacks Logo"
-                                className="host-logo"
-                            />
+                            <a href="https://xy.vandyhacks.org/" target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src="/assets/vandyhacks_logo.png"
+                                    alt="VandyHacks Logo"
+                                    className="host-logo"
+                                />
+                            </a>
+
                         </Col>
                     </Row>
                 </div>
