@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import './home.css'
 
 function Sponsors() {
     const sponsors = [
@@ -8,6 +7,7 @@ function Sponsors() {
             href: 'https://www.vanderbilt.edu/valiant/',
             imgSrc: 'assets/sponsors/valiant.png',
             alt: 'Vanderbilt Lab for Immersive AI Translation',
+            special: true
         },
         {
             href: 'https://engineering.vanderbilt.edu/cs',
@@ -23,6 +23,7 @@ function Sponsors() {
             href: 'https://engineering.vanderbilt.edu/ece',
             imgSrc: 'assets/sponsors/ece.png',
             alt: 'Electrical and Computer Engineering',
+            special: true
         },
         {
             href: 'https://medschool.vanderbilt.edu/brain-institute',
@@ -68,9 +69,16 @@ function Sponsors() {
                     <h2 className="page-heading">
                         2025 <span className="purple">Sponsors</span>
                     </h2>
+                    <p className="text-white text-center mb-8">
+                        We gratefully acknowledge the generous support of our sponsors. A special thanks go to the partnership of VALIANT and ECE.
+                    </p>
                     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
                         {sponsors.map((sponsor, index) => (
-                            <Col key={index} lg={3} className="sponsor-icons">
+                            <Col
+                                key={index}
+                                lg={3}
+                                className={`sponsor-icons ${sponsor.special ? 'sponsor-special' : ''}`}
+                            >
                                 <a href={sponsor.href} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsor.imgSrc} alt={sponsor.alt} className="sponsor-image" />
                                 </a>
