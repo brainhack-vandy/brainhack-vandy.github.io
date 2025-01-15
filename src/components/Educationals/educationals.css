@@ -1,0 +1,42 @@
+.project-heading {
+    color: white !important; /* Default text color for heading */
+    font-size: 2.3em !important;
+    font-weight: 500 !important;
+    padding-top: 10px !important;
+  }
+  
+ 
+  
+.project-card-view {
+    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+    color: white !important;
+    background-color: transparent !important;
+    opacity: 0.9 !important;
+    transition: all 0.5s ease 0s !important;
+    height: 100% !important;
+    padding: 20px !important; /* Add padding for spacing */
+  }
+  
+  .project-card-view iframe {
+    width: 100% !important; /* Ensure iframe spans full card width */
+    height: 180px !important; /* Adjust height for better ratio */
+    border-radius: 10px !important; /* Match card styling */
+    margin-bottom: 15px !important; /* Space below iframe */
+  }
+  
+  .project-card-view h5 {
+    margin-top: 15px !important; /* Space between iframe and title */
+    text-align: center !important;
+    font-size: 1.2rem !important;
+  }
+  
+  .project-card-view p {
+    font-size: 0.9rem !important;
+    margin-bottom: 15px !important; /* Space below description */
+    text-align: justify !important;
+  }
+  
+  .project-card-view .btn {
+    margin: 5px !important; /* Add spacing between buttons */
+  }
+  
