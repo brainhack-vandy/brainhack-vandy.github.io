@@ -131,7 +131,7 @@ export const events = [
         id: 'sun-1',
         title: 'Breakfast',
         start: '2025-01-26T09:00:00',
-        end: '2025-01-2609:30:00',
+        end: '2025-01-26T09:30:00',
         description: 'Morning brunch',
         extendedProps: {
             type: 'events'
