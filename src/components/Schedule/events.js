@@ -12,7 +12,7 @@ export const events = [
     },
     {
         id: 'fri-2',
-        title: 'Opening Ceremony + Keynote',
+        title: 'Opening Ceremony + Keynote: Anastasia Yendiki, PhD',
         start: '2025-01-24T17:00:00',
         end: '2025-01-24T18:00:00',
         description: 'Opening ceremony and keynote presentation',
@@ -35,7 +35,7 @@ export const events = [
         id: 'sat-1',
         title: 'Registration + Breakfast',
         start: '2025-01-25T09:00:00',
-        end: '2025-01-25T09:30:00',
+        end: '2025-01-25T10:00:00',
         description: 'Morning registration and breakfast',
         extendedProps: {
             type: 'events'
@@ -43,26 +43,17 @@ export const events = [
     },
     {
         id: 'sat-2',
-        title: 'Hacking Commences',
-        start: '2025-01-25T09:30:00',
-        end: '2025-01-25T10:00:00',
+        title: 'Project Shopping Period',
+        start: '2025-01-25T10:00:00',
+        end: '2025-01-25T11:00:00',
         description: 'Official start of hacking period',
         extendedProps: {
             type: 'hacking'
         }
     },
     {
-        id: 'sat-3',
-        title: 'Workshop #1',
-        start: '2025-01-25T10:00:00',
-        end: '2025-01-25T10:30:00',
-        extendedProps: {
-            type: 'educational'
-        }
-    },
-    {
         id: 'sat-4',
-        title: 'Workshop #2',
+        title: 'Workshop: Exploratory Data Analysis',
         start: '2025-01-25T11:00:00',
         end: '2025-01-25T11:30:00',
         extendedProps: {
@@ -73,7 +64,7 @@ export const events = [
         id: 'sat-5',
         title: 'Open Science X Neuroscience Panel',
         start: '2025-01-25T12:00:00',
-        end: '2025-01-25T13:00:00',
+        end: '2025-01-25T13:15:00',
         description: 'Moderated panel discussion',
         extendedProps: {
             type: 'keynote'
@@ -81,8 +72,8 @@ export const events = [
     },
     {
         id: 'sat-6',
-        title: 'On-Demand Educational',
-        start: '2025-01-25T13:00:00',
+        title: 'On-Demand Educationals + Lunch',
+        start: '2025-01-25T13:15:00',
         end: '2025-01-25T14:00:00',
         description: 'Educational sessions available on demand',
         extendedProps: {
@@ -91,7 +82,7 @@ export const events = [
     },
     {
         id: 'sat-7',
-        title: 'Workshop #3',
+        title: 'Workshop: NiiVue Visualization',
         start: '2025-01-25T14:00:00',
         end: '2025-01-25T14:30:00',
         extendedProps: {
@@ -109,7 +100,7 @@ export const events = [
     },
     {
         id: 'sat-9',
-        title: 'Workshop #4',
+        title: 'Workshop: Getting Started with the Latest ML',
         start: '2025-01-25T15:00:00',
         end: '2025-01-25T15:30:00',
         extendedProps: {
@@ -126,16 +117,6 @@ export const events = [
         }
     },
     {
-        id: 'sat-11',
-        title: 'Hacking Continued',
-        start: '2025-01-25T16:00:00',
-        end: '2025-01-25T18:00:00',
-        description: 'Hacking period',
-        extendedProps: {
-            type: 'hacking'
-        }
-    },
-    {
         id: 'sat-12',
         title: 'Social',
         start: '2025-01-25T18:00:00',
@@ -148,9 +129,9 @@ export const events = [
     // Sunday Events
     {
         id: 'sun-1',
-        title: 'Brunch',
+        title: 'Breakfast',
         start: '2025-01-26T09:00:00',
-        end: '2025-01-2610:00:00',
+        end: '2025-01-2609:30:00',
         description: 'Morning brunch',
         extendedProps: {
             type: 'events'
@@ -159,7 +140,7 @@ export const events = [
     {
         id: 'sun-2',
         title: 'Hacking Continued',
-        start: '2025-01-26T10:00:00',
+        start: '2025-01-26T09:30:00',
         end: '2025-01-26T12:30:00',
         description: 'Hacking period',
         extendedProps: {
