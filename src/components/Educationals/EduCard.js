@@ -1,41 +1,80 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
-import './educationals.css';
 
-function EduCard(props) {
-  return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
+const EduCard = ({
+  videoUrl,
+  title,
+  description,
+  githubUrl,
+  isResource = false,
+  imageUrl,
+  visitUrl
+}) => {
+  const renderMedia = () => {
+    if (isResource && imageUrl) {
+      return (
+        <div className="thumbnail-wrapper">
+          <a href={visitUrl} target="_blank" rel="noopener noreferrer">
+            <img
+              src={imageUrl}
+              alt={title}
+              className="thumbnail rounded"
+            />
+          </a>
+        </div>
+      );
+    }
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+    return (
+      <div className="ratio ratio-16x9">
+        <iframe
+          src={videoUrl}
+          title={title}
+          allowFullScreen
+          className="rounded"
+        ></iframe>
+      </div>
+    );
+  };
 
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
+  const renderButtons = () => {
+    if (isResource) {
+      return (
+        <a
+          href={visitUrl}
+          className="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit
+        </a>
+      );
+    }
+
+    return (
+      <>
+        {githubUrl && (
+          <a href={githubUrl} className="btn btn-primary">
+            <BsGithub /> &nbsp; GitHub
+          </a>
         )}
-      </Card.Body>
-    </Card>
+        {videoUrl && (
+          <a href={videoUrl} className="btn btn-primary">
+            Video
+          </a>
+        )}
+      </>
+    );
+  };
+
+  return (
+    <div className="project-card-view">
+      {renderMedia()}
+      <h5>{title}</h5>
+      <p>{description}</p>
+      {renderButtons()}
+    </div>
   );
-}
-export default EduCard
+};
+
+export default EduCard;

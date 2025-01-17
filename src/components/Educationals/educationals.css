@@ -1,42 +1,175 @@
+/* Section Layout Styles */
+.project-section {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  background-image: var(--section-background-color);
+}
+
+.project-row {
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+/* Heading Styles */
 .project-heading {
-    color: white !important; /* Default text color for heading */
-    font-size: 2.3em !important;
-    font-weight: 500 !important;
-    padding-top: 10px !important;
-  }
-  
- 
-  
+  color: white;
+  font-size: 2.3em;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.project-description {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Card Styles */
+.project-card {
+  margin-bottom: 30px;
+}
+
 .project-card-view {
-    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
-    color: white !important;
-    background-color: transparent !important;
-    opacity: 0.9 !important;
-    transition: all 0.5s ease 0s !important;
-    height: 100% !important;
-    padding: 20px !important; /* Add padding for spacing */
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+  color: white;
+  background-color: transparent;
+  opacity: 0.9;
+  transition: all 0.5s ease 0s;
+  height: 100%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.project-card-view:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px 4px rgba(119, 53, 136, 0.6);
+}
+
+/* Media Content Styles */
+.ratio-16x9 {
+  margin-bottom: 15px;
+}
+
+.ratio-16x9 iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.thumbnail-wrapper {
+  margin-bottom: 15px;
+}
+
+.thumbnail-wrapper img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.thumbnail-wrapper img:hover {
+  transform: scale(1.02);
+}
+
+/* Card Content Styles */
+.project-card-view h5 {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  text-align: center;
+  line-height: 1.4;
+  min-height: 2.8em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-card-view p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Button Styles */
+.project-card-view .btn {
+  margin: 5px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.project-card-view .btn:hover {
+  transform: translateY(-2px);
+}
+
+.project-card-view .btn-primary {
+  background-color: var(--imp-text-color);
+  border-color: var(--imp-text-color);
+}
+
+.project-card-view .btn-primary:hover {
+  background-color: #a94cce;
+  border-color: #a94cce;
+}
+
+/* Section Spacing */
+.community-section {
+  margin-top: 60px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .project-heading {
+    font-size: 2em;
   }
-  
-  .project-card-view iframe {
-    width: 100% !important; /* Ensure iframe spans full card width */
-    height: 180px !important; /* Adjust height for better ratio */
-    border-radius: 10px !important; /* Match card styling */
-    margin-bottom: 15px !important; /* Space below iframe */
+
+  .project-card-view {
+    padding: 15px;
   }
-  
+
   .project-card-view h5 {
-    margin-top: 15px !important; /* Space between iframe and title */
-    text-align: center !important;
-    font-size: 1.2rem !important;
+    font-size: 1.1rem;
+    min-height: auto;
   }
-  
-  .project-card-view p {
-    font-size: 0.9rem !important;
-    margin-bottom: 15px !important; /* Space below description */
-    text-align: justify !important;
-  }
-  
+
   .project-card-view .btn {
-    margin: 5px !important; /* Add spacing between buttons */
+    width: 100%;
+    margin: 5px 0;
   }
-  
+}
+
+@media (max-width: 576px) {
+  .project-section {
+    padding-top: 100px;
+  }
+
+  .project-heading {
+    font-size: 1.8em;
+  }
+}
+
+/* FAQ Section Styles */
+.faq-section {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.faq-content {
+  padding: 20px 0;
+}
+
+.faq-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
