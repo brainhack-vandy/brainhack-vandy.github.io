@@ -2,24 +2,20 @@ export const videoData = [
     {
         videoUrl: "https://www.youtube.com/embed/4km4-szETJA?list=PLYyjtw9w4UUAik7EvdeHKDDmVyBNOxh5s",
         title: "Introduction to Animal Connectome and Brain-Wide Activity Data | Mikail Rubinov @ BHVU 2024",
-        description: "Discussion on Introduction to Animal Connectome and Brain-Wide Activity Data | Mikail Rubinov @ BHVU 2024",
         githubUrl: "https://github.com/brainhack-vandy/introduction-to-animal-connectome-and-brain-wide-activity-data"
     },
     {
         videoUrl: "https://www.youtube.com/embed/lwxtkvPb4UA?list=PLYyjtw9w4UUAik7EvdeHKDDmVyBNOxh5s",
         title: "Practical Introduction to Structural and Diffusion MRI | Adam Anderson @ BHVU 2024",
-        description: "Discussion on Practical Introduction to Structural and Diffusion MRI | Adam Anderson @ BHVU 2024",
         githubUrl: "https://github.com/brainhack-vandy/practical-introduction-to-structural-and-diffusion-MRI"
     },
     {
         videoUrl: "https://www.youtube.com/embed/ojnV7mWlQD8?list=PLYyjtw9w4UUAik7EvdeHKDDmVyBNOxh5s",
         title: "Open Science Best Practices | Remi Gau @ BHVU 2024",
-        description: "Discussion on Open Science Best Practices | Remi Gau @ BHVU 2024",
     },
     {
         videoUrl: "https://www.youtube.com/embed/pONB6xAO9v0?list=PLYyjtw9w4UUAik7EvdeHKDDmVyBNOxh5s",
         title: "To build a home: 12 years of brainhack | Pierre Bellec @ BHVU 2024",
-        description: "Discussion on To build a home: 12 years of brainhack | Pierre Bellec @ BHVU 2024",
     }
 ];
 
