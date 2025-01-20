@@ -56,7 +56,7 @@ function Educationals() {
 
       {/* Labs Section */}
       <CardSection
-        title="Labs"
+        title="Lab Spotlight"
         subtitle="Explore these additional resources to learn more about neuroscience and open education."
         data={labData}
         isResource={true}
