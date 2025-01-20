@@ -1,5 +1,7 @@
 import React from "react";
 import { BsGithub } from "react-icons/bs";
+import { PiCursorClickBold } from "react-icons/pi";
+
 
 const EduCard = ({
   videoUrl,
@@ -46,7 +48,7 @@ const EduCard = ({
           target="_blank"
           rel="noopener noreferrer"
         >
-          Visit
+          <PiCursorClickBold /> &nbsp; Visit
         </a>
       );
     }
