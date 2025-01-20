@@ -36,7 +36,7 @@ function processIssues(issues) {
   
       // Regular expressions
       const linkRegex = /### Link to project repository\/sources([\s\S]*?)###/;
-      const imageRegex = /### Image!\[.*?\]\((.*?)\)/;
+      const imageRegex = /### Image\s*!\[.*?\]\((.*?)\)/;
       const iamgeHTMLRegex = /<img[^>]*src="(.*?)"/;
 
       const descriptionRegex = /### Project Summary([\s\S]*?)###/;
