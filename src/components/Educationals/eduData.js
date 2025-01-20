@@ -39,13 +39,13 @@ export const eventData = [
     {
         imageUrl: "/assets/educationals/reprohack.org.jpeg",
         title: "ReproHack Hub",
-        description: "A ReproHack is a collaborative event where participants attempt to reproduce published research from a curated list of papers with publicly available code and data. In a supportive environment, they evaluate key aspects such as reproducibility, transparency, and reusability, documenting their experiences.",
+        description: "A ReproHack is a collaborative event where participants attempt to reproduce published research from a curated list of papers with publicly available code and data. ",
         visitUrl: "https://www.reprohack.org/"
     },
     {
         imageUrl: "/assets/educationals/brainhack.org.jpeg",
         title: "BrainHack",
-        description: "Advancing neuroscience requires large datasets and complex analyses. Brainhack bridges data science and neuroscience communities to drive brain research forward. This unique global conference unites researchers from diverse disciplines to collaborate on innovative neuroscience projects.",
+        description: "Advancing neuroscience requires large datasets and complex analyses. Brainhack bridges data science and neuroscience communities to drive brain research forward.",
         visitUrl: "https://brainhack.org/"
     }
 ];
