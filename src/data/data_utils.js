@@ -36,15 +36,22 @@ function processIssues(issues) {
   
       // Regular expressions
       const linkRegex = /### Link to project repository\/sources([\s\S]*?)###/;
-      const imageRegex = /### Image!\[.*?\]\((.*?)\)/;
+      const imageRegex = /### Image\s*!\[.*?\]\((.*?)\)/;
+      const iamgeHTMLRegex = /<img[^>]*src="(.*?)"/;
+
       const descriptionRegex = /### Project Summary([\s\S]*?)###/;
 
       const titleRegex = /### Title([\s\S]*?)###/;
   
       // Extract image link
       const imageMatch = imageRegex.exec(body);
+      const imageHTMLMatch = iamgeHTMLRegex.exec(body);
+
       if (imageMatch) {
         imageLink = imageMatch[1].trim(); // The URL is in the second capturing 
+      }
+      else if (imageHTMLMatch) {
+        imageLink = imageHTMLMatch[1].trim();
       }
   
       // Extract info link
