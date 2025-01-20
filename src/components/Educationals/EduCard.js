@@ -1,5 +1,6 @@
 import React from "react";
 import { BsGithub } from "react-icons/bs";
+import { GoVideo } from "react-icons/go";
 
 const EduCard = ({
   videoUrl,
@@ -56,11 +57,6 @@ const EduCard = ({
         {githubUrl && (
           <a href={githubUrl} className="btn btn-primary">
             <BsGithub /> &nbsp; GitHub
-          </a>
-        )}
-        {videoUrl && (
-          <a href={videoUrl} className="btn btn-primary">
-            Video
           </a>
         )}
       </>
