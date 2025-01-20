@@ -1,6 +1,5 @@
 import React from "react";
 import { BsGithub } from "react-icons/bs";
-import { GoVideo } from "react-icons/go";
 
 const EduCard = ({
   videoUrl,
