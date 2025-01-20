@@ -70,17 +70,17 @@ const FAQ = () => {
     {
       question: "Installation and Setup",
       answer: [
-        "[Set up a brainhack friendly computing environment](https://school-brainhack.github.io/modules/installation/).",
-        "[An introduction to the terminal (Bash)](https://school-brainhack.github.io/modules/introduction_to_terminal/).",
+        "[Set up a brainhack friendly computing environment](https://school-brainhack.github.io/modules/installation/)",
+        "[An introduction to the terminal (Bash)](https://school-brainhack.github.io/modules/introduction_to_terminal/)",
       ],
       icons: [<AiOutlineLaptop />, <AiOutlineCode />],
     },
     {
       question: "Version Control Systems",
       answer: [
-        "[Using Git and Github](https://school-brainhack.github.io/modules/git_github/).",
-        "[Docker](https://school-brainhack.github.io/modules/containers/).",
-        "[Standards for Project Management and Organization](https://school-brainhack.github.io/modules/project_management/)."
+        "[Using Git and Github](https://school-brainhack.github.io/modules/git_github/)",
+        "[Docker](https://school-brainhack.github.io/modules/containers/)",
+        "[Standards for Project Management and Organization](https://school-brainhack.github.io/modules/project_management/)"
       ],
       icons: [<AiOutlineGithub />, <AiOutlineCode />, <AiOutlineProject />],
     },
@@ -88,50 +88,50 @@ const FAQ = () => {
     {
       question: "Introduction to Python for Data Analysis",
       answer: [
-        "[Writing Scripts in Python](https://school-brainhack.github.io/modules/python_scripts/).",
-        "[Python for Data Analysis](https://school-brainhack.github.io/modules/python_data_analysis/).",
-        "[Data visualization in Python](https://school-brainhack.github.io/modules/python_visualization/).",
+        "[Writing Scripts in Python](https://school-brainhack.github.io/modules/python_scripts/)",
+        "[Python for Data Analysis](https://school-brainhack.github.io/modules/python_data_analysis/)",
+        "[Data visualization in Python](https://school-brainhack.github.io/modules/python_visualization/)",
       ],
       icons: [<AiOutlineCode />, <AiOutlineDatabase />, <AiOutlineApi />],
     },
     {
       question: "Data",
       answer: [
-        "[Open Data](https://school-brainhack.github.io/modules/open_data/).",
-        "[Neuroimaging Data and File Structures in Python](https://school-brainhack.github.io/modules/nibabel/).",
-        "[Research Data Management with Datalad](https://school-brainhack.github.io/modules/datalad/).",
-        "[Brain Imaging Data Structures](https://school-brainhack.github.io/modules/bids/).",
+        "[Open Data](https://school-brainhack.github.io/modules/open_data/)",
+        "[Neuroimaging Data and File Structures in Python](https://school-brainhack.github.io/modules/nibabel/)",
+        "[Research Data Management with Datalad](https://school-brainhack.github.io/modules/datalad/)",
+        "[Brain Imaging Data Structures](https://school-brainhack.github.io/modules/bids/)",
       ],
       icons: [<AiOutlineDatabase />, <AiOutlineCluster />, <AiOutlineProject />, <AiOutlineCluster />],
     },
     {
       question: "Neuroimaging Basics and Key Concepts",
       answer: [
-        "[fMRI parcellation](https://school-brainhack.github.io/modules/fmri_parcellation/).",
-        "[fMRI connectivity](https://school-brainhack.github.io/modules/fmri_connectivity/).",
+        "[fMRI parcellation](https://school-brainhack.github.io/modules/fmri_parcellation/)",
+        "[fMRI connectivity](https://school-brainhack.github.io/modules/fmri_connectivity/)",
       ],
       icons: [<AiOutlineCluster />, <AiOutlineApi />],
     },
     {
       question: "Machine Learning for Neuroimaging",
       answer: [
-        "[Machine Learning Basics](https://school-brainhack.github.io/modules/machine_learning_basics/).",
-        "[Machine Learning Applications](https://school-brainhack.github.io/modules/machine_learning_neuroimaging/).",
+        "[Machine Learning Basics](https://school-brainhack.github.io/modules/machine_learning_basics/)",
+        "[Machine Learning Applications](https://school-brainhack.github.io/modules/machine_learning_neuroimaging/)",
       ],
       icons: [<AiOutlineRobot />, <AiOutlineRobot />],
     },
     {
       question: "Deep Learning for Neuroimaging",
       answer: [
-        "[Deep Learning Basics](https://school-brainhack.github.io/modules/deep_learning_intro/).",
-        "[Deep Learning Applications](https://school-brainhack.github.io/modules/dl_for_neuroimaging/).",
+        "[Deep Learning Basics](https://school-brainhack.github.io/modules/deep_learning_intro/)",
+        "[Deep Learning Applications](https://school-brainhack.github.io/modules/dl_for_neuroimaging/)",
       ],
       icons: [<AiOutlineRobot />, <AiOutlineApi />],
     },
     {
       question: "Advanced Programming",
       answer: [
-        "[Software Testing and Continuous Integration](https://school-brainhack.github.io/modules/testing/).",
+        "[Software Testing and Continuous Integration](https://school-brainhack.github.io/modules/testing/)",
       ],
       icons: [<AiOutlineBug />],
     },
