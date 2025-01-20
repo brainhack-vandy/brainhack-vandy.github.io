@@ -53,8 +53,8 @@ export const eventData = [
 export const labData = [
     {
         imageUrl: "/assets/educationals/neurodatascience.github.io.png",
-        title: "ORIGAMI Lab",
-        description: "ORIGAMI lab develops methods and tools to best analyse neuroimaging and genetics data, and strive to produce and foster more reproducible and replicable science.",
+        title: "ORIGAMI (NeuroDataScience) Lab",
+        description: "A group at the Montreal Neurological Institute, the ORIGAMI lab, develops methods and tools to best analyse neuroimaging and genetics data, and strive to produce and foster more reproducible and replicable science.",
         visitUrl: "https://neurodatascience.github.io/research.html"
     }
 ];
