@@ -22,15 +22,15 @@ export const videoData = [
 
 export const resourceData = [
     {
-        imageUrl: "/assets/educationals/neuromatch-thumbnail.png",
+        imageUrl: "/assets/educationals/neuromatch.io.png",
         title: "Neuromatch Open Education Resources",
         description: "Neuromatch Academy offers a range of educational programs, primarily focused on computational neuroscience, artificial intelligence (AI), and climate science, designed to be accessible and inclusive globally.",
         visitUrl: "https://neuromatch.io/open-education-resources/"
     },
     {
-        imageUrl: "/assets/educationals/book.the-turing-way.org.jpeg",
+        imageUrl: "/assets/educationals/the-turing-way.org.jpg",
         title: "The Turing Way",
-        description: "The Turing Way is an open, community-driven project promoting accessible, effective, and reproducible data science. It supports diverse contributors and provides resources for researchers, data scientists, engineers, and policymakers to ensure their projects are reproducible and reusable across sectors.",
+        description: "A handbook for reproducible, ethical and collaborative data science. This community-driven project aims to provide comprehensive guidance to help researchers, data scientists, engineers, and policymakers across sectors create reproducible and reusable projects.",
         visitUrl: "https://book.the-turing-way.org/"
     }
 ];
