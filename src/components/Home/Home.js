@@ -46,7 +46,7 @@ const Home = () => {
                     rel="noopener noreferrer"
                   >
                     <button className="btn btn-primary application-button">
-                      Apply Here
+                      Register Now!
                     </button>
                   </a>
                 </div>
