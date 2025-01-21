@@ -12,10 +12,12 @@ export const videoData = [
     {
         videoUrl: "https://www.youtube.com/embed/ojnV7mWlQD8?list=PLYyjtw9w4UUAik7EvdeHKDDmVyBNOxh5s",
         title: "Open Science Best Practices | Remi Gau @ BHVU 2024",
+        personalUrl: "https://remi-gau.github.io/"
     },
     {
         videoUrl: "https://www.youtube.com/embed/pONB6xAO9v0?list=PLYyjtw9w4UUAik7EvdeHKDDmVyBNOxh5s",
         title: "To build a home: 12 years of brainhack | Pierre Bellec @ BHVU 2024",
+        personalUrl: "https://www.linkedin.com/in/pierre-lune-bellec-6831b9b/"
     }
 ];
 

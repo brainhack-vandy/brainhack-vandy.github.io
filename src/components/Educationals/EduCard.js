@@ -1,6 +1,8 @@
 import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { PiCursorClickBold } from "react-icons/pi";
+import { BsPersonBadge } from "react-icons/bs";
+
 
 
 const EduCard = ({
@@ -8,6 +10,7 @@ const EduCard = ({
   title,
   description,
   githubUrl,
+  personalUrl,
   isResource = false,
   imageUrl,
   visitUrl
@@ -58,6 +61,11 @@ const EduCard = ({
         {githubUrl && (
           <a href={githubUrl} className="btn btn-primary">
             <BsGithub /> &nbsp; GitHub
+          </a>
+        )},
+        {personalUrl && (
+          <a href={personalUrl} className="btn btn-primary">
+            <BsPersonBadge /> &nbsp; Speaker
           </a>
         )}
       </>
