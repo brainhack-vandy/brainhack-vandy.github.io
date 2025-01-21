@@ -49,7 +49,7 @@ function Educationals() {
       {/* Events Section */}
       <CardSection
         title="Community Events"
-        subtitle="Explore these additional resources to learn more about neuroscience and open education."
+        subtitle="Join collaborative events spanning multiple scientific domains, from  building reproducibility practices across sciences, to advancing neuroscience through data science."
         data={eventData}
         isResource={true}
       />
@@ -57,7 +57,7 @@ function Educationals() {
       {/* Labs Section */}
       <CardSection
         title="Lab Spotlight"
-        subtitle="Explore these additional resources to learn more about neuroscience and open education."
+        subtitle="Discover research groups dedicated to open science through accessible resources, and reproducible practices."
         data={labData}
         isResource={true}
       />
