@@ -32,7 +32,7 @@ function Educationals() {
       {/* Videos Section */}
       <CardSection
         title="BrainHack Vanderbilt"
-        subtitle="Resources and past workshops"
+        subtitle="Past BrainHack Vanderbilt workshops and talks."
         data={videoData}
       />
 
