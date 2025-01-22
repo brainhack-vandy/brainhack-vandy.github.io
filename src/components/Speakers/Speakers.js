@@ -6,21 +6,24 @@ import './speakers.css';
 
 const SpeakerRow = ({ speaker, isEven }) => {
     const Content = (
-        <Row className={`speaker-content ${isEven ? 'flex-row-reverse' : ''}`}>
-            <Col md={4} className="speaker-img-col">
-                <img
-                    src={speaker.imgPath}
-                    alt={speaker.name}
-                    className="speaker-img"
-                />
-            </Col>
-            <Col md={8} className="speaker-info-col">
-                <div className={`speaker-info ${isEven ? 'text-end' : 'text-start'}`}>
-                    <h2 className="speaker-name">{speaker.name}</h2>
-                    <p className="speaker-bio">{speaker.bio}</p>
-                </div>
-            </Col>
-        </Row>
+        <>
+            <Row className={`speaker-content ${isEven ? 'flex-row-reverse' : ''}`}>
+                <Col md={4} className="speaker-img-col">
+                    <img
+                        src={speaker.imgPath}
+                        alt={speaker.name}
+                        className="speaker-img"
+                    />
+                </Col>
+                <Col md={8} className="speaker-info-col">
+                    <div className={`speaker-info ${isEven ? 'text-end' : 'text-start'}`}>
+                        <h2 className="speaker-name">{speaker.name}</h2>
+                        <p className="speaker-bio">{speaker.bio}</p>
+                    </div>
+                </Col>
+            </Row>
+            {speaker.link && <div className="view-profile-text">View Profile →</div>}
+        </>
     );
 
     if (speaker.link) {

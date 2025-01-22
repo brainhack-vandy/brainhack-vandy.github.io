@@ -26,6 +26,7 @@
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .speaker-row.clickable {
@@ -36,6 +37,7 @@
     text-decoration: none !important;
     color: inherit !important;
     display: block;
+    position: relative;
 }
 
 .speaker-row:hover {
@@ -44,14 +46,18 @@
     background-color: rgba(255, 255, 255, 0.08);
 }
 
-.speaker-row.clickable:hover::after {
-    content: "View Profile →";
-    position: absolute;
-    bottom: 20px;
-    right: 40px;
+.view-profile-text {
+    display: none;
     color: var(--imp-text-color);
     font-size: 0.9em;
     opacity: 0.8;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+.speaker-row.clickable:hover .view-profile-text {
+    display: block;
 }
 
 .speaker-content {
@@ -113,7 +119,7 @@
         font-size: 1em;
     }
 
-    .speaker-row.clickable:hover::after {
+    .view-profile-text {
         position: static;
         display: block;
         text-align: center;
