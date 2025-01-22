@@ -62,7 +62,7 @@ const EduCard = ({
           <a href={githubUrl} className="btn btn-primary">
             <BsGithub /> &nbsp; GitHub
           </a>
-        )},
+        )}
         {personalUrl && (
           <a href={personalUrl} className="btn btn-primary">
             <BsPersonBadge /> &nbsp; Speaker
