@@ -11,6 +11,7 @@ import {
   AiOutlineTeam,
   AiFillStar
 } from "react-icons/ai";
+import { PiChalkboardTeacherLight } from "react-icons/pi";
 import Button from "react-bootstrap/Button";
 import { CgGitFork } from "react-icons/cg";
 import { RiSpeakLine } from "react-icons/ri";
@@ -74,6 +75,12 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link as={Link} to="/speakers" onClick={() => updateExpanded(false)}>
                 <RiSpeakLine className="nav-icon" /> Speakers
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link as={Link} to="/educationals" onClick={() => updateExpanded(false)}>
+                <PiChalkboardTeacherLight className="nav-icon" /> Educationals
               </Nav.Link>
             </Nav.Item>
 

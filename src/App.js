@@ -8,6 +8,7 @@ import Speakers from "./components/Speakers/Speakers";
 import Footer from "./components/Footer";
 import Teams from './components/Team/Team';
 import Schedule from "./components/Schedule/Schedule";
+import Educationals from "./components/Educationals/Educationals";
 import {
   HashRouter as Router,
   Route,
@@ -49,6 +50,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/educationals" element={<Educationals />} />
           <Route path="/team" element={<Teams />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/speakers" element={<Speakers />} />

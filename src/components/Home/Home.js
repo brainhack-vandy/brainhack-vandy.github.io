@@ -7,6 +7,8 @@ import Location from "./Location";
 import Type from "./Type";
 import Hosts from "./Hosts";
 import SponsorSection from "./Sponsors";
+import { PiCursorClickBold } from "react-icons/pi";
+
 
 const Home = () => {
   return (
@@ -46,7 +48,7 @@ const Home = () => {
                     rel="noopener noreferrer"
                   >
                     <button className="btn btn-primary application-button">
-                      Apply Here
+                      Register Now &nbsp; <PiCursorClickBold />
                     </button>
                   </a>
                 </div>
