@@ -104,7 +104,7 @@ const ScheduleCalendar = () => {
   return (
     <Container fluid className="schedule-section">
       <Container>
-        <h1 className="page-heading">Tentative <strong className="purple">Event Schedule</strong></h1>
+        <h1 className="page-heading">Event <strong className="purple">Schedule</strong></h1>
 
         {isMobile && (
           <div className="date-selector">
