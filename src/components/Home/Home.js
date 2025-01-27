@@ -41,9 +41,9 @@ const Home = () => {
                   January 24-26, 2025
                 </p>
 
-                <div className="button-wrapper">
+                {/* <div className="button-wrapper">
                   <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSeX6AfQ0noO5hzIEO-SgBIcfsHfCuQyyEgLGxrP3N5UCg8w0w/viewform"
+                    href="<insert_registration_form>"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -51,7 +51,10 @@ const Home = () => {
                       Register Now &nbsp; <PiCursorClickBold />
                     </button>
                   </a>
-                </div>
+                </div> */}
+                <button className="btn btn-primary application-button">
+                    Registration Now Closed
+                </button>
               </div>
             </Col>
 
