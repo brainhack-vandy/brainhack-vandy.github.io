@@ -1,26 +1,26 @@
 export const videoData = [
     {
-        videoUrl: "https://youtu.be/Mh_zPJueUkA",
+        videoUrl: "https://www.youtube.com/embed/Mh_zPJueUkA?si=6FOltsGovbihf153",
         title: "Exploratory Data Analysis | J. Andres Gannon @ BrainHack Vanderbilt 2025",
         githubUrl: "https://github.com/brainhack-vandy/brainhack-eda"
     },
     {
-        videoUrl: "https://youtu.be/sa59OLr6FMc",
+        videoUrl: "https://www.youtube.com/embed/sa59OLr6FMc?si=FfiwSj4PMRiAPv6w",
         title: "NiiVue Visualization | Chris Rorden @ BrainHack Vanderbilt 2025",
         githubUrl: "https://github.com/brainhack-vandy/traintrack/tree/main/NiiVue"
     },
     {
-        videoUrl: "https://youtu.be/86r-DtIQulY",
+        videoUrl: "https://www.youtube.com/embed/86r-DtIQulY?si=u_ggtzSFdg3KmoV0",
         title: "Getting Started With Latest ML Approaches: EEG-to-fMRI Translator | Yamin Li @ BrainHack Vanderbilt 2025",
         githubUrl: "https://github.com/brainhack-vandy/how-to-start-latest-ml-approaches"
     },
     {
-        videoUrl: "https://youtu.be/V2_ILtZjEkQ",
+        videoUrl: "https://www.youtube.com/embed/V2_ILtZjEkQ?si=RMTKKaKpMFiJat4u",
         title: "Opening Ceremony and Keynote Address | BrainHack Vanderbilt 2025",
         personalUrl: "https://dmri.mgh.harvard.edu/a-y/"
     },
     {
-        videoUrl: "https://youtu.be/bWI6UWrY0gs",
+        videoUrl: "https://www.youtube.com/embed/bWI6UWrY0gs?si=lzaKcYfMZEf93qJ5",
         title: "Open Science X Neuroscience Panel | BrainHack Vanderbilt 2025",
     },
     {
