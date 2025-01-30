@@ -15,6 +15,15 @@ export const videoData = [
         githubUrl: "https://github.com/brainhack-vandy/how-to-start-latest-ml-approaches"
     },
     {
+        videoUrl: "https://youtu.be/V2_ILtZjEkQ",
+        title: "Opening Ceremony and Keynote Address | BrainHack Vanderbilt 2025",
+        personalUrl: "https://dmri.mgh.harvard.edu/a-y/"
+    },
+    {
+        videoUrl: "https://youtu.be/bWI6UWrY0gs",
+        title: "Open Science X Neuroscience Panel | BrainHack Vanderbilt 2025",
+    },
+    {
         videoUrl: "https://www.youtube.com/embed/ojnV7mWlQD8?list=PLYyjtw9w4UUAik7EvdeHKDDmVyBNOxh5s",
         title: "Open Science Best Practices | Remi Gau @ BHVU 2024",
         personalUrl: "https://remi-gau.github.io/"
