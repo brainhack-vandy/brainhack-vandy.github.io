@@ -1,8 +1,23 @@
 export const videoData = [
     {
-        videoUrl: "https://www.youtube.com/embed/4km4-szETJA?list=PLYyjtw9w4UUAik7EvdeHKDDmVyBNOxh5s",
-        title: "Introduction to Animal Connectome and Brain-Wide Activity Data | Mikail Rubinov @ BHVU 2024",
-        githubUrl: "https://github.com/brainhack-vandy/introduction-to-animal-connectome-and-brain-wide-activity-data"
+        videoUrl: "https://youtu.be/Mh_zPJueUkA",
+        title: "Exploratory Data Analysis | J. Andres Gannon @ BrainHack Vanderbilt 2025",
+        githubUrl: "https://github.com/brainhack-vandy/brainhack-eda"
+    },
+    {
+        videoUrl: "https://youtu.be/sa59OLr6FMc",
+        title: "NiiVue Visualization | Chris Rorden @ BrainHack Vanderbilt 2025",
+        githubUrl: "https://github.com/brainhack-vandy/traintrack/tree/main/NiiVue"
+    },
+    {
+        videoUrl: "https://youtu.be/86r-DtIQulY",
+        title: "Getting Started With Latest ML Approaches: EEG-to-fMRI Translator | Yamin Li @ BrainHack Vanderbilt 2025",
+        githubUrl: "https://github.com/brainhack-vandy/how-to-start-latest-ml-approaches"
+    },
+    {
+        videoUrl: "https://www.youtube.com/embed/ojnV7mWlQD8?list=PLYyjtw9w4UUAik7EvdeHKDDmVyBNOxh5s",
+        title: "Open Science Best Practices | Remi Gau @ BHVU 2024",
+        personalUrl: "https://remi-gau.github.io/"
     },
     {
         videoUrl: "https://www.youtube.com/embed/lwxtkvPb4UA?list=PLYyjtw9w4UUAik7EvdeHKDDmVyBNOxh5s",
