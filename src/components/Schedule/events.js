@@ -17,7 +17,8 @@ export const events = [
         end: '2025-01-24T18:00:00',
         description: 'Opening ceremony and keynote presentation',
         extendedProps: {
-            type: 'keynote'
+            type: 'keynote',
+            link: '#/speakers'
         }
     },
     {
@@ -57,7 +58,8 @@ export const events = [
         start: '2025-01-25T11:00:00',
         end: '2025-01-25T11:30:00',
         extendedProps: {
-            type: 'educational'
+            type: 'educational',
+            link: 'https://github.com/brainhack-vandy/traintrack'
         }
     },
     {
@@ -77,7 +79,7 @@ export const events = [
         end: '2025-01-25T14:00:00',
         description: 'Educational sessions available on demand',
         extendedProps: {
-            type: 'educational'
+            type: 'events'
         }
     },
     {
@@ -86,7 +88,8 @@ export const events = [
         start: '2025-01-25T14:00:00',
         end: '2025-01-25T14:30:00',
         extendedProps: {
-            type: 'educational'
+            type: 'educational',
+            link: 'https://github.com/brainhack-vandy/traintrack'
         }
     },
     {
@@ -104,7 +107,8 @@ export const events = [
         start: '2025-01-25T15:00:00',
         end: '2025-01-25T15:30:00',
         extendedProps: {
-            type: 'educational'
+            type: 'educational',
+            link: 'https://github.com/brainhack-vandy/traintrack'
         }
     },
     {

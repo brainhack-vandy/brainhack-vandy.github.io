@@ -47,7 +47,7 @@ const ScheduleCalendar = () => {
   const getEventClassNames = (eventInfo) => {
     switch (eventInfo.event.extendedProps.type) {
       case 'educational':
-        return ['event-color-1']; // append back 'clickable-event' when link is needed
+        return ['event-color-1', 'clickable-event']; // append back 'clickable-event' when link is needed
       case 'events':
         return ['event-color-2'];
       case 'hacking':
@@ -62,12 +62,12 @@ const ScheduleCalendar = () => {
   };
 
   const renderEventContent = (eventInfo) => {
-    const isKeynote = eventInfo.event.extendedProps.type === 'keynote'
+    const link = eventInfo.event.extendedProps.link
 
-    if (isKeynote) {
+    if (link) {
       return (
         <a
-          href={`#/speakers`}
+          href={link}
           className="custom-event-content clickable"
           onClick={(e) => e.stopPropagation()}
         >
