@@ -37,24 +37,38 @@ const Home = () => {
                   <Type />
                 </div>
 
-                <p className="event-date">
-                  January 24-26, 2025
-                </p>
+                <p className="event-date">Event Dates: September 4-6, 2026</p>
 
-                {/* <div className="button-wrapper">
+                <div className="button-wrapper">
                   <a
-                    href="<insert_registration_form>"
+                    href="https://forms.gle/cbmZgragNKEkJguB6"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <button className="btn btn-primary application-button">
-                      Register Now &nbsp; <PiCursorClickBold />
+                      We Are Recruiting Team Members &nbsp; <PiCursorClickBold />
                     </button>
                   </a>
-                </div> */}
-                <button className="btn btn-primary application-button">
+                </div>
+
+                {/* <button className="btn btn-primary application-button">
                     Registration Now Closed
-                </button>
+                </button> */}
+
+                <div className="button-wrapper">
+                  <a
+                    href="/assets/governance.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="btn btn-primary application-button">
+                      More Info on Organizing Team Roles &nbsp; <PiCursorClickBold />
+                    </button>
+                  </a>
+                </div>
+
+                <p className="event-date">Recruitment Open Until: January 9, 2026</p> 
+
               </div>
             </Col>
 
