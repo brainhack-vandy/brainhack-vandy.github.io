@@ -39,7 +39,7 @@ const Home = () => {
 
                 <p className="event-date">Event Dates: September 4-6, 2026</p>
 
-                <div className="button-wrapper">
+                {/* <div className="button-wrapper">
                   <a
                     href="https://forms.gle/cbmZgragNKEkJguB6"
                     target="_blank"
@@ -49,13 +49,13 @@ const Home = () => {
                       We Are Recruiting Team Members &nbsp; <PiCursorClickBold />
                     </button>
                   </a>
-                </div>
+                </div> */}
 
                 {/* <button className="btn btn-primary application-button">
                     Registration Now Closed
                 </button> */}
 
-                <div className="button-wrapper">
+                {/* <div className="button-wrapper">
                   <a
                     href="/assets/governance.pdf"
                     target="_blank"
@@ -65,9 +65,9 @@ const Home = () => {
                       More Info on Organizing Team Roles &nbsp; <PiCursorClickBold />
                     </button>
                   </a>
-                </div>
+                </div> */}
 
-                <p className="event-date">Recruitment Open Until: January 9, 2026</p> 
+                {/* <p className="event-date">Recruitment Open Until: January 9, 2026</p>  */}
 
               </div>
             </Col>
