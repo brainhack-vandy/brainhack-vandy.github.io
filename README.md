@@ -87,5 +87,28 @@ To merge changes into the main branch from pull requests from other branch:
     
 Merging the PR modifies the main branch. Changes pushed to the main branch will result in an automated deployment action that will update the website. 
 
+## :computer: Developer Instructions
+
+## Schedule
+
+1. Following the existing format in [events.js](src/components/Schedule/events.js), replace the events:
+    - ID is assigned in the format `<day>-<event number for that day>`
+    - Event start/end times are in this format: `2025-01-24T16:30:00`
+    - Extended props assigns the event to a category, which thereby determines the fill color.
+2. Update event dates via `dateButtons` on [Schedule.js](src/components/Schedule/Schedule.js)
+
+## Speakers
+
+Following the existing format in [speakerData.js](src/components/Speakers/speakerData.js), replace the speakers:
+- Speaker ID's are in the form: `<keynote/panelist>-<speaker number>`
+- Name, bio, image and website link can also be added
+
+## Team
+Following the existing format in [teamData.js](src/components/Team/teamData.js), add an entry for the current year to enter the new set of organizers.
+
+## FAQs
+In [Faq.js](src/components/Faq.js), add question/answer pairs to the `faqData` constant.
+
+
 ---
 Design based on [@soumyajit4419/Porfolio](https://github.com/soumyajit4419/Portfolio) and [BrainHack Western](https://brainhackwestern.github.io/).
