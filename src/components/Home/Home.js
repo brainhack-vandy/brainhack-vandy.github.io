@@ -20,7 +20,7 @@ const Home = () => {
             <Col md={7} className="home-header">
               <div className="content-wrapper">
                 <h1 className="heading">
-                  Hi There!{" "}
+                  Hello There!{" "}
                   <span className="wave" role="img" aria-labelledby="wave">
                     👋🏻
                   </span>
