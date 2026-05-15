@@ -91,7 +91,7 @@ const ComingSoon = () => (
 );
 
 function Projects() {
-  const [currentYear, setCurrentYear] = useState("2025");
+  const [currentYear, setCurrentYear] = useState("2026");
 
   console.log(`projectsData: ${projectsData}`);
   const years = Object.keys(projectsData).sort((a, b) => b - a);
@@ -114,9 +114,9 @@ function Projects() {
           />
         </div>
 
-        {(projectsData[currentYear].length === 0 && currentYear !== '2024') ? (
+        {(projectsData[currentYear] && projectsData[currentYear].length === 0 && currentYear !== '2024') ? (
           <ComingSoon />
-        ) : (projectsData[currentYear].length === 0 && currentYear === '2024') ? (
+        ) : (!projectsData[currentYear] || (projectsData[currentYear].length === 0 && currentYear === '2024')) ? (
           <p className="coming-soon-text">
             To see the projects pitched in 2024, please visit{' '}
             <a 
@@ -130,7 +130,7 @@ function Projects() {
           </p>
         ) : (
           <Row className="project-card-row">
-            {projectsData[currentYear].map((project, index) => (
+            {(projectsData[currentYear] || []).map((project, index) => (
               <Col md={4} className="project-card-col" key={index}>
                 <ProjectCard
                   title={project.title}

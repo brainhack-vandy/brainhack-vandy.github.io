@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -46,4 +47,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           publish_branch: deployed
+          keep_files: true
 

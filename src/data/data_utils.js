@@ -1,9 +1,16 @@
-import issues from "./issues.json"
+import liveIssues from "./issues.json"
+import snapshotIssues from "./issues-snapshot.json"
+
+// Use live workflow-fetched data when available (non-empty); otherwise fall back
+// to the committed snapshot which contains the approved 2024/2025 projects.
+// 2026 and future years will come through the workflow once labelled.
+const issues = liveIssues.length > 0 ? liveIssues : snapshotIssues;
 
 function processIssues(issues) {
     const projects = {
       2024: [],
       2025: [],
+      2026: [],
     };
     issues.forEach((issue) => {
       // Check if the issue has the "approved" label
@@ -15,9 +22,8 @@ function processIssues(issues) {
       }
 
       let yearLabel = null;
-      issue.labels.forEach
-      ((label) => {
-        if (label.name === '2024' || label.name === '2025') {
+      issue.labels.forEach((label) => {
+        if (/^\d{4}$/.test(label.name)) {
             yearLabel = parseInt(label.name, 10);
         }
       });
@@ -80,6 +86,9 @@ function processIssues(issues) {
         issueLink: `https://github.com/brainhack-vandy/brainhack-vandy.github.io/issues/${issue.number}`,
       };
   
+      if (!projects[yearLabel]) {
+        projects[yearLabel] = [];
+      }
       projects[yearLabel].push(project);
     });
     console.log(projects);
