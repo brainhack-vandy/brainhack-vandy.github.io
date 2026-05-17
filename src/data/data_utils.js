@@ -1,10 +1,16 @@
 import liveIssues from "./issues.json"
-import snapshotIssues from "./issues-snapshot.json"
+import snapshotIssues from "./issues-snapshot2025.json"
 
-// Use live workflow-fetched data when available (non-empty); otherwise fall back
-// to the committed snapshot which contains the approved 2024/2025 projects.
-// 2026 and future years will come through the workflow once labelled.
-const issues = liveIssues.length > 0 ? liveIssues : snapshotIssues;
+// 2025 is frozen: project cards for 2025 come exclusively from the committed
+// snapshot, never from the live workflow fetch. Any live issue labeled "2025"
+// (reopened, edited, or newly tagged) is ignored so the archive stays stable.
+// 2026+ continues to render from the live fetch as before.
+const isFrozenYear = (issue) =>
+  issue.labels.some((label) => label.name === '2025');
+const issues = [
+  ...liveIssues.filter((i) => !isFrozenYear(i)),
+  ...snapshotIssues,
+];
 
 function processIssues(issues) {
     const projects = {
