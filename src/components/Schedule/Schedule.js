@@ -120,7 +120,12 @@ const ScheduleCalendar = () => {
           </div>
         )}
 
-        <div className="schedule-container">
+        <div className="schedule-container" style={{padding: '4rem 2rem', textAlign: 'center'}}>
+          <h3 style={{color: 'rgba(255, 255, 255, 0.8)', fontWeight: 500, margin: 0}}>
+            Will be updated soon. Stay tuned!
+          </h3>
+        </div>
+        {/* <div className="schedule-container">
           <FullCalendar
             ref={calendarRef}
             plugins={[dayGridPlugin, timeGridPlugin]}
@@ -154,7 +159,7 @@ const ScheduleCalendar = () => {
             eventDisplay="block"
             allDaySlot={false}
           />
-        </div>
+        </div> */}
       </Container>
     </Container>
   );
