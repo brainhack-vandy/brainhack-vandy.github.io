@@ -4,7 +4,7 @@ const teamData = {
             {
                 title: "Richard Song",
                 description: "Undergraduate Student",
-                team: "Hackathon Chair",
+                team: "Past Hackathon Chair",
                 imgPath: "assets/team/Richard_Song.svg",
                 ghLink: "https://github.com/richardwsong",
                 websiteLink: "https://www.linkedin.com/in/richard-song-837015198/"
@@ -18,25 +18,10 @@ const teamData = {
                 websiteLink: "https://rgbayrak.github.io/"
             },
             {
-                title: "Catie Chang",
-                description: "Assistant Professor",
-                team: "Faculty Advisor",
-                imgPath: "assets/team/Catie_Chang.svg",
-                ghLink: "https://github.com/cately",
-                websiteLink: "https://www.cchanglab.net/"
-            },
-            {
-                title: "Kim Rogge-Obando",
-                description: "Graduate Student",
-                imgPath: "assets/team/Kim_Rogge-Obando.svg",
-                team: "Project Team Lead",
-                websiteLink: "https://www.linkedin.com/in/kim-rogge-obando/",
-            },
-            {
                 title: "Sarah Goodale",
                 description: "Postdoctoral Researcher",
                 imgPath: "assets/team/Sarah_Goodale.svg",
-                team: "Operations Team Lead",
+                team: "Operations Co-Team Lead",
                 ghLink: "https://github.com/goodalse2019",
                 websiteLink: "https://www.linkedin.com/in/goodale-sarah/"
             },
@@ -44,81 +29,92 @@ const teamData = {
                 title: "Shansita D. Sharma",
                 description: "Undergraduate Student",
                 imgPath: "assets/team/Shansita_DS.svg",
-                team: "Dev Team Lead",
+                team: "Past Dev Team Lead",
                 ghLink: "https://github.co/shansitads",
                 websiteLink: "https://shansitads.github.io/profile"
             },
             {
-                title: "Terra Lee",
-                description: "Undergraduate Student",
-                imgPath: "assets/team/Terra_Lee.svg",
-                team: "Marketing Team Lead",
-                websiteLink: "https://www.linkedin.com/in/terra-hyunbin-lee/"
-            },
-            {
                 title: "Lucy Wu",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Lucy_Wu.svg",
-                team: "Operations"
-            },
-            {
-                title: "David Zaha",
-                description: "Undergraduate Student",
-                imgPath: "assets/team/David_Zaha.svg",
-                team: "Development",
-                ghLink: "https://github.com/dgzct11",
-                websiteLink: "https://www.linkedin.com/in/davidzaha/"
-            },
-            {
-                title: "Sefika Ozturk",
-                description: "Undergraduate Student",
-                imgPath: "assets/team/Sefika_Ozturk.svg",
-                ghLink: "https://github.com/sefikaozturk",
-                websiteLink: "https://www.linkedin.com/in/sefikaozturk/",
-                team: "Operations"
+                imgPath: "assets/team/Lucy_Wu.png",
+                team: "Hackathon Chair",
+                websiteLink:"https://www.linkedin.com/in/hsin-ju-lucy-wu-381338213/"
             },
             {
                 title: "Lily Kriegel",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Lily_Kriegel.svg",
-                team: "TrainTrack"
+                imgPath: "assets/team/Lily_Kriegel.jpg",
+                team: "Educationals Team Lead",
+                ghLink:"https://github.com/lilysimone22-ctrl",
+                websiteLink:"https://www.linkedin.com/in/lily-kriegel-548714398"
             },
             {
                 title: "Eunice Hahm",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder1.svg",
-                team: "Project"
-            },
-            {
-                title: "Mashiur Khan",
-                description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder2.svg",
-                team: "Development",
-                ghLink: "https://github.com/mashcodes10"
+                imgPath: "assets/team/Eunice_Hahm.jpg",
+                team: "Projects Team Lead",
+                websiteLink:"https://www.linkedin.com/in/eunice-hahm-1bb555327"
             },
             {
                 title: "Crystal Jiang",
                 description: "Undergraduate Student",
                 imgPath: "assets/team/placeholder1.svg",
-                team: "Marketing/Design"
+                team: "Marketing Team Lead/Dev Team"
             },
             {
                 title: "Liza Akpoli",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Liza_Akpoli.svg",
-                team: "Project"
+                imgPath: "assets/team/Liza_Akpoli.png",
+                team: "Operations Co-Team Lead",
+                websiteLink:"www.linkedin.com/in/liza-a-8397b7320"
             },
             {
                 title: "Kristine Won",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder1.svg",
-                team: "TrainTrack"
+                imgPath: "assets/team/Kristine_Won.png",
+                team: "Dev Team"
             },
             {
-                title: "Cynthia Chen",
+                title: "Nishanth Basava",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder1.svg",
-                team: "Project"
+                imgPath: "assets/team/Nishanth_Basava.png",
+                team: "Projects Team",
+                ghLink:"https://github.com/nishanthbasava",
+                webisteLink:"https://www.linkedin.com/in/nishanth-basava/"
+            },
+            {
+                title: "Juan Gomez Lagandara",
+                description: "Undergraduate Student",
+                imgPath: "assets/team/placeholder2.svg",
+                team: "Projects Team"
+            },
+            {
+                title: "Gaurav Rudravaram",
+                description: "Undergraduate Student",
+                imgPath: "assets/team/Gaurav_Rudravaram.png",
+                team: "Educationals Team/Dev Team",
+                ghLink:"https://github.com/GauravR1206",
+                webisteLink:"https://www.linkedin.com/in/gaurav-rudravaram-7ba95a179"
+            },
+            {
+                title: "Gyuri Ramos",
+                description: "Undergraduate Student",
+                imgPath: "assets/team/Gyuri_Ramos.png",
+                team: "Operations Team"
+            },
+            {
+                title: "Karen Escobar-Salgado",
+                description: "Undergraduate Student",
+                imgPath: "assets/team/Karen_Escobar-Salgado.png",
+                team: "Operations Team"
+            },
+            {
+                title: "Ankith Cirgir",
+                description: "Web Developer",
+                imgPath: "assets/team/Ankith_Cirgir.jpg",
+                team: "Dev Team Lead",
+                ghLink: "https://github.com/Ankith-Cirgir",
+                websiteLink: "https://www.linkedin.com/in/ankith-cirgir/"
             }
         ]
     }
