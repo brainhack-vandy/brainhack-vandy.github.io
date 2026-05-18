@@ -8,7 +8,7 @@ import './schedule.css';
 
 const ScheduleCalendar = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [currentDate, setCurrentDate] = useState('2025-01-24');
+  const [currentDate, setCurrentDate] = useState('2026-09-04');
   const calendarRef = React.useRef();
 
   useEffect(() => {
@@ -32,9 +32,9 @@ const ScheduleCalendar = () => {
   }, [windowWidth]);
 
   const dateButtons = [
-    { date: '2025-01-24', label: 'Friday' },
-    { date: '2025-01-25', label: 'Saturday' },
-    { date: '2025-01-26', label: 'Sunday' }
+    { date: '2026-09-04', label: 'Friday' },
+    { date: '2026-09-05', label: 'Saturday' },
+    { date: '2026-09-06', label: 'Sunday' }
   ];
 
   const handleDateSelect = (date) => {
@@ -120,12 +120,7 @@ const ScheduleCalendar = () => {
           </div>
         )}
 
-        <div className="schedule-container" style={{padding: '4rem 2rem', textAlign: 'center'}}>
-          <h3 style={{color: 'rgba(255, 255, 255, 0.8)', fontWeight: 500, margin: 0}}>
-            Will be updated soon. Stay tuned!
-          </h3>
-        </div>
-        {/* <div className="schedule-container">
+        <div className="schedule-container">
           <FullCalendar
             ref={calendarRef}
             plugins={[dayGridPlugin, timeGridPlugin]}
@@ -143,13 +138,13 @@ const ScheduleCalendar = () => {
               right: isMobile ? 'timeGridDay' : ''
             }}
             dayHeaderFormat={{ weekday: 'long' }}
-            initialDate="2025-01-24"
+            initialDate="2026-09-04"
             validRange={{
-              start: '2025-01-24',
-              end: '2025-01-27'
+              start: '2026-09-04',
+              end: '2026-09-07'
             }}
-            slotMinTime="09:00:00"
-            slotMaxTime="19:00:00"
+            slotMinTime="08:00:00"
+            slotMaxTime="20:00:00"
             expandRows={true}
             height={isMobile ? 600 : 800}
             slotDuration="00:30:00"
@@ -159,7 +154,7 @@ const ScheduleCalendar = () => {
             eventDisplay="block"
             allDaySlot={false}
           />
-        </div> */}
+        </div>
       </Container>
     </Container>
   );

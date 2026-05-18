@@ -1,4 +1,34 @@
 export const events = [
+    // Friday September 4, 2026: 4 PM - 7 PM
+    {
+        id: 'fri-1',
+        title: 'Will be updated soon. Stay tuned!',
+        start: '2026-09-04T16:00:00',
+        end: '2026-09-04T19:00:00',
+        extendedProps: {
+            type: 'events'
+        }
+    },
+    // Saturday September 5, 2026: 8 AM - 8 PM
+    {
+        id: 'sat-1',
+        title: 'Will be updated soon. Stay tuned!',
+        start: '2026-09-05T08:00:00',
+        end: '2026-09-05T20:00:00',
+        extendedProps: {
+            type: 'events'
+        }
+    },
+    // Sunday September 6, 2026: 8 AM - 2 PM
+    {
+        id: 'sun-1',
+        title: 'Will be updated soon. Stay tuned!',
+        start: '2026-09-06T08:00:00',
+        end: '2026-09-06T14:00:00',
+        extendedProps: {
+            type: 'events'
+        }
+    }
 ];
 
 // Previous events - uncomment and update when the new schedule is ready
