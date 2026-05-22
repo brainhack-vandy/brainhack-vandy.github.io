@@ -36,14 +36,14 @@ const teamData = {
             {
                 title: "Lucy Wu",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Lucy_Wu.png",
+                imgPath: "assets/team/placeholder1.svg",
                 team: "Hackathon Chair",
                 websiteLink:"https://www.linkedin.com/in/hsin-ju-lucy-wu-381338213/"
             },
             {
                 title: "Lily Kriegel",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Lily_Kriegel.jpg",
+                imgPath: "assets/team/placeholder1.svg",
                 team: "Educationals Team Lead",
                 ghLink:"https://github.com/lilysimone22-ctrl",
                 websiteLink:"https://www.linkedin.com/in/lily-kriegel-548714398"
@@ -51,7 +51,7 @@ const teamData = {
             {
                 title: "Eunice Hahm",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Eunice_Hahm.jpg",
+                imgPath: "assets/team/placeholder1.svg",
                 team: "Projects Team Lead",
                 websiteLink:"https://www.linkedin.com/in/eunice-hahm-1bb555327"
             },
@@ -64,20 +64,20 @@ const teamData = {
             {
                 title: "Liza Akpoli",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Liza_Akpoli.png",
+                imgPath: "assets/team/placeholder1.svg",
                 team: "Operations Co-Team Lead",
                 websiteLink:"www.linkedin.com/in/liza-a-8397b7320"
             },
             {
                 title: "Kristine Won",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Kristine_Won.png",
+                imgPath: "assets/team/placeholder1.svg",
                 team: "Dev Team"
             },
             {
                 title: "Nishanth Basava",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Nishanth_Basava.png",
+                imgPath: "assets/team/placeholder2.svg",
                 team: "Projects Team",
                 ghLink:"https://github.com/nishanthbasava",
                 webisteLink:"https://www.linkedin.com/in/nishanth-basava/"
@@ -91,7 +91,7 @@ const teamData = {
             {
                 title: "Gaurav Rudravaram",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Gaurav_Rudravaram.png",
+                imgPath: "assets/team/placeholder2.svg",
                 team: "Educationals Team/Dev Team",
                 ghLink:"https://github.com/GauravR1206",
                 webisteLink:"https://www.linkedin.com/in/gaurav-rudravaram-7ba95a179"
@@ -99,19 +99,19 @@ const teamData = {
             {
                 title: "Gyuri Ramos",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Gyuri_Ramos.png",
+                imgPath: "assets/team/placeholder1.svg",
                 team: "Operations Team"
             },
             {
                 title: "Karen Escobar-Salgado",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/Karen_Escobar-Salgado.png",
+                imgPath: "assets/team/placeholder1.svg",
                 team: "Operations Team"
             },
             {
                 title: "Ankith Cirgir",
                 description: "Web Developer",
-                imgPath: "assets/team/Ankith_Cirgir.jpg",
+                imgPath: "assets/team/placeholder2.svg",
                 team: "Dev Team Lead",
                 ghLink: "https://github.com/Ankith-Cirgir",
                 websiteLink: "https://www.linkedin.com/in/ankith-cirgir/"
