@@ -24,10 +24,10 @@ function Hosts() {
                             <span className="host-text">co-hosted with</span>
                         </Col>
                         <Col xs="auto">
-                            <a href="https://xy.vandyhacks.org/" target="_blank" rel="noopener noreferrer">
+                            <a href="" target="_blank" rel="noopener noreferrer">
                                 <img
-                                    src="/assets/vandyhacks_logo.png"
-                                    alt="VandyHacks Logo"
+                                    src="/assets/ActiveMinds_logo.png"
+                                    alt="ActiveMinds Logo"
                                     className="host-logo"
                                 />
                             </a>
