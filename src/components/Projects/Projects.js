@@ -25,18 +25,17 @@ const ProjectPitchInstr = () => {
                   <li className="project-guidelines-item">contribute to open science</li>
                 </ul>
               </div>
-              {/* <div className="project-pitch-button-container mt-4">
+              <p className="project-pitch-text mt-4" style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
+                Pitch your project for 2026{' '}
                 <a
-                  className="btn project-pitch-submit-button"
-                  href="https://github.com/brainhack-vandy/brainhack-vandy.github.io/issues/new?assignees=&labels=project-proposal&projects=&template=project-submission-template.yml&title=Project%3A+"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScqVtT5zVLTqT-6bLnAK02o6xfKR3SmvrW4_yBvIsVy7TgMMQ/viewform?usp=dialog"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="purple"
                 >
-                  Submit a Project Pitch
+                  here
                 </a>
-              </div> */}
-              <p className="project-pitch-text mt-4">
-                PROJECT PITCHES FOR 2025 ARE CLOSED!
+                !
               </p>
             </div>
           </Col>
