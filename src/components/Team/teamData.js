@@ -3,6 +3,7 @@ const teamData = {
         "Organizers": [
             {
                 title: "Nick Lord",
+                description: "Senior Research Engineer",
                 team: "Admin",
                 imgPath: "assets/team/Nick_Lord.png"
             },
