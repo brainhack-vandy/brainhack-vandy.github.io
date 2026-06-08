@@ -62,7 +62,7 @@ function Team() {
       <Particle />
       <Container>
         <h1 className="team-heading text-center mb-5">
-          2026 <strong className="purple">Organizers</strong>
+          2025 <strong className="purple">Organizers</strong>
         </h1>
 
         {/* Render current year (2025) first */}
