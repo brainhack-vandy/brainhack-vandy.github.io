@@ -12,7 +12,7 @@ function Footer() {
       <Container>
         <Row>
           <Col md={4} className="footer-copywright">
-            <h3>Copyright @ 2026 BrainHack Vanderbilt</h3>
+            <h3>Copyright @ 2025 BrainHack Vanderbilt</h3>
           </Col>
           <Col md={4} className="footer-body">
             <ul className="footer-icons-section">

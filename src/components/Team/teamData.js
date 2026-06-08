@@ -2,12 +2,6 @@ const teamData = {
     "2025": {
         "Organizers": [
             {
-                title: "Nick Lord",
-                description: "Senior Research Engineer",
-                team: "Admin",
-                imgPath: "assets/team/Nick_Lord.png"
-            },
-            {
                 title: "Richard Song",
                 description: "Undergraduate Student",
                 team: "Past Hackathon Chair",

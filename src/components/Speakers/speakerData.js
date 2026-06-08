@@ -2,14 +2,6 @@
 const speakerData = [
     {
         id: "keynote-1",
-        name: "Russ Poldrack",
-        bio: "I’m a cognitive neuroscientist who uses brain imaging to study how the brain gives rise to the mind. I’m also deeply interested in improving the way that science is done, by providing researchers with tools and knowledge to help them do research that is more reproducible and more transparent. I received my BA in Psychology from Baylor University and my PhD from the University of Illinois at Urbana Champaign. After doing a postdoctoral fellowship at Stanford University, I held faculty positions at Harvard Medical School, UCLA, and the University of Texas at Austin. I’m currently the Albert Ray Lang Professor and Chair of the Department of Psychology at Stanford University. You can learn more about the work that my lab does from our lab web site, poldracklab.org. We also have an online lab manual that outlines our polices and standard operating procedures, as well as my mentoring philosophy. I am also an Associate Director for Stanford Data Science, and Director of the Center for Open and Reproducible Science. I’ve published several books: Statistical Thinking: Analyzing Data in an Uncertain World (Open source version available here), Hard to Break: Why Our Brains Make Habits Stick, The New Mind Readers: What Neuroimaging Can and Cannot Reveal about Our Thoughts, Handbook of fMRI Data Analysis (with Jeanette Mumford and Tom Nichols). I’m currently writing a living textbook on reproducible coding with AI titled Better Code, Better Science. I’m also releasing sections of this new book regularly on my Substack.",
-        imgPath: "assets/team/placeholder2.svg",
-        link: "https://profiles.stanford.edu/russell-poldrack"
-    }
-    /*
-    {
-        id: "keynote-1",
         name: "Anastasia Yendiki",
         bio: "Dr. Anastasia Yendiki is an Associate Professor at Harvard Medical School and an Associate Investigator at Massachusetts General Hospital in the Martinos Center for Biomedical Imaging. She received her PhD in Electrical Engineering from the University of Michigan Ann Arbor, where she worked on inverse problems in tomographic image reconstruction. She then completed her postdoc in the Martinos Center where she trained in functional and diffusion-weighted MRI. Her current research focuses on computational methods for mapping white-matter axon bundles with the goal of providing a reliable, non-invasive tool for the study of brain connections in patients with neurologic and psychiatric conditions. Dr. Yendiki has served as a leader in organizing multiple BrainHack events in Boston and for the BRAIN initiative, and has championed open access and building sustainable open-source tools throughout her career.",
         imgPath: "assets/speakers/anastasia_yendiki.jpg",
@@ -57,7 +49,6 @@ const speakerData = [
         imgPath: "assets/speakers/yamin_li.jpg",
         link: "https://www.vanderbilt.edu/valiant/person/yamin-li/"
     }
-    */
 ];
 
 export default speakerData;
