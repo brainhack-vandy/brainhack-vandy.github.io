@@ -5,7 +5,7 @@ const teamData = {
                 title: "Nick Lord",
                 description: "Senior Research Engineer",
                 team: "Admin",
-                imgPath: "assets/team/Nick_Lord.png"
+                imgPath: "assets/team/placeholder2.svg"
             },
             {
                 title: "Richard Song",
