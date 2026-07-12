@@ -18,7 +18,7 @@ const SpeakerRow = ({ speaker, isEven }) => {
                 <Col md={8} className="speaker-info-col">
                     <div className={`speaker-info ${isEven ? 'text-end' : 'text-start'}`}>
                         <h2 className="speaker-name">{speaker.name}</h2>
-                        <p className="speaker-bio">{speaker.bio}</p>
+                        <div className="speaker-bio" dangerouslySetInnerHTML={{ __html: speaker.bio }} />
                     </div>
                 </Col>
             </Row>

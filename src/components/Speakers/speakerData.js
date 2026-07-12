@@ -3,8 +3,28 @@ const speakerData = [
     {
         id: "keynote-1",
         name: "Russ Poldrack",
-        bio: "I’m a cognitive neuroscientist who uses brain imaging to study how the brain gives rise to the mind. I’m also deeply interested in improving the way that science is done, by providing researchers with tools and knowledge to help them do research that is more reproducible and more transparent. I received my BA in Psychology from Baylor University and my PhD from the University of Illinois at Urbana Champaign. After doing a postdoctoral fellowship at Stanford University, I held faculty positions at Harvard Medical School, UCLA, and the University of Texas at Austin. I’m currently the Albert Ray Lang Professor and Chair of the Department of Psychology at Stanford University. You can learn more about the work that my lab does from our lab web site, poldracklab.org. We also have an online lab manual that outlines our polices and standard operating procedures, as well as my mentoring philosophy. I am also an Associate Director for Stanford Data Science, and Director of the Center for Open and Reproducible Science. I’ve published several books: Statistical Thinking: Analyzing Data in an Uncertain World (Open source version available here), Hard to Break: Why Our Brains Make Habits Stick, The New Mind Readers: What Neuroimaging Can and Cannot Reveal about Our Thoughts, Handbook of fMRI Data Analysis (with Jeanette Mumford and Tom Nichols). I’m currently writing a living textbook on reproducible coding with AI titled Better Code, Better Science. I’m also releasing sections of this new book regularly on my Substack.",
-        imgPath: "assets/speakers/russell_poldrack.webp",
+        bio: `<p><strong>Dr. Poldrack</strong> is a cognitive neuroscientist who uses brain imaging to study how the brain gives rise to the mind. He is also deeply interested in improving the way science is conducted by providing researchers with tools and knowledge to help them perform research that is more reproducible and transparent.</p>
+
+<br>
+
+<p>Dr. Poldrack received his BA in Psychology from Baylor University and his PhD from the University of Illinois at Urbana-Champaign. After completing a postdoctoral fellowship at Stanford University, he held faculty positions at Harvard Medical School, UCLA, and the University of Texas at Austin.</p>
+
+<br>
+
+<p>He is currently the Albert Ray Lang Professor and Chair of the Department of Psychology at Stanford University. More information about his lab's work can be found on the Poldrack Lab website, poldracklab.org. The lab also maintains an online manual outlining its policies, standard operating procedures, and his mentoring philosophy.</p>
+
+<br>
+
+<p>In addition, Dr. Poldrack serves as an Associate Director for Stanford Data Science and as Director of the Center for Open and Reproducible Science.</p>
+
+<br>
+
+<p>He has published several books, including <em>Statistical Thinking: Analyzing Data in an Uncertain World</em> (with an open-source version available online), <em>Hard to Break: Why Our Brains Make Habits Stick</em>, <em>The New Mind Readers: What Neuroimaging Can and Cannot Reveal about Our Thoughts</em>, and <em>Handbook of fMRI Data Analysis</em> (co-authored with Jeanette Mumford and Tom Nichols).</p>
+
+<br>
+
+<p>Dr. Poldrack is currently writing a living textbook on reproducible coding with AI titled <em>Better Code, Better Science</em> and regularly releases new sections of the book through his Substack.</p>`,
+        imgPath: "assets/speakers/russell-poldrack.webp",
         link: "https://profiles.stanford.edu/russell-poldrack"
     }
     /*
