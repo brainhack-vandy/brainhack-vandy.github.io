@@ -220,14 +220,14 @@
 
 .Typewriter__wrapper {
     font-size: 1.5em;
-    color: #be6adf;
+    color: #39ff14;
     font-weight: 600;
     white-space: nowrap;
 }
 
 .Typewriter__cursor {
     font-size: 1.5em;
-    color: #b562d6;
+    color: #39ff14;
 }
 
 @media (max-width: 767px) {
