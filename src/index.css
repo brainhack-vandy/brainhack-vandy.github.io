@@ -5,19 +5,19 @@ body {
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  background-image: linear-gradient(to left, rgb(5, 30, 12), rgb(3, 20, 8));
 }
 
 html {
   --section-background-color: linear-gradient(to bottom left,
-      rgba(17, 16, 16, 0.582),
-      rgba(12, 8, 24, 0.904));
+      rgba(5, 25, 10, 0.582),
+      rgba(3, 18, 7, 0.904));
 
   --image-gradient: linear-gradient(to bottom left,
-      rgba(17, 16, 16, 0.678),
-      rgba(12, 10, 22, 0.863));
+      rgba(5, 25, 10, 0.678),
+      rgba(3, 18, 7, 0.863));
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #39ff14;
 }
 
 #root {
@@ -27,6 +27,10 @@ html {
 }
 
 .purple {
+  color: var(--imp-text-color) !important;
+}
+
+.green {
   color: var(--imp-text-color) !important;
 }
 
@@ -45,7 +49,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: #030d05;
   background-image: url(../public/assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -70,18 +74,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #0a3318;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(57, 255, 20, 0.7);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgba(57, 255, 20, 0.9);
   border-radius: 12px;
 }
 
@@ -90,7 +94,7 @@ button:focus {
   Navigation Bar
   -------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #0a2e10a9 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -111,7 +115,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #39ff14 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -194,7 +198,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #39ff14;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -212,7 +216,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: rgba(39, 180, 60, 0.37) !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -220,8 +224,8 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: rgba(45, 200, 70, 0.53) !important;
+  border-color: rgba(45, 200, 70, 0.53) !important;
 }
 
 .fork-btn-inner::after {
@@ -236,7 +240,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #071a0b !important;
   }
 
   .navbar-nav .nav-item a::after {
@@ -284,7 +288,7 @@ button:focus {
  --------- */
 
 .project-pitch-section {
-  background-color: rgba(98, 54, 134, 0.3);
+  background-color: rgba(22, 101, 52, 0.3);
   padding: 4rem 0;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -319,16 +323,16 @@ button:focus {
   font-size: 1em;
   font-weight: 500;
   width: fit-content;
-  background-color: #c770f0 !important;
+  background-color: #39ff14 !important;
   border: none;
   white-space: nowrap;
   transition: all 0.3s ease;
-  color: white;
+  color: #051a0a;
   opacity: 1 !important;
 }
 
 .project-pitch-section .btn.project-pitch-submit-button:hover {
-  background-color: #a94cce !important;
+  background-color: #15803d !important;
   transform: translateY(-2px);
   color: white;
   text-decoration: none;
@@ -340,16 +344,16 @@ button:focus {
   font-weight: 500;
   width: fit-content;
   white-space: nowrap;
-  border: 2px solid #c770f0;
-  color: #c770f0;
+  border: 2px solid #39ff14;
+  color: #39ff14;
   background-color: transparent;
   transition: all 0.3s ease;
   opacity: 1 !important;
 }
 
 .project-pitch-section .btn.project-pitch-view-button:hover {
-  background-color: #c770f0;
-  color: white;
+  background-color: #39ff14;
+  color: #051a0a;
   transform: translateY(-2px);
   text-decoration: none;
 }
@@ -365,13 +369,14 @@ button:focus {
   font-size: 1em !important;
   font-weight: 500 !important;
   width: fit-content !important;
-  background-color: #c770f0 !important;
+  background-color: #39ff14 !important;
   border: none !important;
-  color: white !important;
+  color: #051a0a !important;
 }
 
 .project-pitch-submit-button:hover {
-  background-color: #a94cce !important;
+  background-color: #15803d !important;
+  color: white !important;
   transform: translateY(-2px);
 }
 
@@ -420,7 +425,7 @@ button:focus {
 .faq-item:hover {
   background-color: rgba(255, 255, 255, 0.08);
   transform: translateY(-2px);
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 5px 3px rgba(39, 255, 20, 0.3) !important;
 }
 
 .faq-question {
@@ -477,7 +482,7 @@ button:focus {
 }
 
 .faq-link:hover {
-  color: #be50f4;
+  color: #39ff14;
   text-decoration: underline;
 }
 
@@ -495,7 +500,7 @@ section {
 
 .footer {
   flex-shrink: 0;
-  background-color: rgb(10, 4, 22);
+  background-color: rgb(3, 18, 7);
   position: relative;
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.1);

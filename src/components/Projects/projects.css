@@ -21,7 +21,7 @@
     content: "•";
     position: absolute;
     left: 0;
-    color: #c770f0;
+    color: #39ff14;
 }
 
 .project-section {
@@ -41,7 +41,7 @@
 }
 
 .project-card-view {
-    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+    box-shadow: 0 4px 5px 3px rgba(39, 255, 20, 0.3) !important;
     color: white !important;
     background-color: transparent !important;
     opacity: 1 !important;
@@ -52,7 +52,7 @@
 .project-card-view:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
-    box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+    box-shadow: 0 4px 4px 5px rgba(39, 255, 20, 0.5) !important;
 }
 
 .project-card-row {
@@ -99,7 +99,7 @@
 
 .year-select-container select {
     width: 100px !important;
-    background-color: #623686 !important;
+    background-color: #166534 !important;
     color: white !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     cursor: pointer !important;
@@ -112,7 +112,7 @@
 
 
 .year-select-container select:hover {
-    background-color: #6d20c5d7 !important;
+    background-color: #15803d !important;
 }
 
 .year-select-container select:focus {
@@ -122,14 +122,14 @@
 
 /* Style the dropdown options */
 .year-select-container select option {
-    background-color: #623686 !important;
+    background-color: #166534 !important;
     color: white !important;
     padding: 8px 12px !important;
 }
 
 /* Year Select Styles */
 .year-select {
-    background-color: #0c0513 !important;
+    background-color: #030d05 !important;
     color: white !important;
     border: 1px solid var(--imp-text-color) !important;
     cursor: pointer !important;
@@ -149,17 +149,17 @@
 }
 
 .year-select:hover {
-    border-color: #a94cce !important;
+    border-color: #39ff14 !important;
 }
 
 .year-select:focus {
     box-shadow: none !important;
-    border-color: #a94cce !important;
+    border-color: #39ff14 !important;
 }
 
 /* Ensure dropdown options are visible */
 .year-select option {
-    background-color: #0c0513 !important;
+    background-color: #030d05 !important;
     color: white !important;
     padding: 8px 12px !important;
 }
@@ -168,7 +168,7 @@
 .coming-soon {
     text-align: center;
     padding: 40px 20px;
-    background-color: rgba(15, 6, 33, 0.9);
+    background-color: rgba(3, 18, 7, 0.9);
     border-radius: 10px;
     margin-top: 20px;
 }

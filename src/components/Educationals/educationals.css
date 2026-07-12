@@ -33,7 +33,7 @@
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+  box-shadow: 0 4px 5px 3px rgba(39, 255, 20, 0.3);
   color: white;
   background-color: transparent;
   opacity: 0.9;
@@ -45,7 +45,7 @@
 
 .project-card-view:hover {
   transform: scale(1.02);
-  box-shadow: 0 4px 8px 4px rgba(119, 53, 136, 0.6);
+  box-shadow: 0 4px 8px 4px rgba(39, 255, 20, 0.5);
 }
 
 /* Media Content Styles */
@@ -110,11 +110,13 @@
 .project-card-view .btn-primary {
   background-color: var(--imp-text-color);
   border-color: var(--imp-text-color);
+  color: #051a0a;
 }
 
 .project-card-view .btn-primary:hover {
-  background-color: #a94cce;
-  border-color: #a94cce;
+  background-color: #15803d;
+  border-color: #15803d;
+  color: #fff;
 }
 
 /* Section Spacing */
