@@ -24,7 +24,7 @@ function Hosts() {
                             <span className="host-text">co-hosted with</span>
                         </Col>
                         <Col xs="auto">
-                            <a href="" target="_blank" rel="noopener noreferrer">
+                            <a href="https://anchorlink.vanderbilt.edu/organization/activeminds" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src="/assets/ActiveMinds_logo.png"
                                     alt="ActiveMinds Logo"
