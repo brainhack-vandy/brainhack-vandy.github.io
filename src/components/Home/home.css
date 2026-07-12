@@ -2,7 +2,7 @@
 .home-section {
     position: relative;
     z-index: 0;
-    background-image: var(--image-gradient), url(../../../public/assets/home-bg.jpg);
+    background-image: var(--image-gradient), url(../../../public/assets/New_Home_bg.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
