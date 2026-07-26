@@ -5,7 +5,7 @@ const teamData = {
             {
                 title: "Lucy Wu",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/lucy_wu.webp",
+                imgPath: "assets/team/Lucy_Wu.webp",
                 team: "Hackathon Chair",
                 websiteLink:"https://www.linkedin.com/in/hsin-ju-lucy-wu-381338213/"
             },
@@ -20,14 +20,14 @@ const teamData = {
             {
                 title: "Eunice Hahm",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/eunice_hahm.webp",
+                imgPath: "assets/team/Eunice_Hahm.webp",
                 team: "Projects Team Lead",
                 websiteLink:"https://www.linkedin.com/in/eunice-hahm-1bb555327"
             },
             {
                 title: "Lily Kriegel",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/lily_kriegel.webp",
+                imgPath: "assets/team/Lily_Kriegel.webp",
                 team: "Educationals Team Lead",
                 ghLink:"https://github.com/lilysimone22-ctrl",
                 websiteLink:"https://www.linkedin.com/in/lily-kriegel-548714398"
@@ -57,7 +57,7 @@ const teamData = {
             {
                 title: "Liza Akpoli",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/liza_akpoli.webp",
+                imgPath: "assets/team/Liza_Akpoli.webp",
                 team: "Operations Co-Team Lead",
                 ghLink: "https://github.com/lizaakpoli",
                 websiteLink:"https://www.linkedin.com/in/liza-a-8397b7320"
@@ -78,13 +78,13 @@ const teamData = {
             {
                 title: "Gyuri Ramos",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/gyuri_ramos.webp",
+                imgPath: "assets/team/Gyuri_Ramos.webp",
                 team: "Operations Team"
             },
             {
                 title: "Kristine Won",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/kristine_won.webp",
+                imgPath: "assets/team/Kristine_Won.webp",
                 team: "Dev Team"
             },
 
@@ -92,7 +92,7 @@ const teamData = {
                 title: "Catie Chang",
                 description: "Associate Faculty",
                 team: "Faculty Advisor",
-                imgPath: "assets/team/catie_chang.webp"
+                imgPath: "assets/team/Catie_Chang.webp"
             },
             {
                 title: "Nick Lord",
@@ -103,7 +103,7 @@ const teamData = {
             {
                 title: "Gaurav Rudravaram",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/gaurav_rudravaram.webp",
+                imgPath: "assets/team/Gaurav_Rudravaram.webp",
                 team: "Volunteer",
                 ghLink:"https://github.com/GauravR1206",
                 websiteLink:"https://www.linkedin.com/in/gaurav-rudravaram-7ba95a179"
@@ -111,7 +111,7 @@ const teamData = {
             {
                 title: "Nishanth Basava",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/nishanth_basava.webp",
+                imgPath: "assets/team/Nishanth_Basava.webp",
                 team: "Volunteer",
                 ghLink:"https://github.com/nishanthbasava",
                 websiteLink:"https://www.linkedin.com/in/nishanth-basava/"
