@@ -7,12 +7,13 @@ function Sponsors() {
             href: 'https://www.vanderbilt.edu/valiant/',
             imgSrc: 'assets/sponsors/valiant.png',
             alt: 'Vanderbilt Lab for Immersive AI Translation',
-            special: true
+            gold: true
         },
         {
             href: 'https://engineering.vanderbilt.edu/cs',
             imgSrc: 'assets/sponsors/cs.png',
             alt: 'Computer Science',
+            silver: true
         },
         {
             href: 'https://www.vanderbilt.edu/datascience',
@@ -23,7 +24,7 @@ function Sponsors() {
             href: 'https://engineering.vanderbilt.edu/ece',
             imgSrc: 'assets/sponsors/ece.png',
             alt: 'Electrical and Computer Engineering',
-            special: true
+            gold: true
         },
         {
             href: 'https://medschool.vanderbilt.edu/brain-institute',
@@ -72,12 +73,25 @@ function Sponsors() {
                     <p className="text-white text-center mb-8">
                         We gratefully acknowledge the generous support of our sponsors. A special thanks go to the partnership of VALIANT and ECE.
                     </p>
+                    <Row style={{ justifyContent: "center", paddingBottom: "20px" }}>
+                        {sponsors.filter(s => s.gold).map((sponsor, index) => (
+                            <Col
+                                key={index}
+                                lg={4}
+                                className="sponsor-icons sponsor-gold"
+                            >
+                                <a href={sponsor.href} target="_blank" rel="noopener noreferrer">
+                                    <img src={sponsor.imgSrc} alt={sponsor.alt} className="sponsor-image" />
+                                </a>
+                            </Col>
+                        ))}
+                    </Row>
                     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-                        {sponsors.map((sponsor, index) => (
+                        {sponsors.filter(s => !s.gold).map((sponsor, index) => (
                             <Col
                                 key={index}
                                 lg={3}
-                                className={`sponsor-icons ${sponsor.special ? 'sponsor-special' : ''}`}
+                                className={`sponsor-icons ${sponsor.silver ? 'sponsor-silver' : ''}`}
                             >
                                 <a href={sponsor.href} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsor.imgSrc} alt={sponsor.alt} className="sponsor-image" />
