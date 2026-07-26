@@ -70,8 +70,8 @@ function Sponsors() {
                         {sponsors.filter(s => s.gold).map((sponsor, index) => (
                             <Col
                                 key={index}
-                                lg={3}
-                                className="sponsor-icons sponsor-gold"
+                                lg={4}
+                                className="sponsor-icons sponsor-glow"
                             >
                                 <a href={sponsor.href} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsor.imgSrc} alt={sponsor.alt} className="sponsor-image" />
