@@ -78,7 +78,7 @@ function Sponsors() {
                             <Col
                                 key={index}
                                 lg={4}
-                                className="sponsor-icons sponsor-gold"
+                                className="sponsor-icons sponsor-glow"
                             >
                                 <a href={sponsor.href} target="_blank" rel="noopener noreferrer">
                                     <img src={sponsor.imgSrc} alt={sponsor.alt} className="sponsor-image" />
