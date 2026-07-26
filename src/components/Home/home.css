@@ -490,5 +490,6 @@
 @media (max-width: 767px) {
     .sponsor-icons {
         margin: 10px !important;
+        box-sizing: content-box !important;
     }
 }

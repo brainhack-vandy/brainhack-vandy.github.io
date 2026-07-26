@@ -48,4 +48,5 @@ jobs:
           publish_dir: ./build
           publish_branch: deployed
           keep_files: true
+          force_orphan: true
 
