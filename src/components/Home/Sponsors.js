@@ -64,13 +64,13 @@ function Sponsors() {
                         2026 <span className="purple">Sponsors</span>
                     </h2>
                     <p className="text-white text-center mb-8">
-                        We gratefully acknowledge the generous support of our sponsors. A special thanks go to the partnership of VALIANT and ECE.
+                        We gratefully acknowledge the generous support of our sponsors. A special thanks go to the partnership of VALIANT.
                     </p>
                     <Row style={{ justifyContent: "center", paddingBottom: "20px" }}>
                         {sponsors.filter(s => s.gold).map((sponsor, index) => (
                             <Col
                                 key={index}
-                                lg={4}
+                                lg={3}
                                 className="sponsor-icons sponsor-gold"
                             >
                                 <a href={sponsor.href} target="_blank" rel="noopener noreferrer">
