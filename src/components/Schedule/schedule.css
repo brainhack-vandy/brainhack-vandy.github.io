@@ -15,7 +15,7 @@
 .schedule-card-view {
     display: flex;
     align-items: flex-start;
-    box-shadow: 0 4px 5px 3px rgba(39, 255, 20, 0.3) !important;
+    box-shadow: 0 4px 5px 3px rgba(252, 255, 255, 0.3) !important;
     color: white !important;
     background-color: transparent !important;
     opacity: 0.9 !important;
@@ -27,7 +27,7 @@
 .schedule-card-view:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
-    box-shadow: 0 4px 4px 5px rgba(39, 255, 20, 0.5) !important;
+    box-shadow: 0 4px 4px 5px rgba(252, 255, 255, 0.5) !important;
 }
 
 @media (max-width: 768px) {
@@ -46,8 +46,8 @@
 }
 
 .date-button {
-    background-color: rgba(39, 255, 20, 0.15);
-    border: 1px solid #39ff14;
+    background-color: rgba(252, 255, 255, 0.15);
+    border: 1px solid #347338;
     color: white;
     padding: 0.5rem 0.75rem;
     border-radius: 6px;
@@ -58,11 +58,11 @@
 }
 
 .date-button:hover {
-    background-color: rgba(39, 255, 20, 0.35);
+    background-color: rgba(252, 255, 255, 0.35);
 }
 
 .date-button.active {
-    background-color: #39ff14;
+    background-color: #347338;
     color: #051a0a;
     font-weight: 600;
 }
@@ -72,7 +72,7 @@
     background: rgba(0, 0, 0, 0.2);
     padding: 0.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 5px 3px rgba(39, 255, 20, 0.3);
+    box-shadow: 0 4px 5px 3px rgba(252, 255, 255, 0.3);
     margin: 2rem 0;
 }
 
@@ -150,7 +150,7 @@
 .fc-theme-standard td,
 .fc-theme-standard th,
 .fc-theme-standard .fc-scrollgrid {
-    border-color: rgba(39, 255, 20, 0.3) !important;
+    border-color: rgba(252, 255, 255, 0.3) !important;
 }
 
 .fc-timegrid-slot-label,
@@ -167,8 +167,8 @@
 }
 
 .fc .fc-button-primary {
-    background-color: #166534;
-    border-color: #166534;
+    background-color: #134023;
+    border-color: #134023;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 

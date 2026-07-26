@@ -48,7 +48,7 @@
 }
 
 .main-name {
-    color: #39ff14;
+    color: #347338;
 }
 
 .event-date {
@@ -73,8 +73,8 @@
 
 .btn-primary {
     color: #fff !important;
-    background-color: #166534 !important;
-    border-color: #166534 !important;
+    background-color: #134023 !important;
+    border-color: #134023 !important;
 }
 
 .btn-primary:hover:not(:disabled) {
@@ -84,8 +84,8 @@
 }
 
 .btn-primary:disabled {
-    background-color: #166534 !important;
-    border-color: #166534 !important;
+    background-color: #134023 !important;
+    border-color: #134023 !important;
     opacity: 0.7 !important;
     cursor: not-allowed !important;
     color: #fff !important;
@@ -220,14 +220,14 @@
 
 .Typewriter__wrapper {
     font-size: 1.5em;
-    color: #39ff14;
+    color: #347338;
     font-weight: 600;
     white-space: nowrap;
 }
 
 .Typewriter__cursor {
     font-size: 1.5em;
-    color: #39ff14;
+    color: #347338;
 }
 
 @media (max-width: 767px) {
@@ -455,7 +455,7 @@
     margin: 15px !important;
     padding: 10px !important;
     opacity: 0.93 !important;
-    border: 1.7px solid rgba(57, 255, 20, 0.4) !important;
+    border: 1.7px solid rgba(252, 255, 255, 0.4) !important;
     vertical-align: middle !important;
     text-align: center !important;
     border-radius: 5px !important;
@@ -468,7 +468,7 @@
 .sponsor-icons:hover {
     transform: scale(1.05) !important;
     overflow: hidden !important;
-    border: 2.2px solid rgba(57, 255, 20, 0.7) !important;
+    border: 2.2px solid rgba(252, 255, 255, 0.7) !important;
 }
 
 .sponsor-icon-images {
@@ -480,11 +480,6 @@
 .sponsor-gold {
     box-shadow: 0px 0px 10px 8px rgba(255, 215, 0, 0.5);
     border: 1.7px solid rgba(255, 255, 0, 1) !important;
-}
-
-.sponsor-silver {
-    box-shadow: 0px 0px 10px 8px rgba(192, 192, 192, 0.5);
-    border: 1.7px solid rgba(192, 192, 192, 1) !important;
 }
 
 @media (max-width: 767px) {
