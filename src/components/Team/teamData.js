@@ -33,18 +33,26 @@ const teamData = {
                 websiteLink:"https://www.linkedin.com/in/lily-kriegel-548714398"
             },
             {
-                title: "Crystal Jiang",
-                description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder1.webp",
-                team: "Marketing Team Lead/Dev Team"
-            },
-            {
                 title: "Ankith Cirgir",
                 description: "Web Developer",
                 imgPath: "assets/team/Ankith_Cirgir.webp",
                 team: "Dev Team Lead",
                 ghLink: "https://github.com/Ankith-Cirgir",
                 websiteLink: "https://www.linkedin.com/in/ankith-cirgir/"
+            },
+            {
+                title: "Crystal Jiang",
+                description: "Undergraduate Student",
+                imgPath: "assets/team/placeholder1.webp",
+                team: "Marketing Team Lead/Dev Team"
+            },
+            {
+                title: "Liza Akpoli",
+                description: "Undergraduate Student",
+                imgPath: "assets/team/Liza_Akpoli.webp",
+                team: "Operations Team Lead",
+                ghLink: "https://github.com/lizaakpoli",
+                websiteLink:"https://www.linkedin.com/in/liza-a-8397b7320"
             },
             {
                 title: "Sarah Goodale",
@@ -54,15 +62,6 @@ const teamData = {
                 ghLink: "https://github.com/goodalse2019",
                 websiteLink: "https://www.linkedin.com/in/goodale-sarah/"
             },
-            {
-                title: "Liza Akpoli",
-                description: "Undergraduate Student",
-                imgPath: "assets/team/Liza_Akpoli.webp",
-                team: "Operations Co-Team Lead",
-                ghLink: "https://github.com/lizaakpoli",
-                websiteLink:"https://www.linkedin.com/in/liza-a-8397b7320"
-            },
-
             {
                 title: "Gauri Agarwal",
                 description: "Undergraduate Student",
@@ -87,19 +86,22 @@ const teamData = {
                 imgPath: "assets/team/Kristine_Won.webp",
                 team: "Dev Team"
             },
-
             {
                 title: "Catie Chang",
-                description: "Associate Faculty",
+                description: "Associate Professor",
                 team: "Faculty Advisor",
                 imgPath: "assets/team/Catie_Chang.webp"
             },
             {
                 title: "Nick Lord",
-                description: "Senior Research Engineer",
+                description: "Executive Project Coordinator",
                 team: "Admin",
                 imgPath: "assets/team/placeholder2.webp"
-            },
+            }
+        ]
+    },
+    "Other": {
+        "Organizers": [
             {
                 title: "Gaurav Rudravaram",
                 description: "Undergraduate Student",
@@ -124,12 +126,12 @@ const teamData = {
             },
             {
                 title: "Juan Gomez Lagandara",
-                description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder1.webp",
+                description: "PhD Student",
+                imgPath: "assets/team/placeholder2.webp",
                 team: "Volunteer"
             },
         ]
     }
-};
+    };
 
 export default teamData;
