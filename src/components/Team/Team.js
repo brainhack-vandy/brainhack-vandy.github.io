@@ -38,7 +38,7 @@ function Team() {
 
     return (
       <div className="year-section">
-        {year !== "2025" && (
+        {year !== "2026" && (
           <>
             <hr className="team-divider my-5" />
             <h1 className="team-heading text-center mb-5">
@@ -65,13 +65,13 @@ function Team() {
           2026 <strong className="purple">Organizers</strong>
         </h1>
 
-        {/* Render current year (2025) first */}
-        {renderTeamSections(teamData["2025"], "2025")}
+        {/* Render current year (2026) first */}
+        {renderTeamSections(teamData["2026"], "2026")}
 
         {/* Render previous years */}
         {Object.keys(teamData)
           .sort((a, b) => b - a)
-          .filter(year => year !== "2025")
+          .filter(year => year !== "2026")
           .map(year => renderTeamSections(teamData[year], year))}
       </Container>
     </Container>

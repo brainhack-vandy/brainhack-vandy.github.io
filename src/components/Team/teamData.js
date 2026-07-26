@@ -1,5 +1,5 @@
 const teamData = {
-    "2025": {
+    "2026": {
         "Organizers": [
             
             {
