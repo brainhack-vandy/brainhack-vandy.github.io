@@ -1,12 +1,13 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { BsGithub } from "react-icons/bs";
-import { FaLink } from "react-icons/fa";
+import { FaLink, FaEnvelope } from "react-icons/fa";
 import './team.css';
 
 function TeamCard(props) {
     const hasGitHub = props.ghLink && props.ghLink.trim() !== "" && props.ghLink !== "https://github.com";
     const hasWebsite = props.websiteLink && props.websiteLink.trim() !== "";
+    const hasEmail = props.email && props.email.trim() !== "";
 
     return (
         <Card className="team-card-view">
@@ -38,6 +39,15 @@ function TeamCard(props) {
                             aria-label={`${props.title}'s website`}
                         >
                             <FaLink className="website-icon" />
+                        </a>
+                    )}
+                    {hasEmail && (
+                        <a
+                            href={`mailto:${props.email}`}
+                            className="website-link"
+                            aria-label={`Email ${props.title}`}
+                        >
+                            <FaEnvelope className="website-icon" />
                         </a>
                     )}
                 </div>

@@ -507,6 +507,7 @@ section {
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 10px !important;
+  box-sizing: content-box !important;
 }
 
 .footer-copywright,
@@ -543,8 +544,8 @@ section {
 
 .footer-social-icons {
   display: inline-block !important;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0;
+  box-sizing: content-box !important;
 }
 
 .footer-social-icons a {
