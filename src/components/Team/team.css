@@ -3,7 +3,6 @@
     padding-top: 150px !important;
     padding-bottom: 30px !important;
     background-image: var(--section-background-color) !important;
-    overflow-x: hidden !important;
 }
 
 .team-heading {
@@ -66,19 +65,23 @@
 }
 
 .team-card-col {
-    padding: 10px;
-    box-sizing: content-box;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
 }
 
 .teamcard-img-top {
+    padding: 10px !important;
     opacity: 1 !important;
     border-radius: 50% !important;
-    width: 220px !important;
-    height: 220px !important;
+    width: 250px !important;
+    /* Increased from 180px */
+    height: 250px !important;
+    /* Increased from 180px */
     object-fit: cover !important;
     display: block !important;
+    margin: 0 auto !important;
     transition: transform 0.3s ease !important;
-    box-sizing: content-box !important;
 }
 
 .team-card-view:hover .teamcard-img-top {
@@ -113,39 +116,31 @@
 /* Media queries for responsive image sizes */
 @media (max-width: 768px) {
     .teamcard-img-top {
-        width: 170px !important;
-        height: 170px !important;
+        width: 200px !important;
+        height: 200px !important;
     }
 }
 
 @media (max-width: 576px) {
     .teamcard-img-top {
-        width: 150px !important;
-        height: 150px !important;
+        width: 180px !important;
+        height: 180px !important;
     }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
     .col-lg-5-cols {
-        flex: 0 0 20% !important;
-        max-width: 20% !important;
+        flex: 0 0 20%;
+        max-width: 20%;
     }
 }
 
-.team-group-heading {
-    font-size: 1.3em !important;
-    font-weight: 500 !important;
-    color: rgba(255, 255, 255, 0.5) !important;
-    text-align: center !important;
-    letter-spacing: 0.12em !important;
-    text-transform: uppercase !important;
-    margin-top: 2.5rem !important;
-    margin-bottom: 0.5rem !important;
-}
-
-.team-group-divider {
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    width: 60%;
-    margin: 0 auto 1.5rem;
+/* Override Bootstrap's global border-box for team card visual elements */
+.team-card,
+.team-card-view,
+.team-card-col,
+.teamcard-img-top,
+.team-card-title,
+.team-card-description {
+    box-sizing: content-box !important;
 }
