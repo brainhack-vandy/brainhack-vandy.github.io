@@ -134,3 +134,13 @@
         max-width: 20%;
     }
 }
+
+/* Override Bootstrap's global border-box for team card visual elements */
+.team-card,
+.team-card-view,
+.team-card-col,
+.teamcard-img-top,
+.team-card-title,
+.team-card-description {
+    box-sizing: content-box !important;
+}
