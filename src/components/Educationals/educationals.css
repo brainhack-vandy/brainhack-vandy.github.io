@@ -33,7 +33,7 @@
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(39, 255, 20, 0.3);
+  box-shadow: 0 4px 5px 3px rgba(252, 255, 255, 0.3);
   color: white;
   background-color: transparent;
   opacity: 0.9;
@@ -45,7 +45,7 @@
 
 .project-card-view:hover {
   transform: scale(1.02);
-  box-shadow: 0 4px 8px 4px rgba(39, 255, 20, 0.5);
+  box-shadow: 0 4px 8px 4px rgba(252, 255, 255, 0.5);
 }
 
 /* Media Content Styles */

@@ -17,7 +17,7 @@ html {
       rgba(5, 25, 10, 0.678),
       rgba(3, 18, 7, 0.863));
 
-  --imp-text-color: #39ff14;
+  --imp-text-color: #347338;
 }
 
 #root {
@@ -79,13 +79,13 @@ button:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(57, 255, 20, 0.7);
+  background: rgba(252, 255, 255, 0.7);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(57, 255, 20, 0.9);
+  background: rgba(252, 255, 255, 0.9);
   border-radius: 12px;
 }
 
@@ -115,7 +115,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #39ff14 !important;
+  background-color: #347338 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -198,7 +198,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #39ff14;
+  background: #347338;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -323,7 +323,7 @@ button:focus {
   font-size: 1em;
   font-weight: 500;
   width: fit-content;
-  background-color: #39ff14 !important;
+  background-color: #347338 !important;
   border: none;
   white-space: nowrap;
   transition: all 0.3s ease;
@@ -344,15 +344,15 @@ button:focus {
   font-weight: 500;
   width: fit-content;
   white-space: nowrap;
-  border: 2px solid #39ff14;
-  color: #39ff14;
+  border: 2px solid #347338;
+  color: #347338;
   background-color: transparent;
   transition: all 0.3s ease;
   opacity: 1 !important;
 }
 
 .project-pitch-section .btn.project-pitch-view-button:hover {
-  background-color: #39ff14;
+  background-color: #347338;
   color: #051a0a;
   transform: translateY(-2px);
   text-decoration: none;
@@ -369,7 +369,7 @@ button:focus {
   font-size: 1em !important;
   font-weight: 500 !important;
   width: fit-content !important;
-  background-color: #39ff14 !important;
+  background-color: #347338 !important;
   border: none !important;
   color: #051a0a !important;
 }
@@ -425,7 +425,7 @@ button:focus {
 .faq-item:hover {
   background-color: rgba(255, 255, 255, 0.08);
   transform: translateY(-2px);
-  box-shadow: 0 4px 5px 3px rgba(39, 255, 20, 0.3) !important;
+  box-shadow: 0 4px 5px 3px rgba(252, 255, 255, 0.3) !important;
 }
 
 .faq-question {
@@ -482,7 +482,7 @@ button:focus {
 }
 
 .faq-link:hover {
-  color: #39ff14;
+  color: #347338;
   text-decoration: underline;
 }
 

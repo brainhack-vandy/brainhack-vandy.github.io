@@ -21,7 +21,7 @@
     content: "•";
     position: absolute;
     left: 0;
-    color: #39ff14;
+    color: #347338;
 }
 
 .project-section {
@@ -41,7 +41,7 @@
 }
 
 .project-card-view {
-    box-shadow: 0 4px 5px 3px rgba(39, 255, 20, 0.3) !important;
+    box-shadow: 0 4px 5px 3px rgba(252, 255, 255, 0.3) !important;
     color: white !important;
     background-color: transparent !important;
     opacity: 1 !important;
@@ -52,7 +52,7 @@
 .project-card-view:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
-    box-shadow: 0 4px 4px 5px rgba(39, 255, 20, 0.5) !important;
+    box-shadow: 0 4px 4px 5px rgba(252, 255, 255, 0.5) !important;
 }
 
 .project-card-row {
@@ -99,7 +99,7 @@
 
 .year-select-container select {
     width: 100px !important;
-    background-color: #166534 !important;
+    background-color: #134023 !important;
     color: white !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     cursor: pointer !important;
@@ -122,7 +122,7 @@
 
 /* Style the dropdown options */
 .year-select-container select option {
-    background-color: #166534 !important;
+    background-color: #134023 !important;
     color: white !important;
     padding: 8px 12px !important;
 }
@@ -149,12 +149,12 @@
 }
 
 .year-select:hover {
-    border-color: #39ff14 !important;
+    border-color: #347338 !important;
 }
 
 .year-select:focus {
     box-shadow: none !important;
-    border-color: #39ff14 !important;
+    border-color: #347338 !important;
 }
 
 /* Ensure dropdown options are visible */
