@@ -79,13 +79,13 @@
 /* Color variables for events */
 :root {
     /* Educational */
-    --event-color-1: #2596be;
+    --event-color-1: #61a272;
     /* Events */
-    --event-color-2: #615f9f;
+    --event-color-2: #124320;
     /* Hacking*/
-    --event-color-3: #3a2c4a;
+    --event-color-3: #331a50;
     /* Keynote*/
-    --event-color-4: #5f929f;
+    --event-color-4: #5b48d7;
     /* Impromptu */
     --event-color-5: #829f5f;
 }
