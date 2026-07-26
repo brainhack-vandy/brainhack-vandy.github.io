@@ -3,6 +3,7 @@
     padding-top: 150px !important;
     padding-bottom: 30px !important;
     background-image: var(--section-background-color) !important;
+    overflow-x: hidden !important;
 }
 
 .team-heading {
@@ -65,23 +66,19 @@
 }
 
 .team-card-col {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 15px;
+    padding: 10px;
+    box-sizing: content-box;
 }
 
 .teamcard-img-top {
-    padding: 10px !important;
     opacity: 1 !important;
     border-radius: 50% !important;
-    width: 250px !important;
-    /* Increased from 180px */
-    height: 250px !important;
-    /* Increased from 180px */
+    width: 220px !important;
+    height: 220px !important;
     object-fit: cover !important;
     display: block !important;
-    margin: 0 auto !important;
     transition: transform 0.3s ease !important;
+    box-sizing: content-box !important;
 }
 
 .team-card-view:hover .teamcard-img-top {
@@ -116,21 +113,39 @@
 /* Media queries for responsive image sizes */
 @media (max-width: 768px) {
     .teamcard-img-top {
-        width: 200px !important;
-        height: 200px !important;
+        width: 170px !important;
+        height: 170px !important;
     }
 }
 
 @media (max-width: 576px) {
     .teamcard-img-top {
-        width: 180px !important;
-        height: 180px !important;
+        width: 150px !important;
+        height: 150px !important;
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
     .col-lg-5-cols {
-        flex: 0 0 20%;
-        max-width: 20%;
+        flex: 0 0 20% !important;
+        max-width: 20% !important;
     }
+}
+
+.team-group-heading {
+    font-size: 1.3em !important;
+    font-weight: 500 !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+    text-align: center !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    margin-top: 2.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.team-group-divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 60%;
+    margin: 0 auto 1.5rem;
 }

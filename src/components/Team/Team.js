@@ -5,10 +5,25 @@ import TeamCard from './TeamCard';
 import teamData from './teamData';
 import './team.css';
 
-const TeamSection = ({ title, members, showDivider = false }) => (
+const GROUP_ORDER = ["Chairs", "Team Leads", "Co-Leads", "Team Members", "Volunteers", "Admin"];
+
+const GROUP_LABELS = {
+    "Chairs":       null,
+    "Team Leads":   "Team Leads",
+    "Co-Leads":     "Co-Leads",
+    "Team Members": "Team Members",
+    "Volunteers":   "Volunteers",
+    "Admin":        "Administration & Faculty",
+};
+
+const TeamSection = ({ title, members }) => (
   <div className="team-section-container">
-    {showDivider && <hr className="team-divider" />}
-    <h2 className="team-category-heading purple mb-4">{title}</h2>
+    {title && (
+      <>
+        <hr className="team-group-divider" />
+        <h3 className="team-group-heading">{title}</h3>
+      </>
+    )}
     <Row className="team-card-row">
       {members.map((member, index) => (
         <Col
@@ -24,6 +39,7 @@ const TeamSection = ({ title, members, showDivider = false }) => (
             imgPath={member.imgPath}
             ghLink={member.ghLink}
             websiteLink={member.websiteLink}
+            email={member.email}
             team={member.team}
           />
         </Col>
@@ -36,6 +52,8 @@ function Team() {
   const renderTeamSections = (yearData, year) => {
     if (!yearData || typeof yearData !== 'object') return null;
 
+    const isGrouped = GROUP_ORDER.some(g => yearData[g]?.length > 0);
+
     return (
       <div className="year-section">
         {year !== "2025" && (
@@ -47,12 +65,14 @@ function Team() {
           </>
         )}
 
-        {yearData["Organizers"]?.length > 0 && (
-          <TeamSection
-            title=""
-            members={yearData["Organizers"]}
-          />
-        )}
+        {isGrouped
+          ? GROUP_ORDER.filter(g => yearData[g]?.length > 0).map(group => (
+              <TeamSection key={group} title={GROUP_LABELS[group]} members={yearData[group]} />
+            ))
+          : yearData["Organizers"]?.length > 0 && (
+              <TeamSection members={yearData["Organizers"]} />
+            )
+        }
       </div>
     );
   };
