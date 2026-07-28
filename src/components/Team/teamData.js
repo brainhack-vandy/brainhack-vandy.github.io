@@ -127,7 +127,7 @@ const teamData = {
             {
                 title: "Juan Gomez Lagandara",
                 description: "PhD Student",
-                imgPath: "assets/team/Juan_Gomez_Lagandara.webp",
+                imgPath: "assets/team/Juan_Gomez-Lagandara.webp",
                 team: "Volunteer"
             },
         ]
