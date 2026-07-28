@@ -57,7 +57,7 @@ const teamData = {
             {
                 title: "Sarah Goodale",
                 description: "Postdoctoral Researcher",
-                imgPath: "assets/team/placeholder1.webp",
+                imgPath: "assets/team/Sarah_Goodale.webp",
                 team: "Operations Co-Team Lead",
                 ghLink: "https://github.com/goodalse2019",
                 websiteLink: "https://www.linkedin.com/in/goodale-sarah/"
@@ -71,7 +71,7 @@ const teamData = {
             {
                 title: "Karen Escobar-Salgado",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder1.webp",
+                imgPath: "assets/team/Karen_Escobar-Salgado.webp",
                 team: "Operations Team"
             },
             {
@@ -96,7 +96,7 @@ const teamData = {
                 title: "Nick Lord",
                 description: "Executive Project Coordinator",
                 team: "Admin",
-                imgPath: "assets/team/placeholder2.webp"
+                imgPath: "assets/team/Nick_Lord.webp"
             }
         ]
     },
@@ -121,13 +121,13 @@ const teamData = {
             {
                 title: "Sefika Ozturk",
                 description: "Undergraduate Student",
-                imgPath: "assets/team/placeholder1.webp",
+                imgPath: "assets/team/Sefika_Ozturk.webp",
                 team: "Volunteer"
             },
             {
                 title: "Juan Gomez Lagandara",
                 description: "PhD Student",
-                imgPath: "assets/team/placeholder2.webp",
+                imgPath: "assets/team/Juan_Gomez_Lagandara.webp",
                 team: "Volunteer"
             },
         ]
