@@ -83,7 +83,7 @@ const FAQ = () => {
         },
         {
             question: "How can I volunteer for BrainHack?",
-            answer: "Fill out the volunteer section in the registration form. Or reach out to us at brianhack.vanderbilt@gmail.com througout the year."
+            answer: "Fill out the volunteer section in the registration form. Or reach out to us at brainhack.vanderbilt@gmail.com throughout the year."
         }
     ];
 
