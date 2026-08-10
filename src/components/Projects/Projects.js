@@ -5,12 +5,12 @@ import ProjectCard from './ProjectCard';
 import projectsData from '../../data/data_utils';
 import './projects.css';
 
-const ProjectPitchInstr = () => {
+/*const ProjectPitchInstr = () => {
   return (
     <div className="project-pitch-instr-section py-5" id="project-pitch-instr">
       <Container fluid="lg">
         <Row className="justify-content-center align-items-start g-4">
-          <Col md={6} className="text-start">
+\          <Col md={6} className="text-start">
             <div className="project-pitch-container">
               <p className="project-pitch-text mb-4">
                 BrainHack is an attendee-driven event. That means you get to bring
@@ -60,7 +60,7 @@ const ProjectPitchInstr = () => {
       </Container>
     </div>
   );
-}
+}*/
 
 const YearSelect = ({ years, currentYear, onYearChange }) => (
   <Form.Group className="year-select-container">
@@ -103,7 +103,7 @@ function Projects() {
           BrainHack <strong className="purple">Projects</strong>
         </h1>
 
-        <ProjectPitchInstr />
+        {/* <ProjectPitchInstr /> */}
 
         <div className="d-flex justify-content-center">
           <YearSelect
