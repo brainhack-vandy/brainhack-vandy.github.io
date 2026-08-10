@@ -84,7 +84,7 @@ function Speakers() {
 
                     {keynoteSpeakers.length > 0 && (
                         <SpeakerSection
-                            title="Keynote Speaker"
+                            title="Educational Speaker"
                             speakers={keynoteSpeakers}
                         />
                     )}

@@ -59,7 +59,7 @@ export const events = [
     end: '2026-09-05T12:00:00',
     extendedProps: {
         type: 'educational',
-        link: 'https://github.com/brainhack-vandy/traintrack'
+        link: '#/speakers'
     }
 },
 {
@@ -69,7 +69,8 @@ export const events = [
     end: '2026-09-05T13:00:00',
     description: 'Educational sessions available on demand',
     extendedProps: {
-        type: 'educational'
+        type: 'educational',
+        link: '#/speakers'
     }
 },
 {
@@ -84,12 +85,12 @@ export const events = [
 },
 {
     id: 'sat-7',
-    title: 'Educational #3',
+    title: 'Joining a World Wide Lab',
     start: '2026-09-05T14:00:00',
     end: '2026-09-05T15:00:00',
     extendedProps: {
         type: 'educational',
-        link: 'https://github.com/brainhack-vandy/traintrack'
+        link: '#/speakers'
     }
 },
 // {
@@ -103,12 +104,13 @@ export const events = [
 // },
 {
     id: 'sat-9',
-    title: 'Educational #4',
+    title: 'Cognitive Neuroscience in the Foundation Model Era: Lessons in Reproducibility',
     start: '2026-09-05T15:00:00',
     end: '2026-09-05T16:00:00',
     extendedProps: {
         type: 'educational',
-        link: 'https://github.com/brainhack-vandy/traintrack'
+        link: '#/speakers'
+        //link: 'https://github.com/brainhack-vandy/traintrack'
     }
 },
 // {
