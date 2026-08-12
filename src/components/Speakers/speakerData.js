@@ -12,7 +12,7 @@ const speakerData = [
         name: "Hao-Ting Wang",
         bio: "Dr. Hao-Ting Wang is an Assistant Professor in Data Science in the Department of Psychiatry at the University of British Columbia, Vancouver, BC, Canada, where she works at the intersection of data science, neuroimaging, and psychiatry. Her research focuses on understanding brain and cognition in naturalistic contexts for transdiagnostic description of psychiatric conditions. She is a core developer of Nilearn, a widely used Python library for machine learning in neuroimaging. She is a recipient of the 2023 Neuro-Irv and Helga Cooper Open Science Prize. In addition to her research, she is active in education and outreach and is committed to fostering inclusivity in the open science community. Previously, she co-led workshops for Brainhack School and the Montreal AI and Neuroscience initiative.",
         imgPath: "assets/speakers/Hao-Ting_Wang.webp",
-        link: "#"
+        link: "https://wanghaoting.com/"
     },
     {
         id: "keynote-3",
@@ -26,7 +26,7 @@ const speakerData = [
         name: "Alex Maier",
         bio: "Dr. Alex Maier is an Associate Professor in the Neuroscience Area Group within Vanderbilt University’s Department of Psychology. His research focuses on understanding visual processing at the level of individual neurons and neural circuits.",
         imgPath: "assets/speakers/Alex_Maier.webp",
-        link: "#"
+        link: "https://maierlab.wiki/"
     },
     
     

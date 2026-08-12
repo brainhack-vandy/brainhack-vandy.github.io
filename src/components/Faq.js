@@ -55,7 +55,7 @@ const FAQ = () => {
             answer: "Open Science is about making the entire scientific process transparent, collaborative, and accessible to everyone. When scientists openly share their methods, data, code, and findings, it allows others to verify their work, build upon it, and contribute their own insights. At BrainHack, we put these principles into practice by working together on shared tools and datasets, documenting everything clearly, and welcoming participants from any background or skill level to join in the research process. Instead of keeping scientific knowledge locked behind institutional walls, we're creating an environment where everyone can learn, participate, and advance science together."        },
         {
             question: "What kind of projects are suitable for BrainHack?",
-            answer: "Any project that is broadly related to neuroscience and can be made publicly available. Check out previous year's projects here: https://github.com/brainhack-vandy/projects"
+            answer: "Any project that is broadly related to neuroscience and can be made publicly available. Check out previous year's projects here: https://brainhack-vandy.github.io/#/projects"
         },
         {
             question: "Will my project be judged at BrainHack?",
