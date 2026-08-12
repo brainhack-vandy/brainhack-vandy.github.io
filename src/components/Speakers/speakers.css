@@ -27,6 +27,7 @@
     border-radius: 10px;
     transition: all 0.3s ease;
     position: relative;
+    scroll-margin-top: 120px;
 }
 
 .speaker-row.clickable {

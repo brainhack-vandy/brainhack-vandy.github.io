@@ -64,13 +64,13 @@ const SpeakerSection = ({ title, speakers }) => (
 );
 
 function Speakers() {
-    // Split speakers into keynote speakers and panelists
+    // Split speakers into keynote speakers and Educational
     const keynoteSpeakers = speakerData.filter(speaker =>
         speaker.id.startsWith('keynote-')
     );
 
-    const panelists = speakerData.filter(speaker =>
-        speaker.id.startsWith('panelist-')
+    const educationals = speakerData.filter(speaker =>
+        speaker.id.startsWith('educational-')
     );
 
     return (
@@ -79,20 +79,20 @@ function Speakers() {
                 <Particle />
                 <Container>
                     <h1 className="page-heading">
-                        Our <strong className="purple">Speakers</strong>
+                        Our <strong className="purple">Keynote Speakers</strong>
                     </h1>
 
                     {keynoteSpeakers.length > 0 && (
                         <SpeakerSection
-                            title="Educational Speaker"
+                            title="Keynote Speaker"
                             speakers={keynoteSpeakers}
                         />
                     )}
 
-                    {panelists.length > 0 && (
+                    {educationals.length > 0 && (
                         <SpeakerSection
-                            title="Panelists"
-                            speakers={panelists}
+                            title="Educational Speakers"
+                            speakers={educationals}
                         />
                     )}
                 </Container>
