@@ -208,6 +208,8 @@
     font-size: 0.9rem;
     line-height: 1;
     margin: 0;
+    text-align: center;
+    padding: 10px;
 }
 
 .clickable-event {
