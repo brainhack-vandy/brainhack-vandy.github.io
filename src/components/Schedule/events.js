@@ -104,12 +104,12 @@ export const events = [
 // },
 {
     id: 'sat-9',
-    title: 'Cognitive Neuroscience in the Foundation Model Era: Lessons in Reproducibility, Hao-Ting Wang',
+    title: 'Cognitive Neuroscience in the Foundation Model Era: Lessons in Reproducibility',
     start: '2026-09-05T15:00:00',
     end: '2026-09-05T16:00:00',
     extendedProps: {
         type: 'educational',
-        link: '#/speakers#educational-2'
+        link: '#/speakers#educational-4'
         //link: 'https://github.com/brainhack-vandy/traintrack'
     }
 },
