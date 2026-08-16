@@ -54,7 +54,7 @@ export const events = [
 },
 {
     id: 'sat-4',
-    title: 'How to measure and reduce the carbon footprint of fMRI data analysis, Nick Souter',
+    title: 'How to measure and reduce the carbon footprint of fMRI data analysis',
     start: '2026-09-05T11:00:00',
     end: '2026-09-05T12:00:00',
     extendedProps: {
@@ -85,12 +85,12 @@ export const events = [
 },
 {
     id: 'sat-7',
-    title: 'Joining a World Wide Lab, Alex Maier',
+    title: 'Joining a World Wide Lab',
     start: '2026-09-05T14:00:00',
     end: '2026-09-05T15:00:00',
     extendedProps: {
         type: 'educational',
-        link: '#/speakers#educational-2'
+        link: '#/speakers#educational-3'
     }
 },
 // {
@@ -109,7 +109,7 @@ export const events = [
     end: '2026-09-05T16:00:00',
     extendedProps: {
         type: 'educational',
-        link: '#/speakers#educational-3'
+        link: '#/speakers#educational-2'
         //link: 'https://github.com/brainhack-vandy/traintrack'
     }
 },
