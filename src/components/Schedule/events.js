@@ -44,7 +44,7 @@ export const events = [
 },
 {
     id: 'sat-2',
-    title: 'Project Shopping Period',
+    title: 'Project Shopping Period + Hacking Commences',
     start: '2026-09-05T10:00:00',
     end: '2026-09-05T11:00:00',
     description: 'Official start of hacking period',
@@ -54,7 +54,7 @@ export const events = [
 },
 {
     id: 'sat-4',
-    title: 'How to measure and reduce the carbon footprint of fMRI data analysis',
+    title: 'How to measure and reduce the carbon footprint of fMRI data analysis, Nick Souter',
     start: '2026-09-05T11:00:00',
     end: '2026-09-05T12:00:00',
     extendedProps: {
@@ -64,7 +64,7 @@ export const events = [
 },
 {
     id: 'sat-5',
-    title: 'Jonathan Magnolia Gilligan',
+    title: 'Sustainability in Scientific Research: Challenges and Opportunities, Jonathan Magnolia Gilligan',
     start: '2026-09-05T12:00:00',
     end: '2026-09-05T13:00:00',
     description: 'Educational sessions available on demand',
@@ -85,7 +85,7 @@ export const events = [
 },
 {
     id: 'sat-7',
-    title: 'Joining a World Wide Lab',
+    title: 'Joining a World Wide Lab, Alex Maier',
     start: '2026-09-05T14:00:00',
     end: '2026-09-05T15:00:00',
     extendedProps: {
@@ -93,18 +93,9 @@ export const events = [
         link: '#/speakers#educational-3'
     }
 },
-// {
-//     id: 'sat-8',
-//     title: 'Unconference',
-//     start: '2026-09-05T14:30:00',
-//     end: '2026-09-05T15:00:00',
-//     extendedProps: {
-//         type: 'unconference'
-//     }
-// },
 {
     id: 'sat-9',
-    title: 'Cognitive Neuroscience in the Foundation Model Era: Lessons in Reproducibility',
+    title: 'Cognitive Neuroscience in the Foundation Model Era: Lessons in Reproducibility, Hao-Ting Wang',
     start: '2026-09-05T15:00:00',
     end: '2026-09-05T16:00:00',
     extendedProps: {
