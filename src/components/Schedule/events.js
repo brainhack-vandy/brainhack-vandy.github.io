@@ -117,7 +117,7 @@ export const events = [
     id: 'sat-12',
     title: 'Social',
     start: '2026-09-05T18:00:00',
-    end: '2026-09-05T19:30:00',
+    end: '2026-09-05T20:30:00',
     description: 'Evening social event',
     extendedProps: {
         type: 'events'
