@@ -3,7 +3,7 @@ export const events = [
     {
         id: 'fri-1',
         title: 'Registration + Reception',
-        start: '2026-09-04T16:30:00',
+        start: '2026-09-04T16:00:00',
         end: '2026-09-04T17:00:00',
         description: 'Initial registration and welcome reception',
         extendedProps: {
