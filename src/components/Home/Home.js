@@ -38,22 +38,25 @@ const Home = () => {
                 </div>
 
                 <p className="event-date">Event Dates: September 4-6, 2026</p>
-
+                {/*
                 {<div className="button-wrapper">
                   <a
                     href="https://forms.gle/3tKbz2ioVGQuWyw69"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    
                     <button className="btn btn-primary application-button">
                     Register Now &nbsp; <PiCursorClickBold />
-                    </button>
+                    </button> 
+                    
+                    
                   </a>
-                </div> }
+                </div> }*/}
 
-                {/* <button className="btn btn-primary application-button">
+                <button className="btn btn-primary application-button">
                     Registration Now Closed
-                </button> */}
+                </button> 
 
                 {/* <div className="button-wrapper">
                   <a
