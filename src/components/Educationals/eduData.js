@@ -1,5 +1,30 @@
 export const videoData = [
     {
+        videoUrl: "https://www.youtube.com/watch?v=z0J5me_KfbA&list=PLUfN2R7yKo70&index=3",
+        title: "Building better software for science: Lessons from software engineering | BrainHack Vanderbilt 2026",
+        personalUrl: "https://profiles.stanford.edu/russell-poldrack"
+    },
+    {
+        videoUrl: "https://www.youtube.com/watch?v=NwLU547vLT4&list=PLUfN2R7yKo70&index=5",
+        title: "How To Measure And Reduce The Carbon Footprint Of Fmri Data Analysis | BrainHack Vanderbilt 2026",
+        personalUrl: "https://profiles.sussex.ac.uk/p596400-nick-souter"
+    },
+    {
+        videoUrl: "https://www.youtube.com/watch?v=8r9rsCLU-0Q&list=PLUfN2R7yKo70&index=6",
+        title: "Sustainability in Scientific Research: Challenges and Opportunities, J. Magnolia Gilligan",
+        personalUrl: "https://www.magnoliagilligan.org/"
+    },
+    {
+        videoUrl: "https://www.youtube.com/watch?v=r3Oq0NpAXf8&list=PLUfN2R7yKo70&index=7",
+        title: "Joining a World Wide Lab, Alex Maier",
+        personalUrl: "https://maierlab.wiki/"
+    },
+    {
+        videoUrl: "https://www.youtube.com/watch?v=m5ltNkCHv1g&list=PLUfN2R7yKo70&index=8",
+        title: "Cognitive Neuroscience in the Foundation Model Era: Lessons in Reproducibility, Hao-Ting Wang",
+        personalUrl: "https://wanghaoting.com/"
+    },
+    {
         videoUrl: "https://www.youtube.com/embed/Mh_zPJueUkA?si=6FOltsGovbihf153",
         title: "Exploratory Data Analysis | J. Andres Gannon @ BrainHack Vanderbilt 2025",
         githubUrl: "https://github.com/brainhack-vandy/brainhack-eda"
