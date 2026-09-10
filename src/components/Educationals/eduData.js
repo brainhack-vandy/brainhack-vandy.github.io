@@ -1,26 +1,26 @@
 export const videoData = [
     {
-        videoUrl: "https://www.youtube.com/watch?v=z0J5me_KfbA&list=PLUfN2R7yKo70&index=3",
+        videoUrl: "https://www.youtube.com/embed/z0J5me_KfbA?si=xha7AQ1NurTXl8fP",
         title: "Building better software for science: Lessons from software engineering | BrainHack Vanderbilt 2026",
         personalUrl: "https://profiles.stanford.edu/russell-poldrack"
     },
     {
-        videoUrl: "https://www.youtube.com/watch?v=NwLU547vLT4&list=PLUfN2R7yKo70&index=5",
+        videoUrl: "https://www.youtube.com/embed/NwLU547vLT4?si=zfMahK2jiXpNKBZ2",
         title: "How To Measure And Reduce The Carbon Footprint Of Fmri Data Analysis | BrainHack Vanderbilt 2026",
         personalUrl: "https://profiles.sussex.ac.uk/p596400-nick-souter"
     },
     {
-        videoUrl: "https://www.youtube.com/watch?v=8r9rsCLU-0Q&list=PLUfN2R7yKo70&index=6",
+        videoUrl: "https://www.youtube.com/embed/8r9rsCLU-0Q?si=Yh4ssQMuLIziTbNJ",
         title: "Sustainability in Scientific Research: Challenges and Opportunities, J. Magnolia Gilligan",
         personalUrl: "https://www.magnoliagilligan.org/"
     },
     {
-        videoUrl: "https://www.youtube.com/watch?v=r3Oq0NpAXf8&list=PLUfN2R7yKo70&index=7",
+        videoUrl: "https://www.youtube.com/embed/r3Oq0NpAXf8?si=Fyob3939La_c77qo",
         title: "Joining a World Wide Lab, Alex Maier",
         personalUrl: "https://maierlab.wiki/"
     },
     {
-        videoUrl: "https://www.youtube.com/watch?v=m5ltNkCHv1g&list=PLUfN2R7yKo70&index=8",
+        videoUrl: "https://www.youtube.com/embed/m5ltNkCHv1g?si=BSXr4h79hK6yVYkC",
         title: "Cognitive Neuroscience in the Foundation Model Era: Lessons in Reproducibility, Hao-Ting Wang",
         personalUrl: "https://wanghaoting.com/"
     },
